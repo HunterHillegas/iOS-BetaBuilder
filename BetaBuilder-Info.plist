@@ -24,7 +24,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>betabuilder.icns</string>
+	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>com.hanchorllc.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

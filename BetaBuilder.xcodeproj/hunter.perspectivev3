@@ -301,8 +301,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
-									<integer>1</integer>
+									<integer>12</integer>
+									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -340,7 +340,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>5AA4E392120DDE9E00385530</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>BuilderController.m</string>
+								<string>BetaBuilder-Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -348,11 +348,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>5AA4E393120DDE9E00385530</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>BuilderController.m</string>
+										<string>BetaBuilder-Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5AC4089512280BC700122143</string>
+										<string>5AA0895F1228298C002A12E8</string>
 										<key>history</key>
 										<array>
 											<string>5A2344371211BAEE0098AAB8</string>
@@ -360,13 +360,13 @@
 											<string>5A2344401211BB000098AAB8</string>
 											<string>5A408B341222F0370061A394</string>
 											<string>5AB3C6181224872E00778CFC</string>
-											<string>5AB3C6231224875E00778CFC</string>
 											<string>5AB3C64A122489DB00778CFC</string>
 											<string>5AC4088F12280BC500122143</string>
 											<string>5AC4089012280BC500122143</string>
 											<string>5AC4089112280BC500122143</string>
 											<string>5AC4089212280BC500122143</string>
-											<string>5AC4089412280BC500122143</string>
+											<string>5AA0895D12282989002A12E8</string>
+											<string>5AA0895E12282989002A12E8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -380,18 +380,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1474, 631}}</string>
+								<string>{{0, 0}, {1474, 623}}</string>
 								<key>RubberWindowFrame</key>
 								<string>2 111 1761 1067 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>631pt</string>
+							<string>623pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>390pt</string>
+							<string>398pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -405,7 +405,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1474, 363}}</string>
+										<string>{{10, 27}, {1474, 371}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -459,7 +459,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1474, 363}}</string>
+										<string>{{10, 27}, {1474, 371}}</string>
 										<key>RubberWindowFrame</key>
 										<string>2 111 1761 1067 0 0 1920 1178 </string>
 									</dict>
@@ -489,11 +489,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>5AC4089612280BC700122143</string>
+				<string>5AA089601228298C002A12E8</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>5AC4089712280BC700122143</string>
+				<string>5AA089611228298C002A12E8</string>
 				<string>5AA4E392120DDE9E00385530</string>
-				<string>5AC4089812280BC700122143</string>
+				<string>5AA089621228298C002A12E8</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -669,7 +669,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>304614343.88647699</real>
+	<real>304621964.75582099</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -686,7 +686,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>/Users/hunter/Documents/Guerrilla/Projects/Cocoa/BetaBuilder/BetaBuilder.xcodeproj</string>
+		<string>/Users/hunter/Desktop/iOS-BetaBuilder/BetaBuilder.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>2 111 1761 1067 0 0 1920 1178 </string>

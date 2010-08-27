@@ -18,7 +18,6 @@
 		5AA4E39D120DE13300385530 /* BuilderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA4E39C120DE13300385530 /* BuilderController.m */; };
 		5AA4E409120DE84F00385530 /* index_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E408120DE84F00385530 /* index_template.html */; };
 		5AA4E491120DF21D00385530 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E490120DF21D00385530 /* README */; };
-		5AB3C5F21224864600778CFC /* betabuilder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5AB3C5F11224864600778CFC /* betabuilder.icns */; };
 		5AB3C6151224870100778CFC /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AB3C6141224870100778CFC /* Credits.html */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -52,7 +51,6 @@
 		5AA4E39C120DE13300385530 /* BuilderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuilderController.m; sourceTree = "<group>"; };
 		5AA4E408120DE84F00385530 /* index_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_template.html; sourceTree = "<group>"; };
 		5AA4E490120DF21D00385530 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		5AB3C5F11224864600778CFC /* betabuilder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = betabuilder.icns; sourceTree = "<group>"; };
 		5AB3C6141224870100778CFC /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BetaBuilder-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BetaBuilder-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* BetaBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,7 +132,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5AB3C5F11224864600778CFC /* betabuilder.icns */,
 				8D1107310486CEB800E47090 /* BetaBuilder-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -227,7 +224,6 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				5AA4E409120DE84F00385530 /* index_template.html in Resources */,
 				5AA4E491120DF21D00385530 /* README in Resources */,
-				5AB3C5F21224864600778CFC /* betabuilder.icns in Resources */,
 				5AB3C6151224870100778CFC /* Credits.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
