@@ -253,6 +253,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -301,7 +303,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
 									<integer>11</integer>
 									<integer>0</integer>
 								</array>
@@ -340,7 +341,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>5AA4E392120DDE9E00385530</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>BetaBuilder-Info.plist</string>
+								<string>README</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -348,25 +349,25 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>5AA4E393120DDE9E00385530</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>BetaBuilder-Info.plist</string>
+										<string>README</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>5AA0895F1228298C002A12E8</string>
+										<string>5AA0896812282A18002A12E8</string>
 										<key>history</key>
 										<array>
 											<string>5A2344371211BAEE0098AAB8</string>
 											<string>5A2344381211BAEE0098AAB8</string>
-											<string>5A2344401211BB000098AAB8</string>
 											<string>5A408B341222F0370061A394</string>
 											<string>5AB3C6181224872E00778CFC</string>
-											<string>5AB3C64A122489DB00778CFC</string>
 											<string>5AC4088F12280BC500122143</string>
 											<string>5AC4089012280BC500122143</string>
 											<string>5AC4089112280BC500122143</string>
 											<string>5AC4089212280BC500122143</string>
 											<string>5AA0895D12282989002A12E8</string>
-											<string>5AA0895E12282989002A12E8</string>
+											<string>5AA0896512282A18002A12E8</string>
+											<string>5AA0896612282A18002A12E8</string>
+											<string>5AA0896712282A18002A12E8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -645,13 +646,13 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>5AB3C5FE1224865300778CFC</string>
+				<string>5AA0896912282A18002A12E8</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>5AB3C5FF1224865300778CFC</string>
-				<string>5AB3C6001224865300778CFC</string>
-				<string>5AB3C6011224865300778CFC</string>
-				<string>5AB3C6021224865300778CFC</string>
+				<string>5AA0896A12282A18002A12E8</string>
+				<string>5AA0896B12282A18002A12E8</string>
+				<string>5AA0896C12282A18002A12E8</string>
+				<string>5AA0896D12282A18002A12E8</string>
 				<string>5AA4E392120DDE9E00385530</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
@@ -669,7 +670,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>304621964.75582099</real>
+	<real>304622104.96331298</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -686,6 +687,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>5AA0896E12282A18002A12E8</string>
+		<string>5AA0896F12282A18002A12E8</string>
 		<string>/Users/hunter/Desktop/iOS-BetaBuilder/BetaBuilder.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
