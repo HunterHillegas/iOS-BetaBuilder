@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		C9181BBC121DC31D0022E4AC /* DAVResponseItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C9181BBA121DC31D0022E4AC /* DAVResponseItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9181BBD121DC31D0022E4AC /* DAVResponseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C9181BBB121DC31D0022E4AC /* DAVResponseItem.m */; };
+		C9FED59B121D989900DD1DFF /* DAVCredentials.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED58F121D989900DD1DFF /* DAVCredentials.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FED59C121D989900DD1DFF /* DAVCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED590121D989900DD1DFF /* DAVCredentials.m */; };
+		C9FED59D121D989900DD1DFF /* DAVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED591121D989900DD1DFF /* DAVKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FED59E121D989900DD1DFF /* DAVListingParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED592121D989900DD1DFF /* DAVListingParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FED59F121D989900DD1DFF /* DAVListingParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED593121D989900DD1DFF /* DAVListingParser.m */; };
+		C9FED5A0121D989900DD1DFF /* DAVRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED594121D989900DD1DFF /* DAVRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FED5A1121D989900DD1DFF /* DAVRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED595121D989900DD1DFF /* DAVRequest.m */; };
+		C9FED5A2121D989900DD1DFF /* DAVRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED596121D989900DD1DFF /* DAVRequest+Private.h */; };
+		C9FED5A3121D989900DD1DFF /* DAVRequests.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED597121D989900DD1DFF /* DAVRequests.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FED5A4121D989900DD1DFF /* DAVRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED598121D989900DD1DFF /* DAVRequests.m */; };
+		C9FED5A5121D989900DD1DFF /* DAVSession.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED599121D989900DD1DFF /* DAVSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FED5A6121D989900DD1DFF /* DAVSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED59A121D989900DD1DFF /* DAVSession.m */; };
+		C9FED5AF121D98B800DD1DFF /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FED5AD121D98B800DD1DFF /* ISO8601DateFormatter.h */; };
+		C9FED5B0121D98B800DD1DFF /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5AE121D98B800DD1DFF /* ISO8601DateFormatter.m */; };
+		C9FED5C1121D98D600DD1DFF /* AMkColTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5B2121D98D600DD1DFF /* AMkColTest.m */; };
+		C9FED5C2121D98D600DD1DFF /* BPutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5B4121D98D600DD1DFF /* BPutTest.m */; };
+		C9FED5C3121D98D600DD1DFF /* CGetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5B6121D98D600DD1DFF /* CGetTest.m */; };
+		C9FED5C4121D98D600DD1DFF /* DAVTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5B8121D98D600DD1DFF /* DAVTest.m */; };
+		C9FED5C5121D98D600DD1DFF /* DCopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5BA121D98D600DD1DFF /* DCopyTest.m */; };
+		C9FED5C6121D98D600DD1DFF /* EMoveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5BC121D98D600DD1DFF /* EMoveTest.m */; };
+		C9FED5C7121D98D600DD1DFF /* FListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5BE121D98D600DD1DFF /* FListTest.m */; };
+		C9FED5C8121D98D600DD1DFF /* GDeleteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FED5C0121D98D600DD1DFF /* GDeleteTest.m */; };
+		C9FF7821121C7224001250C7 /* DAVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* DAVKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9FF77F2121C6F58001250C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = DAVKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* DAVKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVKit_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* DAVKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DAVKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9181BBA121DC31D0022E4AC /* DAVResponseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVResponseItem.h; path = Sources/Core/DAVResponseItem.h; sourceTree = "<group>"; };
+		C9181BBB121DC31D0022E4AC /* DAVResponseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAVResponseItem.m; path = Sources/Core/DAVResponseItem.m; sourceTree = "<group>"; };
+		C9FED58F121D989900DD1DFF /* DAVCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVCredentials.h; path = Sources/Core/DAVCredentials.h; sourceTree = "<group>"; };
+		C9FED590121D989900DD1DFF /* DAVCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAVCredentials.m; path = Sources/Core/DAVCredentials.m; sourceTree = "<group>"; };
+		C9FED591121D989900DD1DFF /* DAVKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVKit.h; path = Sources/Core/DAVKit.h; sourceTree = "<group>"; };
+		C9FED592121D989900DD1DFF /* DAVListingParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVListingParser.h; path = Sources/Core/DAVListingParser.h; sourceTree = "<group>"; };
+		C9FED593121D989900DD1DFF /* DAVListingParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAVListingParser.m; path = Sources/Core/DAVListingParser.m; sourceTree = "<group>"; };
+		C9FED594121D989900DD1DFF /* DAVRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVRequest.h; path = Sources/Core/DAVRequest.h; sourceTree = "<group>"; };
+		C9FED595121D989900DD1DFF /* DAVRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAVRequest.m; path = Sources/Core/DAVRequest.m; sourceTree = "<group>"; };
+		C9FED596121D989900DD1DFF /* DAVRequest+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DAVRequest+Private.h"; path = "Sources/Core/DAVRequest+Private.h"; sourceTree = "<group>"; };
+		C9FED597121D989900DD1DFF /* DAVRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVRequests.h; path = Sources/Core/DAVRequests.h; sourceTree = "<group>"; };
+		C9FED598121D989900DD1DFF /* DAVRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAVRequests.m; path = Sources/Core/DAVRequests.m; sourceTree = "<group>"; };
+		C9FED599121D989900DD1DFF /* DAVSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVSession.h; path = Sources/Core/DAVSession.h; sourceTree = "<group>"; };
+		C9FED59A121D989900DD1DFF /* DAVSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAVSession.m; path = Sources/Core/DAVSession.m; sourceTree = "<group>"; };
+		C9FED5AD121D98B800DD1DFF /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISO8601DateFormatter.h; path = Sources/ISO8601/ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		C9FED5AE121D98B800DD1DFF /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISO8601DateFormatter.m; path = Sources/ISO8601/ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		C9FED5B1121D98D600DD1DFF /* AMkColTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMkColTest.h; path = Sources/Tests/AMkColTest.h; sourceTree = "<group>"; };
+		C9FED5B2121D98D600DD1DFF /* AMkColTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMkColTest.m; path = Sources/Tests/AMkColTest.m; sourceTree = "<group>"; };
+		C9FED5B3121D98D600DD1DFF /* BPutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPutTest.h; path = Sources/Tests/BPutTest.h; sourceTree = "<group>"; };
+		C9FED5B4121D98D600DD1DFF /* BPutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPutTest.m; path = Sources/Tests/BPutTest.m; sourceTree = "<group>"; };
+		C9FED5B5121D98D600DD1DFF /* CGetTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGetTest.h; path = Sources/Tests/CGetTest.h; sourceTree = "<group>"; };
+		C9FED5B6121D98D600DD1DFF /* CGetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGetTest.m; path = Sources/Tests/CGetTest.m; sourceTree = "<group>"; };
+		C9FED5B7121D98D600DD1DFF /* DAVTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAVTest.h; path = Sources/Tests/DAVTest.h; sourceTree = "<group>"; };
+		C9FED5B8121D98D600DD1DFF /* DAVTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAVTest.m; path = Sources/Tests/DAVTest.m; sourceTree = "<group>"; };
+		C9FED5B9121D98D600DD1DFF /* DCopyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCopyTest.h; path = Sources/Tests/DCopyTest.h; sourceTree = "<group>"; };
+		C9FED5BA121D98D600DD1DFF /* DCopyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCopyTest.m; path = Sources/Tests/DCopyTest.m; sourceTree = "<group>"; };
+		C9FED5BB121D98D600DD1DFF /* EMoveTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EMoveTest.h; path = Sources/Tests/EMoveTest.h; sourceTree = "<group>"; };
+		C9FED5BC121D98D600DD1DFF /* EMoveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EMoveTest.m; path = Sources/Tests/EMoveTest.m; sourceTree = "<group>"; };
+		C9FED5BD121D98D600DD1DFF /* FListTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FListTest.h; path = Sources/Tests/FListTest.h; sourceTree = "<group>"; };
+		C9FED5BE121D98D600DD1DFF /* FListTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FListTest.m; path = Sources/Tests/FListTest.m; sourceTree = "<group>"; };
+		C9FED5BF121D98D600DD1DFF /* GDeleteTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDeleteTest.h; path = Sources/Tests/GDeleteTest.h; sourceTree = "<group>"; };
+		C9FED5C0121D98D600DD1DFF /* GDeleteTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDeleteTest.m; path = Sources/Tests/GDeleteTest.m; sourceTree = "<group>"; };
+		C9FF77EC121C6F51001250C7 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FF77ED121C6F51001250C7 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FF77E9121C6F51001250C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FF7821121C7224001250C7 /* DAVKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* DAVKit.framework */,
+				C9FF77EC121C6F51001250C7 /* Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* DAVKit */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = DAVKit;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				C9FF77ED121C6F51001250C7 /* Tests-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9FF779F121C6BDF001250C7 /* Core */,
+				C9FF7787121C6B8B001250C7 /* ISO8601 */,
+				C9FF77A1121C6BF0001250C7 /* Private */,
+				C9FF77A2121C6C1A001250C7 /* Tests */,
+				C9FED591121D989900DD1DFF /* DAVKit.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* DAVKit_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		C9FF7787121C6B8B001250C7 /* ISO8601 */ = {
+			isa = PBXGroup;
+			children = (
+				C9FED5AD121D98B800DD1DFF /* ISO8601DateFormatter.h */,
+				C9FED5AE121D98B800DD1DFF /* ISO8601DateFormatter.m */,
+			);
+			name = ISO8601;
+			sourceTree = "<group>";
+		};
+		C9FF779F121C6BDF001250C7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C9FED58F121D989900DD1DFF /* DAVCredentials.h */,
+				C9FED590121D989900DD1DFF /* DAVCredentials.m */,
+				C9FED594121D989900DD1DFF /* DAVRequest.h */,
+				C9FED595121D989900DD1DFF /* DAVRequest.m */,
+				C9FED597121D989900DD1DFF /* DAVRequests.h */,
+				C9FED598121D989900DD1DFF /* DAVRequests.m */,
+				C9181BBA121DC31D0022E4AC /* DAVResponseItem.h */,
+				C9181BBB121DC31D0022E4AC /* DAVResponseItem.m */,
+				C9FED599121D989900DD1DFF /* DAVSession.h */,
+				C9FED59A121D989900DD1DFF /* DAVSession.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C9FF77A1121C6BF0001250C7 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				C9FED592121D989900DD1DFF /* DAVListingParser.h */,
+				C9FED593121D989900DD1DFF /* DAVListingParser.m */,
+				C9FED596121D989900DD1DFF /* DAVRequest+Private.h */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+		C9FF77A2121C6C1A001250C7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C9FED5B1121D98D600DD1DFF /* AMkColTest.h */,
+				C9FED5B2121D98D600DD1DFF /* AMkColTest.m */,
+				C9FED5B3121D98D600DD1DFF /* BPutTest.h */,
+				C9FED5B4121D98D600DD1DFF /* BPutTest.m */,
+				C9FED5B5121D98D600DD1DFF /* CGetTest.h */,
+				C9FED5B6121D98D600DD1DFF /* CGetTest.m */,
+				C9FED5B7121D98D600DD1DFF /* DAVTest.h */,
+				C9FED5B8121D98D600DD1DFF /* DAVTest.m */,
+				C9FED5B9121D98D600DD1DFF /* DCopyTest.h */,
+				C9FED5BA121D98D600DD1DFF /* DCopyTest.m */,
+				C9FED5BB121D98D600DD1DFF /* EMoveTest.h */,
+				C9FED5BC121D98D600DD1DFF /* EMoveTest.m */,
+				C9FED5BD121D98D600DD1DFF /* FListTest.h */,
+				C9FED5BE121D98D600DD1DFF /* FListTest.m */,
+				C9FED5BF121D98D600DD1DFF /* GDeleteTest.h */,
+				C9FED5C0121D98D600DD1DFF /* GDeleteTest.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FED59B121D989900DD1DFF /* DAVCredentials.h in Headers */,
+				C9FED59D121D989900DD1DFF /* DAVKit.h in Headers */,
+				C9FED59E121D989900DD1DFF /* DAVListingParser.h in Headers */,
+				C9FED5A0121D989900DD1DFF /* DAVRequest.h in Headers */,
+				C9FED5A2121D989900DD1DFF /* DAVRequest+Private.h in Headers */,
+				C9FED5A3121D989900DD1DFF /* DAVRequests.h in Headers */,
+				C9FED5A5121D989900DD1DFF /* DAVSession.h in Headers */,
+				C9FED5AF121D98B800DD1DFF /* ISO8601DateFormatter.h in Headers */,
+				C9181BBC121DC31D0022E4AC /* DAVResponseItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* DAVKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "DAVKit" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DAVKit;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = DAVKit;
+			productReference = 8DC2EF5B0486A6940098B216 /* DAVKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C9FF77EB121C6F51001250C7 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FF77F1121C6F52001250C7 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				C9FF77E7121C6F51001250C7 /* Resources */,
+				C9FF77E8121C6F51001250C7 /* Sources */,
+				C9FF77E9121C6F51001250C7 /* Frameworks */,
+				C9FF77EA121C6F51001250C7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9FF77F3121C6F58001250C7 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = C9FF77EC121C6F51001250C7 /* Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "DAVKit" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* DAVKit */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* DAVKit */,
+				C9FF77EB121C6F51001250C7 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FF77E7121C6F51001250C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9FF77EA121C6F51001250C7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FED59C121D989900DD1DFF /* DAVCredentials.m in Sources */,
+				C9FED59F121D989900DD1DFF /* DAVListingParser.m in Sources */,
+				C9FED5A1121D989900DD1DFF /* DAVRequest.m in Sources */,
+				C9FED5A4121D989900DD1DFF /* DAVRequests.m in Sources */,
+				C9FED5A6121D989900DD1DFF /* DAVSession.m in Sources */,
+				C9FED5B0121D98B800DD1DFF /* ISO8601DateFormatter.m in Sources */,
+				C9181BBD121DC31D0022E4AC /* DAVResponseItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FF77E8121C6F51001250C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FED5C1121D98D600DD1DFF /* AMkColTest.m in Sources */,
+				C9FED5C2121D98D600DD1DFF /* BPutTest.m in Sources */,
+				C9FED5C3121D98D600DD1DFF /* CGetTest.m in Sources */,
+				C9FED5C4121D98D600DD1DFF /* DAVTest.m in Sources */,
+				C9FED5C5121D98D600DD1DFF /* DCopyTest.m in Sources */,
+				C9FED5C6121D98D600DD1DFF /* EMoveTest.m in Sources */,
+				C9FED5C7121D98D600DD1DFF /* FListTest.m in Sources */,
+				C9FED5C8121D98D600DD1DFF /* GDeleteTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9FF77F3121C6F58001250C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC2EF4F0486A6940098B216 /* DAVKit */;
+			targetProxy = C9FF77F2121C6F58001250C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DAVKit_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = DAVKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DAVKit_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				PRODUCT_NAME = DAVKit;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		C9FF77EF121C6F52001250C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C9FF77F0121C6F52001250C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "DAVKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "DAVKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9FF77F1121C6F52001250C7 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FF77EF121C6F52001250C7 /* Debug */,
+				C9FF77F0121C6F52001250C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

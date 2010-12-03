@@ -1,0 +1,744 @@
+TTests
+v7
+r0
+t312955537.894751
+cCheck dependencies
+cProcessInfoPlistFile "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/Info.plist" Tests-Info.plist
+cProcessPCH /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h.pth /Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/AMkColTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/BPutTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/CGetTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DAVTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DCopyTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/EMoveTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/FListTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/GDeleteTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m"
+cLd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/MacOS/Tests" normal x86_64
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m"
+cPhaseScriptExecution "Run Script" "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Script-C9FF77EA121C6F51001250C7.sh"
+cTouch "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest"
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/NSException_SenTestFailure.h
+c000000004C885CA00000000000000E25
+t1284005024
+s3621
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenInterfaceTestCase.h
+c000000004C885CA00000000000000701
+t1284005024
+s1793
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestCase.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTest.h
+c000000004C885CA0000000000000084C
+t1284005024
+s2124
+i<Foundation/Foundation.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestCase.h
+c000000004C885CA0000000000000167B
+t1284005024
+s5755
+i<Foundation/NSObject.h>
+i<SenTestingKit/SenTest.h>
+i<SenTestingKit/SenTestCase_Macros.h>
+i<SenTestingKit/NSException_SenTestFailure.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestCaseRun.h
+c000000004C885CA00000000000000860
+t1284005024
+s2144
+i<SenTestingKit/SenTestRun.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestCase_Macros.h
+c000000004C885CA00000000000007F41
+t1284005024
+s32577
+i<SenTestingKit/SenTestingUtilities.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestDefines.h
+c000000004C885CA00000000000000947
+t1284005024
+s2375
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestDistributedNotifier.h
+c000000004C885CA000000000000006F0
+t1284005024
+s1776
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestObserver.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestLog.h
+c000000004C885CA000000000000006D0
+t1284005024
+s1744
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestObserver.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestObserver.h
+c000000004C885CA000000000000009CF
+t1284005024
+s2511
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestProbe.h
+c000000004C885CA00000000000000958
+t1284005024
+s2392
+i<Foundation/Foundation.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestRun.h
+c000000004C885CA00000000000000A79
+t1284005024
+s2681
+i<Foundation/NSObject.h>
+i<SenTestingKit/SenTest.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestSuite.h
+c000000004C885CA00000000000000CCF
+t1284005024
+s3279
+i<SenTestingKit/SenTest.h>
+i<SenTestingKit/SenTestCase.h>
+i<Foundation/Foundation.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestSuiteRun.h
+c000000004C885CA000000000000007D3
+t1284005024
+s2003
+i<SenTestingKit/SenTestRun.h>
+i<SenTestingKit/SenTestDefines.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingKit.h
+c000000004C885CA000000000000008A5
+t1284005024
+s2213
+i<SenTestingKit/SenTestDefines.h>
+i<SenTestingKit/SenTest.h>
+i<SenTestingKit/SenTestCase.h>
+i<SenTestingKit/SenTestSuite.h>
+i<SenTestingKit/SenTestObserver.h>
+i<SenTestingKit/NSException_SenTestFailure.h>
+i<SenTestingKit/SenTestLog.h>
+i<SenTestingKit/SenTestDistributedNotifier.h>
+i<SenTestingKit/SenTestRun.h>
+i<SenTestingKit/SenTestSuiteRun.h>
+i<SenTestingKit/SenTestCaseRun.h>
+i<SenTestingKit/SenInterfaceTestCase.h>
+i<SenTestingKit/SenTestProbe.h>
+i<SenTestingKit/SenTestingUtilities.h>
+
+N/Developer4.2/Library/Frameworks/SenTestingKit.framework/Headers/SenTestingUtilities.h
+c000000004C885CA00000000000000C37
+t1284005024
+s3127
+i<Foundation/Foundation.h>
+
+N/Developer4.2/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C23AA0400000000000013E6
+t1277405700
+s5094
+
+N/Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h
+c000000004C23AA050000000000000EDE
+t1277405701
+s3806
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.h
+c000000004CB8C8CC00000000000001E3
+t1287178444
+s483
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVKit.h
+c000000004CB8C8CC00000000000000F6
+t1287178444
+s246
+i<DAVKit/DAVCredentials.h>
+i<DAVKit/DAVRequest.h>
+i<DAVKit/DAVRequests.h>
+i<DAVKit/DAVResponseItem.h>
+i<DAVKit/DAVSession.h>
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.h
+c000000004CB8C8CC0000000000000469
+t1287178444
+s1129
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.h
+c000000004CB8C8CC000000000000033F
+t1287178444
+s831
+i"DAVRequest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.h
+c000000004CB8C8CC00000000000001DD
+t1287178444
+s477
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.h
+c000000004CB8C8CC0000000000000303
+t1287178444
+s771
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.h
+c000000004CB8C8CC000000000000009A
+t1287178444
+s154
+i"DAVTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m
+c000000004CB8C8CC0000000000000247
+t1287178444
+s583
+i"AMkColTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.h
+c000000004CB8C8CC0000000000000096
+t1287178444
+s150
+i"DAVTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m
+c000000004CB8C8CC0000000000000298
+t1287178444
+s664
+i"BPutTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.h
+c000000004CB8C8CC0000000000000096
+t1287178444
+s150
+i"DAVTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m
+c000000004CB8C8CC00000000000002B8
+t1287178444
+s696
+i"CGetTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.h
+c000000004CB8C8CC00000000000001A3
+t1287178444
+s419
+i<SenTestingKit/SenTestingKit.h>
+i<DAVKit/DAVKit.h>
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m
+c000000004CB8C8CC000000000000046C
+t1287178444
+s1132
+i"DAVTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.h
+c000000004CB8C8CC0000000000000098
+t1287178444
+s152
+i"DAVTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m
+c000000004CB8C8CC0000000000000289
+t1287178444
+s649
+i"DCopyTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.h
+c000000004CB8C8CC0000000000000098
+t1287178444
+s152
+i"DAVTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m
+c000000004CB8C8CC0000000000000273
+t1287178444
+s627
+i"EMoveTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.h
+c000000004CB8C8CC0000000000000098
+t1287178444
+s152
+i"DAVTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m
+c000000004CB8C8CC00000000000002B2
+t1287178444
+s690
+i"FListTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.h
+c000000004CB8C8CC000000000000009C
+t1287178444
+s156
+i"DAVTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m
+c000000004CB8C8CC000000000000023B
+t1287178444
+s571
+i"GDeleteTest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/AMkColTest.o
+t1291262735
+s13392
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/BPutTest.o
+t1291262735
+s13920
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/CGetTest.o
+t1291262735
+s13504
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DAVTest.o
+t1291262735
+s23040
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DCopyTest.o
+t1291262735
+s13820
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/EMoveTest.o
+t1291262735
+s13692
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/FListTest.o
+t1291262736
+s13564
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/GDeleteTest.o
+t1291262736
+s13392
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/Tests.LinkFileList
+c000000004CF71B0E000000000000043F
+t1291262734
+s1087
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Script-C9FF77EA121C6F51001250C7.sh
+c000000004CF71B0E0000000000000062
+t1291262734
+s98
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/AMkColTest.plist
+t1291262736
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/BPutTest.plist
+t1291262736
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/CGetTest.plist
+t1291262736
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/DAVTest.plist
+t1291262736
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/DCopyTest.plist
+t1291262736
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/EMoveTest.plist
+t1291262736
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/FListTest.plist
+t1291262736
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/GDeleteTest.plist
+t1291262736
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/DAVKit
+c000000004CF718380000000000014320
+t1291262008
+s82720
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest
+t1291262737
+s102
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/Info.plist
+t1291262734
+s657
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/MacOS/Tests
+t1291262736
+s42480
+
+N/var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h.pth
+t1291262735
+s9016732
+
+NTests-Info.plist
+c000000004CB8C8CC00000000000002BA
+t1287178444
+s698
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m"
+s312955536.043766
+e312955536.241577
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m
+lSLF07#2@99"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m312955536#312955536#0(0"0(0#0#91"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m8638216384#1821"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/AMkColTest.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m"
+s312955536.152179
+e312955536.278642
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m
+lSLF07#2@97"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m312955536#312955536#0(0"0(0#0#89"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m8645590112#1817"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/BPutTest.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m"
+s312955536.241674
+e312955536.363308
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m
+lSLF07#2@97"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m312955536#312955536#0(0"0(0#0#89"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m8677061280#1817"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/CGetTest.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m"
+s312955536.278913
+e312955536.428828
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m
+lSLF07#2@96"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m312955536#312955536#0(0"0(0#0#88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m8675037856#1815"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/DAVTest.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m"
+s312955536.363589
+e312955536.517777
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m
+lSLF07#2@98"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m312955536#312955536#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m8668025664#1819"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/DCopyTest.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m"
+s312955536.428917
+e312955536.545400
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m
+lSLF07#2@98"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m312955536#312955536#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m8676942848#1819"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/EMoveTest.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m"
+s312955536.517872
+e312955536.636680
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m
+lSLF07#2@98"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m312955536#312955536#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m8665324160#1819"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/FListTest.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m"
+s312955536.545492
+e312955536.665635
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m
+lSLF07#2@100"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m312955536#312955536#0(0"0(0#0#92"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m8661714464#1823"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/StaticAnalyzer/normal/x86_64/GDeleteTest.plist"0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies312955534#312955534#0(0"0(0#1#0"8652063072#0"0#
+
+CCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/AMkColTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312955535.802965
+e312955535.864167
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/AMkColTest.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@99"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m312955535#312955535#0(0"0(0#0#91"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m8666608352#1803"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/AMkColTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/AMkColTest.o"0#
+
+CCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/BPutTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312955535.804154
+e312955535.866879
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/BPutTest.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@97"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m312955535#312955535#0(0"0(0#0#89"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m8661417664#1799"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/BPutTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/BPutTest.o"0#
+
+CCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/CGetTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312955535.864265
+e312955535.925922
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/CGetTest.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@97"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m312955535#312955535#0(0"0(0#0#89"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m8657906720#1799"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/CGetTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/CGetTest.o"0#
+
+CCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DAVTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312955535.866962
+e312955535.933028
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DAVTest.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@96"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m312955535#312955535#0(0"0(0#0#88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m8657179264#1797"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DAVTest.o"0#
+
+CCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DCopyTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312955535.926415
+e312955535.989189
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DCopyTest.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@98"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m312955535#312955535#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m8651795936#1801"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DCopyTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/DCopyTest.o"0#
+
+CCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/EMoveTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312955535.933125
+e312955535.996134
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/EMoveTest.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@98"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m312955535#312955536#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m8651623200#1801"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/EMoveTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/EMoveTest.o"0#
+
+CCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/FListTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312955535.989289
+e312955536.043662
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/FListTest.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@98"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m312955535#312955536#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m8650250496#1801"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/FListTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/FListTest.o"0#
+
+CCompileC build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/GDeleteTest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312955535.996230
+e312955536.054548
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/GDeleteTest.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@100"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m312955535#312955536#0(0"0(0#0#92"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m8649031872#1805"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/GDeleteTest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/GDeleteTest.o"0#
+
+CLd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/MacOS/Tests" normal x86_64
+s312955536.054781
+e312955536.152083
+r1
+xLd
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/MacOS/Tests
+xnormal
+xx86_64
+lSLF07#2@115"Link /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/MacOS/Tests312955536#312955536#0(0"0(0#0#0"8653431936#766"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer4.2/usr/bin/clang -arch x86_64 -bundle -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk "-L/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks -filelist "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/Tests.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -framework SenTestingKit -framework DAVKit -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/MacOS/Tests"0#
+
+CPhaseScriptExecution "Run Script" "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Script-C9FF77EA121C6F51001250C7.sh"
+s312955536.665736
+e312955537.891196
+r0
+xPhaseScriptExecution
+xRun Script
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Script-C9FF77EA121C6F51001250C7.sh
+o/Developer4.2/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'x86_64'
+o/Developer4.2/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'x86_64' (GC ON)
+oTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' started at 2010-12-02 05:05:36 +0100
+oTest Suite 'AMkColTest' started at 2010-12-02 05:05:36 +0100
+oTest Case '-[AMkColTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200258dc0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200258e40 "unsupported URL")
+oTest Case '-[AMkColTest testRequest]' failed (0.024 seconds).
+oTest Suite 'AMkColTest' finished at 2010-12-02 05:05:36 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.024 (0.025) seconds
+o
+oTest Suite 'BPutTest' started at 2010-12-02 05:05:36 +0100
+oTest Case '-[BPutTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002420c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20023fec0 "unsupported URL")
+oTest Case '-[BPutTest testRequest]' failed (0.004 seconds).
+oTest Suite 'BPutTest' finished at 2010-12-02 05:05:36 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.004 (0.005) seconds
+o
+oTest Suite 'CGetTest' started at 2010-12-02 05:05:36 +0100
+oTest Case '-[CGetTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200031d00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x2000315a0 "unsupported URL")
+oTest Case '-[CGetTest testRequest]' failed (0.002 seconds).
+oTest Suite 'CGetTest' finished at 2010-12-02 05:05:36 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds
+o
+oTest Suite 'DAVTest' started at 2010-12-02 05:05:36 +0100
+oTest Suite 'DAVTest' finished at 2010-12-02 05:05:36 +0100.
+oExecuted 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+o
+oTest Suite 'DCopyTest' started at 2010-12-02 05:05:36 +0100
+oTest Case '-[DCopyTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200016f00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200016f80 "unsupported URL")
+oTest Case '-[DCopyTest testRequest]' failed (0.002 seconds).
+oTest Suite 'DCopyTest' finished at 2010-12-02 05:05:36 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds
+o
+oTest Suite 'EMoveTest' started at 2010-12-02 05:05:36 +0100
+oTest Case '-[EMoveTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002517c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200251840 "unsupported URL")
+oTest Case '-[EMoveTest testRequest]' failed (0.002 seconds).
+oTest Suite 'EMoveTest' finished at 2010-12-02 05:05:36 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.002 (0.003) seconds
+o
+oTest Suite 'FListTest' started at 2010-12-02 05:05:36 +0100
+oTest Case '-[FListTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200246600 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200246400 "unsupported URL")
+oTest Case '-[FListTest testRequest]' failed (0.003 seconds).
+oTest Suite 'FListTest' finished at 2010-12-02 05:05:36 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.003 (0.003) seconds
+o
+oTest Suite 'GDeleteTest' started at 2010-12-02 05:05:36 +0100
+oTest Case '-[GDeleteTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200042e20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20003e800 "unsupported URL")
+oTest Case '-[GDeleteTest testRequest]' failed (0.002 seconds).
+oTest Suite 'GDeleteTest' finished at 2010-12-02 05:05:36 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds
+o
+oTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' finished at 2010-12-02 05:05:36 +0100.
+oExecuted 7 tests, with 7 failures (0 unexpected) in 0.039 (0.049) seconds
+o
+o/Developer4.2/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'x86_64' (GC ON)
+o/Developer4.2/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'x86_64' (GC OFF)
+oobjc[56041]: GC: forcing GC OFF because OBJC_DISABLE_GC is set
+oTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' started at 2010-12-02 05:05:37 +0100
+oTest Suite 'AMkColTest' started at 2010-12-02 05:05:37 +0100
+oTest Case '-[AMkColTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005b8a20 "unsupported URL")
+oTest Case '-[AMkColTest testRequest]' failed (0.006 seconds).
+oTest Suite 'AMkColTest' finished at 2010-12-02 05:05:37 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.006 (0.006) seconds
+o
+oTest Suite 'BPutTest' started at 2010-12-02 05:05:37 +0100
+oTest Case '-[BPutTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x100545aa0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005a71c0 "unsupported URL")
+oTest Case '-[BPutTest testRequest]' failed (0.002 seconds).
+oTest Suite 'BPutTest' finished at 2010-12-02 05:05:37 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds
+o
+oTest Suite 'CGetTest' started at 2010-12-02 05:05:37 +0100
+oTest Case '-[CGetTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10059d710 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005d0c20 "unsupported URL")
+oTest Case '-[CGetTest testRequest]' failed (0.001 seconds).
+oTest Suite 'CGetTest' finished at 2010-12-02 05:05:37 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) seconds
+o
+oTest Suite 'DAVTest' started at 2010-12-02 05:05:37 +0100
+oTest Suite 'DAVTest' finished at 2010-12-02 05:05:37 +0100.
+oExecuted 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+o
+oTest Suite 'DCopyTest' started at 2010-12-02 05:05:37 +0100
+oTest Case '-[DCopyTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e0e00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x100545aa0 "unsupported URL")
+oTest Case '-[DCopyTest testRequest]' failed (0.002 seconds).
+oTest Suite 'DCopyTest' finished at 2010-12-02 05:05:37 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds
+o
+oTest Suite 'EMoveTest' started at 2010-12-02 05:05:37 +0100
+oTest Case '-[EMoveTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e7ae0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005eef50 "unsupported URL")
+oTest Case '-[EMoveTest testRequest]' failed (0.001 seconds).
+oTest Suite 'EMoveTest' finished at 2010-12-02 05:05:37 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) seconds
+o
+oTest Suite 'FListTest' started at 2010-12-02 05:05:37 +0100
+oTest Case '-[FListTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005b8a20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005e0e80 "unsupported URL")
+oTest Case '-[FListTest testRequest]' failed (0.002 seconds).
+oTest Suite 'FListTest' finished at 2010-12-02 05:05:37 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds
+o
+oTest Suite 'GDeleteTest' started at 2010-12-02 05:05:37 +0100
+oTest Case '-[GDeleteTest testRequest]' started.
+o/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005f92d0 "unsupported URL")
+oTest Case '-[GDeleteTest testRequest]' failed (0.002 seconds).
+oTest Suite 'GDeleteTest' finished at 2010-12-02 05:05:37 +0100.
+oExecuted 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds
+o
+oTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' finished at 2010-12-02 05:05:37 +0100.
+oExecuted 7 tests, with 7 failures (0 unexpected) in 0.015 (0.022) seconds
+o
+o/Developer4.2/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'x86_64' (GC OFF)
+o/Developer4.2/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'x86_64'
+lSLF07#2@36"Run custom shell script 'Run Script'312955536#312955537#2(20@48"Run unit tests for architecture 'x86_64' (GC ON)312955536#312955537#1(20@111"Run test suite /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)312955536#312955537#8(20@25"Run test suite AMkColTest312955536#312955536#1(20@25"Run test case testRequest312955536#312955536#0(441"Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200258dc0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200258e40 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.024 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200258dc0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200258e40 "unsupported URL")312955536#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.024 seconds61"Test Case '-[AMkColTest testRequest]' failed (0.024 seconds).11"testRequest637"Test Suite 'AMkColTest' started at 2010-12-02 05:05:36 +0100Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200258dc0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200258e40 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.024 seconds).Test Suite 'AMkColTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.024 (0.025) seconds0(0#0#22"0 out of 1 test passed13"0.024 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.024 (0.025) seconds10"AMkColTest20@23"Run test suite BPutTest312955536#312955536#1(20@25"Run test case testRequest312955536#312955536#0(435"Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002420c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20023fec0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.004 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002420c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20023fec0 "unsupported URL")312955536#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.004 seconds59"Test Case '-[BPutTest testRequest]' failed (0.004 seconds).11"testRequest627"Test Suite 'BPutTest' started at 2010-12-02 05:05:36 +0100Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002420c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20023fec0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.004 seconds).Test Suite 'BPutTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.004 (0.005) seconds0(0#0#22"0 out of 1 test passed13"0.004 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.004 (0.005) seconds8"BPutTest20@23"Run test suite CGetTest312955536#312955536#1(20@25"Run test case testRequest312955536#312955536#0(435"Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200031d00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x2000315a0 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.002 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200031d00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x2000315a0 "unsupported URL")312955536#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.002 seconds59"Test Case '-[CGetTest testRequest]' failed (0.002 seconds).11"testRequest627"Test Suite 'CGetTest' started at 2010-12-02 05:05:36 +0100Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200031d00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x2000315a0 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.002 seconds).Test Suite 'CGetTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds0(0#0#22"0 out of 1 test passed13"0.002 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds8"CGetTest20@22"Run test suite DAVTest312955536#312955536#0(192"Test Suite 'DAVTest' started at 2010-12-02 05:05:36 +0100Test Suite 'DAVTest' finished at 2010-12-02 05:05:36 +0100.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds0(0#0#23"0 out of 0 tests passed13"0.000 seconds73"Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds7"DAVTest20@24"Run test suite DCopyTest312955536#312955537#1(20@25"Run test case testRequest312955536#312955537#0(438"Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200016f00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200016f80 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200016f00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200016f80 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.002 seconds60"Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).11"testRequest632"Test Suite 'DCopyTest' started at 2010-12-02 05:05:36 +0100Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200016f00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200016f80 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).Test Suite 'DCopyTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds0(0#0#22"0 out of 1 test passed13"0.002 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds9"DCopyTest20@24"Run test suite EMoveTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(438"Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002517c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200251840 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.002 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002517c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200251840 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.002 seconds60"Test Case '-[EMoveTest testRequest]' failed (0.002 seconds).11"testRequest632"Test Suite 'EMoveTest' started at 2010-12-02 05:05:36 +0100Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002517c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200251840 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.002 seconds).Test Suite 'EMoveTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.003) seconds0(0#0#22"0 out of 1 test passed13"0.002 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.003) seconds9"EMoveTest20@24"Run test suite FListTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(438"Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200246600 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200246400 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.003 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200246600 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200246400 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.003 seconds60"Test Case '-[FListTest testRequest]' failed (0.003 seconds).11"testRequest632"Test Suite 'FListTest' started at 2010-12-02 05:05:36 +0100Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200246600 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200246400 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.003 seconds).Test Suite 'FListTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.003 (0.003) seconds0(0#0#22"0 out of 1 test passed13"0.003 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.003 (0.003) seconds9"FListTest20@26"Run test suite GDeleteTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(444"Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200042e20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20003e800 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200042e20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20003e800 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.002 seconds62"Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).11"testRequest642"Test Suite 'GDeleteTest' started at 2010-12-02 05:05:36 +0100Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200042e20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20003e800 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).Test Suite 'GDeleteTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds0(0#0#22"0 out of 1 test passed13"0.002 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds11"GDeleteTest4999"Test Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' started at 2010-12-02 05:05:36 +0100Test Suite 'AMkColTest' started at 2010-12-02 05:05:36 +0100Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200258dc0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200258e40 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.024 seconds).Test Suite 'AMkColTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.024 (0.025) secondsTest Suite 'BPutTest' started at 2010-12-02 05:05:36 +0100Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002420c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20023fec0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.004 seconds).Test Suite 'BPutTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.004 (0.005) secondsTest Suite 'CGetTest' started at 2010-12-02 05:05:36 +0100Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200031d00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x2000315a0 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.002 seconds).Test Suite 'CGetTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'DAVTest' started at 2010-12-02 05:05:36 +0100Test Suite 'DAVTest' finished at 2010-12-02 05:05:36 +0100.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite 'DCopyTest' started at 2010-12-02 05:05:36 +0100Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200016f00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200016f80 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).Test Suite 'DCopyTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'EMoveTest' started at 2010-12-02 05:05:36 +0100Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002517c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200251840 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.002 seconds).Test Suite 'EMoveTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.003) secondsTest Suite 'FListTest' started at 2010-12-02 05:05:36 +0100Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200246600 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200246400 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.003 seconds).Test Suite 'FListTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.003 (0.003) secondsTest Suite 'GDeleteTest' started at 2010-12-02 05:05:36 +0100Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200042e20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20003e800 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).Test Suite 'GDeleteTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' finished at 2010-12-02 05:05:36 +0100.Executed 7 tests, with 7 failures (0 unexpected) in 0.039 (0.049) seconds0(0#0#23"0 out of 7 tests passed13"0.039 seconds73"Executed 7 tests, with 7 failures (0 unexpected) in 0.039 (0.049) seconds96"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)5216"/Developer4.2/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'x86_64' (GC ON)Test Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' started at 2010-12-02 05:05:36 +0100Test Suite 'AMkColTest' started at 2010-12-02 05:05:36 +0100Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200258dc0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200258e40 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.024 seconds).Test Suite 'AMkColTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.024 (0.025) secondsTest Suite 'BPutTest' started at 2010-12-02 05:05:36 +0100Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002420c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20023fec0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.004 seconds).Test Suite 'BPutTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.004 (0.005) secondsTest Suite 'CGetTest' started at 2010-12-02 05:05:36 +0100Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200031d00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x2000315a0 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.002 seconds).Test Suite 'CGetTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'DAVTest' started at 2010-12-02 05:05:36 +0100Test Suite 'DAVTest' finished at 2010-12-02 05:05:36 +0100.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite 'DCopyTest' started at 2010-12-02 05:05:36 +0100Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200016f00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200016f80 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).Test Suite 'DCopyTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'EMoveTest' started at 2010-12-02 05:05:36 +0100Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002517c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200251840 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.002 seconds).Test Suite 'EMoveTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.003) secondsTest Suite 'FListTest' started at 2010-12-02 05:05:36 +0100Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200246600 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200246400 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.003 seconds).Test Suite 'FListTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.003 (0.003) secondsTest Suite 'GDeleteTest' started at 2010-12-02 05:05:36 +0100Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200042e20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20003e800 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).Test Suite 'GDeleteTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' finished at 2010-12-02 05:05:36 +0100.Executed 7 tests, with 7 failures (0 unexpected) in 0.039 (0.049) seconds/Developer4.2/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'x86_64' (GC ON)0(0#0#0"0"107"/Developer4.2/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'x86_64' (GC ON)0"20@49"Run unit tests for architecture 'x86_64' (GC OFF)312955537#312955537#1(20@111"Run test suite /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)312955537#312955537#8(20@25"Run test suite AMkColTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(441"Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005b8a20 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.006 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005b8a20 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.006 seconds61"Test Case '-[AMkColTest testRequest]' failed (0.006 seconds).11"testRequest637"Test Suite 'AMkColTest' started at 2010-12-02 05:05:37 +0100Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005b8a20 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.006 seconds).Test Suite 'AMkColTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.006 (0.006) seconds0(0#0#22"0 out of 1 test passed13"0.006 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.006 (0.006) seconds10"AMkColTest20@23"Run test suite BPutTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(435"Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x100545aa0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005a71c0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.002 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x100545aa0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005a71c0 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.002 seconds59"Test Case '-[BPutTest testRequest]' failed (0.002 seconds).11"testRequest627"Test Suite 'BPutTest' started at 2010-12-02 05:05:37 +0100Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x100545aa0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005a71c0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.002 seconds).Test Suite 'BPutTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds0(0#0#22"0 out of 1 test passed13"0.002 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds8"BPutTest20@23"Run test suite CGetTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(435"Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10059d710 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005d0c20 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.001 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10059d710 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005d0c20 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.001 seconds59"Test Case '-[CGetTest testRequest]' failed (0.001 seconds).11"testRequest627"Test Suite 'CGetTest' started at 2010-12-02 05:05:37 +0100Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10059d710 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005d0c20 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.001 seconds).Test Suite 'CGetTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) seconds0(0#0#22"0 out of 1 test passed13"0.001 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) seconds8"CGetTest20@22"Run test suite DAVTest312955537#312955537#0(192"Test Suite 'DAVTest' started at 2010-12-02 05:05:37 +0100Test Suite 'DAVTest' finished at 2010-12-02 05:05:37 +0100.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds0(0#0#23"0 out of 0 tests passed13"0.000 seconds73"Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds7"DAVTest20@24"Run test suite DCopyTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(438"Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e0e00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x100545aa0 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e0e00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x100545aa0 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.002 seconds60"Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).11"testRequest632"Test Suite 'DCopyTest' started at 2010-12-02 05:05:37 +0100Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e0e00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x100545aa0 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).Test Suite 'DCopyTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds0(0#0#22"0 out of 1 test passed13"0.002 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds9"DCopyTest20@24"Run test suite EMoveTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(438"Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e7ae0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005eef50 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.001 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e7ae0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005eef50 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.001 seconds60"Test Case '-[EMoveTest testRequest]' failed (0.001 seconds).11"testRequest632"Test Suite 'EMoveTest' started at 2010-12-02 05:05:37 +0100Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e7ae0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005eef50 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.001 seconds).Test Suite 'EMoveTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) seconds0(0#0#22"0 out of 1 test passed13"0.001 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) seconds9"EMoveTest20@24"Run test suite FListTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(438"Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005b8a20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005e0e80 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.002 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005b8a20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005e0e80 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.002 seconds60"Test Case '-[FListTest testRequest]' failed (0.002 seconds).11"testRequest632"Test Suite 'FListTest' started at 2010-12-02 05:05:37 +0100Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005b8a20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005e0e80 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.002 seconds).Test Suite 'FListTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds0(0#0#22"0 out of 1 test passed13"0.002 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds9"FListTest20@26"Run test suite GDeleteTest312955537#312955537#1(20@25"Run test case testRequest312955537#312955537#0(444"Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005f92d0 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).1(4@185"Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005f92d0 "unsupported URL")312955537#18446744073709551615#0#0(6@88"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m308871244#41#0#41#0#0"0(0#0#0"13"0.002 seconds62"Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).11"testRequest642"Test Suite 'GDeleteTest' started at 2010-12-02 05:05:37 +0100Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005f92d0 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).Test Suite 'GDeleteTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds0(0#0#22"0 out of 1 test passed13"0.002 seconds71"Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) seconds11"GDeleteTest4999"Test Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' started at 2010-12-02 05:05:37 +0100Test Suite 'AMkColTest' started at 2010-12-02 05:05:37 +0100Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005b8a20 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.006 seconds).Test Suite 'AMkColTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.006 (0.006) secondsTest Suite 'BPutTest' started at 2010-12-02 05:05:37 +0100Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x100545aa0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005a71c0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.002 seconds).Test Suite 'BPutTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'CGetTest' started at 2010-12-02 05:05:37 +0100Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10059d710 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005d0c20 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.001 seconds).Test Suite 'CGetTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) secondsTest Suite 'DAVTest' started at 2010-12-02 05:05:37 +0100Test Suite 'DAVTest' finished at 2010-12-02 05:05:37 +0100.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite 'DCopyTest' started at 2010-12-02 05:05:37 +0100Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e0e00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x100545aa0 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).Test Suite 'DCopyTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'EMoveTest' started at 2010-12-02 05:05:37 +0100Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e7ae0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005eef50 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.001 seconds).Test Suite 'EMoveTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) secondsTest Suite 'FListTest' started at 2010-12-02 05:05:37 +0100Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005b8a20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005e0e80 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.002 seconds).Test Suite 'FListTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'GDeleteTest' started at 2010-12-02 05:05:37 +0100Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005f92d0 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).Test Suite 'GDeleteTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' finished at 2010-12-02 05:05:37 +0100.Executed 7 tests, with 7 failures (0 unexpected) in 0.015 (0.022) seconds0(0#0#23"0 out of 7 tests passed13"0.015 seconds73"Executed 7 tests, with 7 failures (0 unexpected) in 0.015 (0.022) seconds96"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)5281"/Developer4.2/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'x86_64' (GC OFF)objc[56041]: GC: forcing GC OFF because OBJC_DISABLE_GC is setTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' started at 2010-12-02 05:05:37 +0100Test Suite 'AMkColTest' started at 2010-12-02 05:05:37 +0100Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005b8a20 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.006 seconds).Test Suite 'AMkColTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.006 (0.006) secondsTest Suite 'BPutTest' started at 2010-12-02 05:05:37 +0100Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x100545aa0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005a71c0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.002 seconds).Test Suite 'BPutTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'CGetTest' started at 2010-12-02 05:05:37 +0100Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10059d710 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005d0c20 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.001 seconds).Test Suite 'CGetTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) secondsTest Suite 'DAVTest' started at 2010-12-02 05:05:37 +0100Test Suite 'DAVTest' finished at 2010-12-02 05:05:37 +0100.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite 'DCopyTest' started at 2010-12-02 05:05:37 +0100Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e0e00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x100545aa0 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).Test Suite 'DCopyTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'EMoveTest' started at 2010-12-02 05:05:37 +0100Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e7ae0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005eef50 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.001 seconds).Test Suite 'EMoveTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) secondsTest Suite 'FListTest' started at 2010-12-02 05:05:37 +0100Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005b8a20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005e0e80 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.002 seconds).Test Suite 'FListTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'GDeleteTest' started at 2010-12-02 05:05:37 +0100Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005f92d0 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).Test Suite 'GDeleteTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' finished at 2010-12-02 05:05:37 +0100.Executed 7 tests, with 7 failures (0 unexpected) in 0.015 (0.022) seconds/Developer4.2/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'x86_64' (GC OFF)0(0#0#0"0"108"/Developer4.2/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'x86_64' (GC OFF)0"10741"/Developer4.2/Tools/RunPlatformUnitTests.include:412: note: Started tests for architectures 'x86_64'/Developer4.2/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'x86_64' (GC ON)Test Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' started at 2010-12-02 05:05:36 +0100Test Suite 'AMkColTest' started at 2010-12-02 05:05:36 +0100Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200258dc0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200258e40 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.024 seconds).Test Suite 'AMkColTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.024 (0.025) secondsTest Suite 'BPutTest' started at 2010-12-02 05:05:36 +0100Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002420c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20023fec0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.004 seconds).Test Suite 'BPutTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.004 (0.005) secondsTest Suite 'CGetTest' started at 2010-12-02 05:05:36 +0100Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200031d00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x2000315a0 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.002 seconds).Test Suite 'CGetTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'DAVTest' started at 2010-12-02 05:05:36 +0100Test Suite 'DAVTest' finished at 2010-12-02 05:05:36 +0100.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite 'DCopyTest' started at 2010-12-02 05:05:36 +0100Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200016f00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200016f80 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).Test Suite 'DCopyTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'EMoveTest' started at 2010-12-02 05:05:36 +0100Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x2002517c0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200251840 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.002 seconds).Test Suite 'EMoveTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.003) secondsTest Suite 'FListTest' started at 2010-12-02 05:05:36 +0100Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200246600 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x200246400 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.003 seconds).Test Suite 'FListTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.003 (0.003) secondsTest Suite 'GDeleteTest' started at 2010-12-02 05:05:36 +0100Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x200042e20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x20003e800 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).Test Suite 'GDeleteTest' finished at 2010-12-02 05:05:36 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' finished at 2010-12-02 05:05:36 +0100.Executed 7 tests, with 7 failures (0 unexpected) in 0.039 (0.049) seconds/Developer4.2/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'x86_64' (GC ON)/Developer4.2/Tools/RunPlatformUnitTests.include:419: note: Running tests for architecture 'x86_64' (GC OFF)objc[56041]: GC: forcing GC OFF because OBJC_DISABLE_GC is setTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' started at 2010-12-02 05:05:37 +0100Test Suite 'AMkColTest' started at 2010-12-02 05:05:37 +0100Test Case '-[AMkColTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[AMkColTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005b8a20 "unsupported URL")Test Case '-[AMkColTest testRequest]' failed (0.006 seconds).Test Suite 'AMkColTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.006 (0.006) secondsTest Suite 'BPutTest' started at 2010-12-02 05:05:37 +0100Test Case '-[BPutTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[BPutTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x100545aa0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005a71c0 "unsupported URL")Test Case '-[BPutTest testRequest]' failed (0.002 seconds).Test Suite 'BPutTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'CGetTest' started at 2010-12-02 05:05:37 +0100Test Case '-[CGetTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[CGetTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10059d710 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005d0c20 "unsupported URL")Test Case '-[CGetTest testRequest]' failed (0.001 seconds).Test Suite 'CGetTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) secondsTest Suite 'DAVTest' started at 2010-12-02 05:05:37 +0100Test Suite 'DAVTest' finished at 2010-12-02 05:05:37 +0100.Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.000) secondsTest Suite 'DCopyTest' started at 2010-12-02 05:05:37 +0100Test Case '-[DCopyTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[DCopyTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e0e00 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x100545aa0 "unsupported URL")Test Case '-[DCopyTest testRequest]' failed (0.002 seconds).Test Suite 'DCopyTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'EMoveTest' started at 2010-12-02 05:05:37 +0100Test Case '-[EMoveTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[EMoveTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005e7ae0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005eef50 "unsupported URL")Test Case '-[EMoveTest testRequest]' failed (0.001 seconds).Test Suite 'EMoveTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.001 (0.002) secondsTest Suite 'FListTest' started at 2010-12-02 05:05:37 +0100Test Case '-[FListTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[FListTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x1005b8a20 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005e0e80 "unsupported URL")Test Case '-[FListTest testRequest]' failed (0.002 seconds).Test Suite 'FListTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite 'GDeleteTest' started at 2010-12-02 05:05:37 +0100Test Case '-[GDeleteTest testRequest]' started./Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Tests/DAVTest.m:41: error: -[GDeleteTest testRequest] : We have an error: Error Domain=NSURLErrorDomain Code=-1002 UserInfo=0x10056cdd0 "unsupported URL" Underlying Error=(Error Domain=kCFErrorDomainCFNetwork Code=-1002 UserInfo=0x1005f92d0 "unsupported URL")Test Case '-[GDeleteTest testRequest]' failed (0.002 seconds).Test Suite 'GDeleteTest' finished at 2010-12-02 05:05:37 +0100.Executed 1 test, with 1 failure (0 unexpected) in 0.002 (0.002) secondsTest Suite '/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest(Tests)' finished at 2010-12-02 05:05:37 +0100.Executed 7 tests, with 7 failures (0 unexpected) in 0.015 (0.022) seconds/Developer4.2/Tools/RunPlatformUnitTests.include:448: error: Failed tests for architecture 'x86_64' (GC OFF)/Developer4.2/Tools/RunPlatformUnitTests.include:462: note: Completed tests for architectures 'x86_64'Command /bin/sh failed with exit code 11(4@39"Command /bin/sh failed with exit code 1312955537#18446744073709551615#0#0(1@0"0(0#0#0"8648923072#17777"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER samlepirate    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS x86_64    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build"    setenv BUILD_ROOT "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build"    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug"    setenv CACHE_ROOT /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest"    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug"    setenv CONFIGURATION_TEMP_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug"    setenv CONTENTS_FOLDER_PATH Tests.octest/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH x86_64    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Developer4.2/Applications    setenv DEVELOPER_BIN_DIR /Developer4.2/usr/bin    setenv DEVELOPER_DIR /Developer4.2    setenv DEVELOPER_FRAMEWORKS_DIR /Developer4.2/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer4.2/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer4.2/Library    setenv DEVELOPER_SDK_DIR /Developer4.2/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer4.2/Tools    setenv DEVELOPER_USR_DIR /Developer4.2/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH Tests.octest/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/DAVKit.dst    setenv DWARF_DSYM_FILE_NAME Tests.octest.dSYM    setenv DWARF_DSYM_FOLDER_PATH "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug"    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH Tests.octest/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH Tests.octest/Contents/MacOS    setenv EXECUTABLE_NAME Tests    setenv EXECUTABLE_PATH Tests.octest/Contents/MacOS/Tests    setenv FILE_LIST "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH Tests.octest/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug\" /Developer4.2/Library/Frameworks"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME Tests.octest    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE NO    setenv GCC_ENABLE_OBJC_EXCEPTIONS YES    setenv GCC_ENABLE_OBJC_GC supported    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_MODEL_TUNING G5    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE NO    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Tests-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH Tests.octest/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH Tests.octest/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR "/tmp/DAVKit.dst/Volumes/a new hope/Users/samlepirate/Library/Bundles"    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER samlepirate    setenv INSTALL_PATH "/Volumes/a new hope/Users/samlepirate/Library/Bundles"    setenv INSTALL_ROOT /tmp/DAVKit.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH Tests.octest/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-LinkMap-normal-x86_64.txt"    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer4.2/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_x86_64 "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal/x86_64/Tests.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH Tests.octest/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_bundle    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1065    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0605    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Objects-normal"    setenv OBJROOT "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build"    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-framework Cocoa -framework SenTestingKit"    setenv PACKAGE_TYPE com.apple.package-type.wrapper    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer4.2/Headers /Developer4.2/SDKs /Developer4.2/Platforms"    setenv PBDEVELOPMENTPLIST_PATH Tests.octest/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/PkgInfo"    setenv PKGINFO_PATH Tests.octest/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer4.2/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer4.2/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer4.2/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer4.2/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer4.2/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer4.2/usr    setenv PLATFORM_NAME macosx    setenv PLATFORM_PRODUCT_BUILD_VERSION 10M2423    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH Tests.octest/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH Tests.octest/Contents/PrivateHeaders    setenv PRODUCT_NAME Tests    setenv PRODUCT_SETTINGS_PATH "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Tests-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.bundle    setenv PROFILING_CODE NO    setenv PROJECT DAVKit    setenv PROJECT_DERIVED_FILE_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/DerivedSources"    setenv PROJECT_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv PROJECT_FILE_PATH "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/DAVKit.xcodeproj"    setenv PROJECT_NAME DAVKit    setenv PROJECT_TEMP_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build"    setenv PUBLIC_HEADERS_FOLDER_PATH Tests.octest/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER YES    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH Tests.octest/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer4.2/SDKs/MacOSX10.6.sdk    setenv SDK_DIR /Developer4.2/SDKs/MacOSX10.6.sdk    setenv SDK_NAME macosx10.6    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH Tests.octest/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH Tests.octest/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv SRCROOT "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE non-global    setenv SYMBOL_REPOSITORY_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/SymbolRepositories"    setenv SYMROOT "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer4.2/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer4.2/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer4.2/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer4.2    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer4.2/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer4.2/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer4.2/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer4.2/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer4.2/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer4.2/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer4.2/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer4.2/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer4.2/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer4.2/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME Tests    setenv TARGET_BUILD_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug"    setenv TARGET_NAME Tests    setenv TARGET_TEMP_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build"    setenv TEMP_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build"    setenv TEMP_FILES_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build"    setenv TEMP_FILE_DIR "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build"    setenv TEMP_ROOT "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build"    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH Tests.octest/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER samlepirate    setenv USER_APPS_DIR "/Volumes/a new hope/Users/samlepirate/Applications"    setenv USER_LIBRARY_DIR "/Volumes/a new hope/Users/samlepirate/Library"    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH Tests.octest/Contents/version.plist    setenv VERSION_INFO_BUILDER samlepirate    setenv VERSION_INFO_FILE Tests_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Tests  PROJECT:DAVKit-\""    setenv WRAPPER_EXTENSION octest    setenv WRAPPER_NAME Tests.octest    setenv WRAPPER_SUFFIX .octest    setenv XCODE_APP_SUPPORT_DIR /Developer4.2/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2423    setenv XCODE_VERSION_ACTUAL 0325    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer4.2/usr/bin/yacc    setenv _REAL_SDKROOT macosx10.6    /bin/sh -c "\"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Script-C9FF77EA121C6F51001250C7.sh\""1#
+
+CProcessInfoPlistFile "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/Info.plist" Tests-Info.plist
+s312955534.835685
+e312955534.838530
+r1
+xProcessInfoPlistFile
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/Info.plist
+xTests-Info.plist
+lSLF07#2@24"Process Tests-Info.plist312955534#312955534#0(0"0(0#0#81"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Tests-Info.plist8649141888#273"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    builtin-infoPlistUtility Tests-Info.plist -expandbuildsettings -platform macosx -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h.pth /Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312955534.838617
+e312955535.802854
+r1
+xProcessPCH
+x/var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h.pth
+x/Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@102"Precompile /Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h312955534#312955535#0(0"0(0#0#91"/Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h8648444544#1664"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/Tests-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -F/Developer4.2/Library/Frameworks "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources/x86_64" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/Tests.build/DerivedSources" -c /Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h -o /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cocoa-cpcuxekomlpvnueeihlabtrucfte/Cocoa.h.pth0#
+
+CTouch "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest"
+s312955537.891439
+e312955537.894597
+r1
+xTouch
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest
+lSLF07#2@95"Touch /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest312955537#312955537#0(0"0(0#0#0"8656851552#188"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /usr/bin/touch -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/Tests.octest"0#
+

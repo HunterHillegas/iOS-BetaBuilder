@@ -30,9 +30,9 @@
  */
 
 #import <Cocoa/Cocoa.h>
+#import "NSPasswordPanel.h"
 
-
-@interface BuilderController : NSObject {
+@interface BuilderController : NSObject <NSTextFieldDelegate> {
 	NSTextField *bundleIdentifierField;
 	NSTextField *bundleVersionField;
 	NSTextField *bundleNameField;
@@ -40,10 +40,17 @@
 	NSTextField *archiveIPAFilenameField;
 	
 	NSButton *generateFilesButton;
+	NSButton *generateAndDeployButton;
 	
 	NSString *mobileProvisionFilePath;
+	NSString *iconFilePath;
+	NSInteger	_done;
+	NSURL *saveDirectoryURL;
+	NSProgressIndicator	*progressIndicator;
+	NSPasswordPanel*	passwordPanel;
 }
 
+@property (nonatomic, retain) IBOutlet NSProgressIndicator	*progressIndicator;
 @property (nonatomic, retain) IBOutlet NSTextField *bundleIdentifierField;
 @property (nonatomic, retain) IBOutlet NSTextField *bundleVersionField;
 @property (nonatomic, retain) IBOutlet NSTextField *bundleNameField;
@@ -51,6 +58,7 @@
 @property (nonatomic, retain) IBOutlet NSTextField *archiveIPAFilenameField;
 
 @property (nonatomic, retain) IBOutlet NSButton *generateFilesButton;
+@property (nonatomic, retain) IBOutlet NSPasswordPanel* passwordPanel;
 
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;
 
@@ -58,5 +66,6 @@
 - (IBAction)generateFiles:(id)sender;
 
 - (void)setupFromIPAFile:(NSString *)ipaFilename;
+- (IBAction)generateAndDeployButtonClicked:(id)sender;
 
 @end

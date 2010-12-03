@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0138070212A72B4B007914E0 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 013806FA12A72B4B007914E0 /* libicucore.A.dylib */; };
+		0138070312A72B4B007914E0 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 013806FB12A72B4B007914E0 /* libssl.dylib */; };
+		0138070412A72B4B007914E0 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 013806FC12A72B4B007914E0 /* libcrypto.dylib */; };
+		0138070512A72B4B007914E0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013806FD12A72B4B007914E0 /* ApplicationServices.framework */; };
+		0138070612A72B4B007914E0 /* SecurityInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013806FE12A72B4B007914E0 /* SecurityInterface.framework */; };
+		0138070712A72B4B007914E0 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013806FF12A72B4B007914E0 /* Carbon.framework */; };
+		0138070812A72B4B007914E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0138070012A72B4B007914E0 /* Security.framework */; };
+		0138070912A72B4B007914E0 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0138070112A72B4B007914E0 /* libcurl.dylib */; };
+		01380B3112A75086007914E0 /* DAVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01380B3012A75086007914E0 /* DAVKit.framework */; };
+		01380B4412A750A4007914E0 /* DAVKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01380B3012A75086007914E0 /* DAVKit.framework */; };
+		01C5724B12A96FAB00F88ECC /* fixpng.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5724A12A96FAB00F88ECC /* fixpng.c */; };
+		01C5724E12A96FC800F88ECC /* flipchannels.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5724D12A96FC800F88ECC /* flipchannels.c */; };
+		01C5727912A9709C00F88ECC /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5726612A9709C00F88ECC /* png.c */; };
+		01C5727A12A9709C00F88ECC /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5726912A9709C00F88ECC /* pngerror.c */; };
+		01C5727B12A9709C00F88ECC /* pnggccrd.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5726A12A9709C00F88ECC /* pnggccrd.c */; };
+		01C5727C12A9709C00F88ECC /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5726B12A9709C00F88ECC /* pngget.c */; };
+		01C5727D12A9709C00F88ECC /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5726C12A9709C00F88ECC /* pngmem.c */; };
+		01C5727E12A9709C00F88ECC /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5726D12A9709C00F88ECC /* pngpread.c */; };
+		01C5727F12A9709C00F88ECC /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5726E12A9709C00F88ECC /* pngread.c */; };
+		01C5728012A9709C00F88ECC /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5726F12A9709C00F88ECC /* pngrio.c */; };
+		01C5728112A9709C00F88ECC /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5727012A9709C00F88ECC /* pngrtran.c */; };
+		01C5728212A9709C00F88ECC /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5727112A9709C00F88ECC /* pngrutil.c */; };
+		01C5728312A9709C00F88ECC /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5727212A9709C00F88ECC /* pngset.c */; };
+		01C5728412A9709C00F88ECC /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5727312A9709C00F88ECC /* pngtrans.c */; };
+		01C5728512A9709C00F88ECC /* pngvcrd.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5727412A9709C00F88ECC /* pngvcrd.c */; };
+		01C5728612A9709C00F88ECC /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5727512A9709C00F88ECC /* pngwio.c */; };
+		01C5728712A9709C00F88ECC /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5727612A9709C00F88ECC /* pngwrite.c */; };
+		01C5728812A9709C00F88ECC /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5727712A9709C00F88ECC /* pngwtran.c */; };
+		01C5728912A9709C00F88ECC /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5727812A9709C00F88ECC /* pngwutil.c */; };
+		01D32C5712A95D1A00213194 /* NSPasswordPanel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01D32C5612A95D1A00213194 /* NSPasswordPanel.mm */; };
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* BetaBuilderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* BetaBuilderAppDelegate.m */; };
 		5A23434A1211AB1F0098AAB8 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343401211AB1F0098AAB8 /* ioapi.c */; };
@@ -24,7 +54,54 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0138081812A7323E007914E0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01380B4412A750A4007914E0 /* DAVKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		013806FA12A72B4B007914E0 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = /usr/lib/libicucore.A.dylib; sourceTree = "<absolute>"; };
+		013806FB12A72B4B007914E0 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = /usr/lib/libssl.dylib; sourceTree = "<absolute>"; };
+		013806FC12A72B4B007914E0 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = /usr/lib/libcrypto.dylib; sourceTree = "<absolute>"; };
+		013806FD12A72B4B007914E0 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		013806FE12A72B4B007914E0 /* SecurityInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityInterface.framework; path = /System/Library/Frameworks/SecurityInterface.framework; sourceTree = "<absolute>"; };
+		013806FF12A72B4B007914E0 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		0138070012A72B4B007914E0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		0138070112A72B4B007914E0 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = /usr/lib/libcurl.dylib; sourceTree = "<absolute>"; };
+		01380B3012A75086007914E0 /* DAVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DAVKit.framework; path = DAVKit/build/Debug/DAVKit.framework; sourceTree = "<group>"; };
+		01C5724912A96FAB00F88ECC /* fixpng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fixpng.h; sourceTree = "<group>"; };
+		01C5724A12A96FAB00F88ECC /* fixpng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fixpng.c; sourceTree = "<group>"; };
+		01C5724C12A96FC800F88ECC /* flipchannels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flipchannels.h; sourceTree = "<group>"; };
+		01C5724D12A96FC800F88ECC /* flipchannels.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = flipchannels.c; sourceTree = "<group>"; };
+		01C5726612A9709C00F88ECC /* png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = png.c; sourceTree = "<group>"; };
+		01C5726712A9709C00F88ECC /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		01C5726812A9709C00F88ECC /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		01C5726912A9709C00F88ECC /* pngerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngerror.c; sourceTree = "<group>"; };
+		01C5726A12A9709C00F88ECC /* pnggccrd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pnggccrd.c; sourceTree = "<group>"; };
+		01C5726B12A9709C00F88ECC /* pngget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngget.c; sourceTree = "<group>"; };
+		01C5726C12A9709C00F88ECC /* pngmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngmem.c; sourceTree = "<group>"; };
+		01C5726D12A9709C00F88ECC /* pngpread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngpread.c; sourceTree = "<group>"; };
+		01C5726E12A9709C00F88ECC /* pngread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngread.c; sourceTree = "<group>"; };
+		01C5726F12A9709C00F88ECC /* pngrio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrio.c; sourceTree = "<group>"; };
+		01C5727012A9709C00F88ECC /* pngrtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrtran.c; sourceTree = "<group>"; };
+		01C5727112A9709C00F88ECC /* pngrutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrutil.c; sourceTree = "<group>"; };
+		01C5727212A9709C00F88ECC /* pngset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngset.c; sourceTree = "<group>"; };
+		01C5727312A9709C00F88ECC /* pngtrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngtrans.c; sourceTree = "<group>"; };
+		01C5727412A9709C00F88ECC /* pngvcrd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngvcrd.c; sourceTree = "<group>"; };
+		01C5727512A9709C00F88ECC /* pngwio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwio.c; sourceTree = "<group>"; };
+		01C5727612A9709C00F88ECC /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwrite.c; sourceTree = "<group>"; };
+		01C5727712A9709C00F88ECC /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwtran.c; sourceTree = "<group>"; };
+		01C5727812A9709C00F88ECC /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwutil.c; sourceTree = "<group>"; };
+		01D32C5512A95D1A00213194 /* NSPasswordPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPasswordPanel.h; sourceTree = "<group>"; };
+		01D32C5612A95D1A00213194 /* NSPasswordPanel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSPasswordPanel.mm; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -63,20 +140,62 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				5A23435C1211ABD40098AAB8 /* libz.1.2.3.dylib in Frameworks */,
+				0138070212A72B4B007914E0 /* libicucore.A.dylib in Frameworks */,
+				0138070312A72B4B007914E0 /* libssl.dylib in Frameworks */,
+				0138070412A72B4B007914E0 /* libcrypto.dylib in Frameworks */,
+				0138070512A72B4B007914E0 /* ApplicationServices.framework in Frameworks */,
+				0138070612A72B4B007914E0 /* SecurityInterface.framework in Frameworks */,
+				0138070712A72B4B007914E0 /* Carbon.framework in Frameworks */,
+				0138070812A72B4B007914E0 /* Security.framework in Frameworks */,
+				0138070912A72B4B007914E0 /* libcurl.dylib in Frameworks */,
+				01380B3112A75086007914E0 /* DAVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01C5726512A9709C00F88ECC /* libpng */ = {
+			isa = PBXGroup;
+			children = (
+				01C5726612A9709C00F88ECC /* png.c */,
+				01C5726712A9709C00F88ECC /* png.h */,
+				01C5726812A9709C00F88ECC /* pngconf.h */,
+				01C5726912A9709C00F88ECC /* pngerror.c */,
+				01C5726A12A9709C00F88ECC /* pnggccrd.c */,
+				01C5726B12A9709C00F88ECC /* pngget.c */,
+				01C5726C12A9709C00F88ECC /* pngmem.c */,
+				01C5726D12A9709C00F88ECC /* pngpread.c */,
+				01C5726E12A9709C00F88ECC /* pngread.c */,
+				01C5726F12A9709C00F88ECC /* pngrio.c */,
+				01C5727012A9709C00F88ECC /* pngrtran.c */,
+				01C5727112A9709C00F88ECC /* pngrutil.c */,
+				01C5727212A9709C00F88ECC /* pngset.c */,
+				01C5727312A9709C00F88ECC /* pngtrans.c */,
+				01C5727412A9709C00F88ECC /* pngvcrd.c */,
+				01C5727512A9709C00F88ECC /* pngwio.c */,
+				01C5727612A9709C00F88ECC /* pngwrite.c */,
+				01C5727712A9709C00F88ECC /* pngwtran.c */,
+				01C5727812A9709C00F88ECC /* pngwutil.c */,
+			);
+			path = libpng;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				01C5726512A9709C00F88ECC /* libpng */,
 				5A23433D1211AB1F0098AAB8 /* ZipArchive */,
 				256AC3D80F4B6AC300CF3369 /* BetaBuilderAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* BetaBuilderAppDelegate.m */,
 				5AA4E39B120DE13300385530 /* BuilderController.h */,
 				5AA4E39C120DE13300385530 /* BuilderController.m */,
+				01D32C5512A95D1A00213194 /* NSPasswordPanel.h */,
+				01D32C5612A95D1A00213194 /* NSPasswordPanel.mm */,
+				01C5724912A96FAB00F88ECC /* fixpng.h */,
+				01C5724A12A96FAB00F88ECC /* fixpng.c */,
+				01C5724C12A96FC800F88ECC /* flipchannels.h */,
+				01C5724D12A96FC800F88ECC /* flipchannels.c */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -84,6 +203,14 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				013806FA12A72B4B007914E0 /* libicucore.A.dylib */,
+				013806FB12A72B4B007914E0 /* libssl.dylib */,
+				013806FC12A72B4B007914E0 /* libcrypto.dylib */,
+				013806FD12A72B4B007914E0 /* ApplicationServices.framework */,
+				013806FE12A72B4B007914E0 /* SecurityInterface.framework */,
+				013806FF12A72B4B007914E0 /* Carbon.framework */,
+				0138070012A72B4B007914E0 /* Security.framework */,
+				0138070112A72B4B007914E0 /* libcurl.dylib */,
 				5A23435B1211ABD40098AAB8 /* libz.1.2.3.dylib */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
@@ -145,6 +272,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01380B3012A75086007914E0 /* DAVKit.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -187,6 +315,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				0138081812A7323E007914E0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -205,7 +334,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BetaBuilder" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* BetaBuilder */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,6 +379,26 @@
 				5A23434C1211AB1F0098AAB8 /* unzip.c in Sources */,
 				5A23434D1211AB1F0098AAB8 /* zip.c in Sources */,
 				5A23434E1211AB1F0098AAB8 /* ZipArchive.mm in Sources */,
+				01D32C5712A95D1A00213194 /* NSPasswordPanel.mm in Sources */,
+				01C5724B12A96FAB00F88ECC /* fixpng.c in Sources */,
+				01C5724E12A96FC800F88ECC /* flipchannels.c in Sources */,
+				01C5727912A9709C00F88ECC /* png.c in Sources */,
+				01C5727A12A9709C00F88ECC /* pngerror.c in Sources */,
+				01C5727B12A9709C00F88ECC /* pnggccrd.c in Sources */,
+				01C5727C12A9709C00F88ECC /* pngget.c in Sources */,
+				01C5727D12A9709C00F88ECC /* pngmem.c in Sources */,
+				01C5727E12A9709C00F88ECC /* pngpread.c in Sources */,
+				01C5727F12A9709C00F88ECC /* pngread.c in Sources */,
+				01C5728012A9709C00F88ECC /* pngrio.c in Sources */,
+				01C5728112A9709C00F88ECC /* pngrtran.c in Sources */,
+				01C5728212A9709C00F88ECC /* pngrutil.c in Sources */,
+				01C5728312A9709C00F88ECC /* pngset.c in Sources */,
+				01C5728412A9709C00F88ECC /* pngtrans.c in Sources */,
+				01C5728512A9709C00F88ECC /* pngvcrd.c in Sources */,
+				01C5728612A9709C00F88ECC /* pngwio.c in Sources */,
+				01C5728712A9709C00F88ECC /* pngwrite.c in Sources */,
+				01C5728812A9709C00F88ECC /* pngwtran.c in Sources */,
+				01C5728912A9709C00F88ECC /* pngwutil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +429,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DAVKit/build/Debug\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_GC = required;
@@ -291,6 +451,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/DAVKit/build/Debug\"",
+				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -309,6 +473,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ".//**";
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
@@ -322,6 +487,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ".//**";
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 			};

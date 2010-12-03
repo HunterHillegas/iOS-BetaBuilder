@@ -1,0 +1,662 @@
+TDAVKit
+v7
+r0
+t312954761.454788
+cCheck dependencies
+cSymLink "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/Current" A
+cSymLink "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Resources" Versions/Current/Resources
+cSymLink "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Headers" Versions/Current/Headers
+cSymLink "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/DAVKit" Versions/Current/DAVKit
+cProcessInfoPlistFile "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Resources/Info.plist" Info.plist
+cCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVCredentials.h Sources/Core/DAVCredentials.h
+cCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVKit.h Sources/Core/DAVKit.h
+cCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVListingParser.h Sources/Core/DAVListingParser.h
+cCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVRequest.h Sources/Core/DAVRequest.h
+cCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVRequests.h Sources/Core/DAVRequests.h
+cCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVSession.h Sources/Core/DAVSession.h
+cCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVResponseItem.h Sources/Core/DAVResponseItem.h
+cProcessPCH /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch.pth DAVKit_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVCredentials.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVListingParser.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequests.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVSession.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/ISO8601DateFormatter.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVResponseItem.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m"
+cLd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/DAVKit" normal i386
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m"
+cAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m"
+cTouch "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework"
+
+N/Developer4.2/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer4.2/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C23AA0400000000000013E6
+t1277405700
+s5094
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/DAVKit_Prefix.pch
+c000000004CB8C8CC0000000000000097
+t1287178444
+s151
+i<Foundation/Foundation.h>
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.h
+c000000004CB8C8CC00000000000001E3
+t1287178444
+s483
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m
+c000000004CB8C8CC00000000000002F6
+t1287178444
+s758
+i"DAVCredentials.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVKit.h
+c000000004CB8C8CC00000000000000F6
+t1287178444
+s246
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.h
+c000000004CB8C8CC000000000000018A
+t1287178444
+s394
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m
+c000000004CB8C8CC0000000000000A6F
+t1287178444
+s2671
+i"DAVListingParser.h"
+i"DAVResponseItem.h"
+i"ISO8601DateFormatter.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest+Private.h
+c000000004CB8C8CC000000000000012B
+t1287178444
+s299
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.h
+c000000004CB8C8CC0000000000000469
+t1287178444
+s1129
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m
+c000000004CB8C8CC0000000000000FDD
+t1287178444
+s4061
+i"DAVRequest.h"
+i"DAVCredentials.h"
+i"DAVSession.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.h
+c000000004CB8C8CC000000000000033F
+t1287178444
+s831
+i"DAVRequest.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m
+c000000004CB8C8CC0000000000000BEB
+t1287178444
+s3051
+i"DAVRequests.h"
+i"DAVListingParser.h"
+i"DAVRequest+Private.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.h
+c000000004CB8C8CC00000000000001DD
+t1287178444
+s477
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m
+c000000004CB8C8CC000000000000028E
+t1287178444
+s654
+i"DAVResponseItem.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.h
+c000000004CB8C8CC0000000000000303
+t1287178444
+s771
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m
+c000000004CB8C8CC0000000000000504
+t1287178444
+s1284
+i"DAVSession.h"
+i"DAVRequest.h"
+i"DAVRequest+Private.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.h
+c000000004CB8C8CC0000000000000B90
+t1287178444
+s2960
+i<Foundation/Foundation.h>
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m
+c000000004CB8C8CC0000000000005B8D
+t1287178444
+s23437
+i<Foundation/Foundation.h>
+i"ISO8601DateFormatter.h"
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVCredentials.o
+t1291261953
+s8332
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVKit.LinkFileList
+c000000004CF7180000000000000003D2
+t1291261952
+s978
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVListingParser.o
+t1291261953
+s17212
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequest.o
+t1291261953
+s23392
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequests.o
+t1291261953
+s22472
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVResponseItem.o
+t1291261953
+s10460
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVSession.o
+t1291261953
+s10332
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/ISO8601DateFormatter.o
+t1291261953
+s49688
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVCredentials.o
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVKit.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVListingParser.o
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVRequest.o
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVRequests.o
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVResponseItem.o
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVSession.o
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/ISO8601DateFormatter.o
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVCredentials.plist
+t1291261953
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVListingParser.plist
+t1291261953
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVRequest.plist
+t1291261953
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVRequests.plist
+t1291261953
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVResponseItem.plist
+t1291261953
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVSession.plist
+t1291261953
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/ISO8601DateFormatter.plist
+t1291261961
+s276
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/x86_64/DAVCredentials.plist
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/x86_64/DAVListingParser.plist
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/x86_64/DAVRequest.plist
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/x86_64/DAVRequests.plist
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/x86_64/DAVResponseItem.plist
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/x86_64/DAVSession.plist
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/x86_64/ISO8601DateFormatter.plist
+t2
+s0
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework
+t1291261961
+s204
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/DAVKit
+t3
+s23
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Headers
+t3
+s24
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Resources
+t3
+s26
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/DAVKit
+t1291261953
+s69376
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers/DAVCredentials.h
+t1291261952
+s483
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers/DAVKit.h
+t1291261952
+s246
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers/DAVListingParser.h
+t1291261952
+s394
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers/DAVRequest.h
+t1291261952
+s1129
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers/DAVRequests.h
+t1291261952
+s831
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers/DAVResponseItem.h
+t1291261952
+s477
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers/DAVSession.h
+t1291261952
+s771
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Resources/Info.plist
+t1291261952
+s709
+
+N/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/Current
+t3
+s1
+
+N/var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch.pth
+t1291261953
+s7367040
+
+N/var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-dwogqzvoggszahdncvvaetdupbqc/DAVKit_Prefix.pch.pth
+t2
+s0
+
+NInfo.plist
+c000000004CB8C8CC0000000000000355
+t1287178444
+s853
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m"
+s312954753.399720
+e312954753.523364
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m
+lSLF07#2@102"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m312954753#312954753#0(0"0(0#0#94"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m8674251968#1835"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVCredentials.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m"
+s312954753.523453
+e312954753.676805
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m
+lSLF07#2@104"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m312954753#312954753#0(0"0(0#0#96"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m8665516320#1839"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVListingParser.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m"
+s312954753.552268
+e312954753.687383
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m
+lSLF07#2@98"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m312954753#312954753#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m8662281376#1827"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVRequest.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m"
+s312954753.676888
+e312954753.791645
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m
+lSLF07#2@99"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m312954753#312954753#0(0"0(0#0#91"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m8671290272#1829"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVRequests.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m"
+s312954753.804440
+e312954753.921699
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m
+lSLF07#2@103"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m312954753#312954753#0(0"0(0#0#95"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m8661915328#1837"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVResponseItem.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m"
+s312954753.687469
+e312954753.804350
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m
+lSLF07#2@98"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m312954753#312954753#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m8669229696#1827"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/DAVSession.plist"0#
+
+CAnalyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m"
+s312954753.791732
+e312954761.450842
+r1
+xAnalyze
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m
+lSLF07#2@111"Analyze /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m312954753#312954761#0(0"0(0#0#103"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m8663002144#1850"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch --analyze "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/StaticAnalyzer/normal/i386/ISO8601DateFormatter.plist"0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies312954752#312954752#0(0"0(0#1#0"8649122304#0"0#
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVCredentials.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312954753.153231
+e312954753.232904
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVCredentials.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@102"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m312954753#312954753#0(0"0(0#0#94"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m8670217376#1817"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVCredentials.o"0#
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVListingParser.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312954753.154441
+e312954753.238455
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVListingParser.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@104"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m312954753#312954753#0(0"0(0#0#96"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m8669040736#1821"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVListingParser.o"0#
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312954753.233004
+e312954753.300922
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequest.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@98"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m312954753#312954753#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m8667773216#1809"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequest.o"0#
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequests.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312954753.238553
+e312954753.307338
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequests.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@99"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m312954753#312954753#0(0"0(0#0#91"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m8666558592#1811"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVRequests.o"0#
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVResponseItem.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312954753.348241
+e312954753.399630
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVResponseItem.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@103"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m312954753#312954753#0(0"0(0#0#95"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m8662122688#1819"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVResponseItem.o"0#
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVSession.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312954753.301016
+e312954753.348135
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVSession.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@98"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m312954753#312954753#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m8665050816#1809"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVSession.o"0#
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/ISO8601DateFormatter.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312954753.307435
+e312954753.483007
+r1
+xCompileC
+xbuild/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/ISO8601DateFormatter.o
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@111"Compile /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m312954753#312954753#0(0"0(0#0#103"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m8662747232#1832"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -include /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m" -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/ISO8601DateFormatter.o"0#
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVCredentials.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVListingParser.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVRequest.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVRequests.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVResponseItem.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/DAVSession.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/DAVKit.build/Debug/DAVKit.build/Objects-normal/x86_64/ISO8601DateFormatter.o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/ISO8601/ISO8601DateFormatter.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVCredentials.h Sources/Core/DAVCredentials.h
+s312954752.258787
+e312954752.294010
+r1
+xCpHeader
+xbuild/Debug/DAVKit.framework/Versions/A/Headers/DAVCredentials.h
+xSources/Core/DAVCredentials.h
+lSLF07#2@34"Copy Sources/Core/DAVCredentials.h312954752#312954752#0(0"0(0#0#94"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.h8665274784#451"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /Developer4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVCredentials.h" "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVKit.h Sources/Core/DAVKit.h
+s312954752.264016
+e312954752.294142
+r1
+xCpHeader
+xbuild/Debug/DAVKit.framework/Versions/A/Headers/DAVKit.h
+xSources/Core/DAVKit.h
+lSLF07#2@26"Copy Sources/Core/DAVKit.h312954752#312954752#0(0"0(0#0#86"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVKit.h8678353440#443"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /Developer4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVKit.h" "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVListingParser.h Sources/Core/DAVListingParser.h
+s312954752.264761
+e312954752.294735
+r1
+xCpHeader
+xbuild/Debug/DAVKit.framework/Versions/A/Headers/DAVListingParser.h
+xSources/Core/DAVListingParser.h
+lSLF07#2@36"Copy Sources/Core/DAVListingParser.h312954752#312954752#0(0"0(0#0#96"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.h8678127168#453"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /Developer4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVListingParser.h" "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVRequest.h Sources/Core/DAVRequest.h
+s312954752.268661
+e312954752.294868
+r1
+xCpHeader
+xbuild/Debug/DAVKit.framework/Versions/A/Headers/DAVRequest.h
+xSources/Core/DAVRequest.h
+lSLF07#2@30"Copy Sources/Core/DAVRequest.h312954752#312954752#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.h8675592896#447"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /Developer4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequest.h" "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVRequests.h Sources/Core/DAVRequests.h
+s312954752.273493
+e312954752.294992
+r1
+xCpHeader
+xbuild/Debug/DAVKit.framework/Versions/A/Headers/DAVRequests.h
+xSources/Core/DAVRequests.h
+lSLF07#2@31"Copy Sources/Core/DAVRequests.h312954752#312954752#0(0"0(0#0#91"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.h8670273152#448"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /Developer4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVRequests.h" "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVResponseItem.h Sources/Core/DAVResponseItem.h
+s312954752.285302
+e312954752.295234
+r1
+xCpHeader
+xbuild/Debug/DAVKit.framework/Versions/A/Headers/DAVResponseItem.h
+xSources/Core/DAVResponseItem.h
+lSLF07#2@35"Copy Sources/Core/DAVResponseItem.h312954752#312954752#0(0"0(0#0#95"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.h8670227296#452"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /Developer4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVResponseItem.h" "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers"0#
+
+CCpHeader build/Debug/DAVKit.framework/Versions/A/Headers/DAVSession.h Sources/Core/DAVSession.h
+s312954752.279937
+e312954752.295114
+r1
+xCpHeader
+xbuild/Debug/DAVKit.framework/Versions/A/Headers/DAVSession.h
+xSources/Core/DAVSession.h
+lSLF07#2@30"Copy Sources/Core/DAVSession.h312954752#312954752#0(0"0(0#0#90"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.h8657911104#447"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /Developer4.2/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Sources/Core/DAVSession.h" "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Headers"0#
+
+CLd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/DAVKit" normal i386
+s312954753.483350
+e312954753.552170
+r1
+xLd
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/DAVKit
+xnormal
+xi386
+lSLF07#2@116"Link /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/DAVKit312954753#312954753#0(0"0(0#0#0"8667521280#830"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer4.2/usr/bin/clang -arch i386 -dynamiclib -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk "-L/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" -filelist "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/Objects-normal/i386/DAVKit.LinkFileList" -install_name @executable_path/../Frameworks/DAVKit.framework/Versions/A/DAVKit -mmacosx-version-min=10.6 -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/DAVKit"0#
+
+CLd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/DAVKit" normal x86_64
+r0
+
+CProcessInfoPlistFile "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Resources/Info.plist" Info.plist
+s312954752.215023
+e312954752.258709
+r1
+xProcessInfoPlistFile
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Resources/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist312954752#312954752#0(0"0(0#0#75"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/Info.plist8658635648#283"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    builtin-infoPlistUtility Info.plist -expandbuildsettings -platform macosx -o "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/A/Resources/Info.plist"0#
+
+CProcessPCH /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch.pth DAVKit_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s312954752.295316
+e312954753.153102
+r1
+xProcessPCH
+x/var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch.pth
+xDAVKit_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@28"Precompile DAVKit_Prefix.pch312954752#312954753#0(0"0(0#0#82"/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/DAVKit_Prefix.pch8658344864#1665"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    setenv LANG en_US.US-ASCII    /Developer4.2/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer4.2/SDKs/MacOSX10.6.sdk -fasm-blocks -mfix-and-continue -fobjc-gc -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-generated-files.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-own-target-headers.hmap" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-all-target-headers.hmap" -iquote "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DAVKit-project-headers.hmap" "-F/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/include" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources/i386" "-I/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/DAVKit.build/Debug/DAVKit.build/DerivedSources" -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/DAVKit_Prefix.pch" -o /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-ciaatnlvoqbatmebighdjqgjvakc/DAVKit_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/T-/T-e6RGe4FU8+Opzyvi2eoU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/DAVKit_Prefix-dwogqzvoggszahdncvvaetdupbqc/DAVKit_Prefix.pch.pth DAVKit_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CSymLink "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/DAVKit" Versions/Current/DAVKit
+s312954752.211975
+e312954752.214957
+r1
+xSymLink
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/DAVKit
+xVersions/Current/DAVKit
+lSLF07#2@108"Process /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/DAVKit312954752#312954752#0(0"0(0#0#0"8676438656#217"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /bin/ln -sf Versions/Current/DAVKit "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/DAVKit"0#
+
+CSymLink "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Headers" Versions/Current/Headers
+s312954752.209711
+e312954752.213707
+r1
+xSymLink
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Headers
+xVersions/Current/Headers
+lSLF07#2@109"Process /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Headers312954752#312954752#0(0"0(0#0#0"8657914976#219"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /bin/ln -sf Versions/Current/Headers "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Headers"0#
+
+CSymLink "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Resources" Versions/Current/Resources
+s312954752.205054
+e312954752.209639
+r1
+xSymLink
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Resources
+xVersions/Current/Resources
+lSLF07#2@111"Process /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Resources312954752#312954752#0(0"0(0#0#0"8659969952#223"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /bin/ln -sf Versions/Current/Resources "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Resources"0#
+
+CSymLink "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/Current" A
+s312954752.202100
+e312954752.209515
+r1
+xSymLink
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/Current
+xA
+lSLF07#2@118"Process /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/Current312954752#312954752#0(0"0(0#0#0"8654317792#205"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /bin/ln -sf A "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework/Versions/Current"0#
+
+CTouch "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework"
+s312954761.451079
+e312954761.454755
+r1
+xTouch
+x/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework
+lSLF07#2@99"Touch /Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework312954761#312954761#0(0"0(0#0#0"8657155936#192"    cd "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit"    /usr/bin/touch -c "/Volumes/a new hope/Users/samlepirate/Dev/iOS-BetaBuilder/DAVKit/build/Debug/DAVKit.framework"0#
+
