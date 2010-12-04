@@ -58,6 +58,7 @@
 @property (nonatomic, retain) IBOutlet NSTextField *archiveIPAFilenameField;
 
 @property (nonatomic, retain) IBOutlet NSButton *generateFilesButton;
+@property (nonatomic, retain) IBOutlet NSButton *generateAndDeployButton;
 @property (nonatomic, retain) IBOutlet NSPasswordPanel* passwordPanel;
 
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;

@@ -46,6 +46,29 @@
 @synthesize mobileProvisionFilePath;
 @synthesize progressIndicator;
 @synthesize passwordPanel;
+@synthesize generateAndDeployButton;
+
+- (id) init {
+	self = [super init];
+	if (self != nil) {
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(webserverDirectoryFieldDidChange:)
+													 name:NSControlTextDidChangeNotification object:webserverDirectoryField];
+	}
+	return self;
+}
+
+- (void)checkWebserverDirectoryField {
+	if ([[webserverDirectoryField stringValue] rangeOfString:@"web.me.com"].length != 0) {
+		[generateAndDeployButton setEnabled:YES];
+	} else {
+		[generateAndDeployButton setEnabled:NO];
+	}
+
+}
+
+- (void)webserverDirectoryFieldDidChange:(NSNotification *)notification {
+	[self checkWebserverDirectoryField];
+}
 
 - (IBAction)specifyIPAFile:(id)sender {
 	NSOpenPanel *openDlg = [NSOpenPanel openPanel];
@@ -112,8 +135,6 @@
 		}
 	}
 	
-	[generateFilesButton setEnabled:YES];
-	
 	{
 		NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
 		NSString* value = [defaults valueForKey:[archiveIPAFilenameField stringValue]];
@@ -121,6 +142,10 @@
 			[webserverDirectoryField setStringValue: value];
 		}
 	}
+
+	[generateFilesButton setEnabled:YES];
+	[self checkWebserverDirectoryField];
+	
 }
 
 - (void)generateFilesWithOutputDirectory:(NSString*)outputPath {
@@ -144,7 +169,7 @@
 		saveDirectoryURL = [[NSURL fileURLWithPath: outputPath] copy];
 	}
 
-	if (outputPath) {
+	if (saveDirectoryURL) {
 		
 		{
 			NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];

@@ -13,8 +13,8 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="29"/>
+			<integer value="372"/>
 			<integer value="622"/>
-			<integer value="551"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1877,7 +1877,7 @@
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{1.79769e+308, 1.79769e+308}</string>
 				<object class="NSView" key="NSWindowView" id="405760554">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1886,7 +1886,6 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{17, 20}, {242, 34}}</string>
 							<reference key="NSSuperview" ref="405760554"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="578480779">
 								<int key="NSCellFlags">67239424</int>
@@ -1903,7 +1902,6 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{17, 62}, {242, 22}}</string>
 							<reference key="NSSuperview" ref="405760554"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="384942995">
 								<int key="NSCellFlags">68288064</int>
@@ -1917,8 +1915,6 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{276, 104}</string>
-					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
@@ -2821,14 +2817,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">generateFilesButton</string>
-						<reference key="source" ref="1033850965"/>
-						<reference key="destination" ref="565500210"/>
-					</object>
-					<int key="connectionID">616</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">progressIndicator</string>
 						<reference key="source" ref="1033850965"/>
 						<reference key="destination" ref="60254570"/>
@@ -2866,6 +2854,22 @@
 						<reference key="destination" ref="228047699"/>
 					</object>
 					<int key="connectionID">634</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">generateAndDeployButton</string>
+						<reference key="source" ref="1033850965"/>
+						<reference key="destination" ref="565500210"/>
+					</object>
+					<int key="connectionID">635</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">generateFilesButton</string>
+						<reference key="source" ref="1033850965"/>
+						<reference key="destination" ref="981861590"/>
+					</object>
+					<int key="connectionID">636</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -5119,7 +5123,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">634</int>
+			<int key="maxID">636</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -5260,6 +5264,7 @@
 							<string>bundleIdentifierField</string>
 							<string>bundleNameField</string>
 							<string>bundleVersionField</string>
+							<string>generateAndDeployButton</string>
 							<string>generateFilesButton</string>
 							<string>passwordPanel</string>
 							<string>progressIndicator</string>
@@ -5271,6 +5276,7 @@
 							<string>NSTextField</string>
 							<string>NSTextField</string>
 							<string>NSTextField</string>
+							<string>NSButton</string>
 							<string>NSButton</string>
 							<string>NSPasswordPanel</string>
 							<string>NSProgressIndicator</string>
@@ -5285,6 +5291,7 @@
 							<string>bundleIdentifierField</string>
 							<string>bundleNameField</string>
 							<string>bundleVersionField</string>
+							<string>generateAndDeployButton</string>
 							<string>generateFilesButton</string>
 							<string>passwordPanel</string>
 							<string>progressIndicator</string>
@@ -5307,6 +5314,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">bundleVersionField</string>
 								<string key="candidateClassName">NSTextField</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">generateAndDeployButton</string>
+								<string key="candidateClassName">NSButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">generateFilesButton</string>
