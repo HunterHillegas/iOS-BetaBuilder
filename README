@@ -1,1 +1,8 @@
-The files generated in this directory need to be copied into the URL that was specified as the Web deployment URL.
+MacOS X tool designed to simplify creating and distributing beta releases of iOS apps.
+
+Fork including:
+- MobileMe autodeployment:
+	Enter your MobileMe webserver deployment path like http://web.me.com/username/MyPath/MyApp 
+	and let the tool build and deploy files for you.
+- HTML template with version number
+- App icon decompressed, fixed and copied to the deployment build.
