@@ -8,7 +8,7 @@
 
 /* 
  iOS BetaBuilder - a tool for simpler iOS betas
- Version 1.0, August 2010
+ Version 1.5, January 2011
  
  Condition of use and distribution:
  
@@ -43,13 +43,16 @@
 @synthesize mobileProvisionFilePath;
 
 - (IBAction)specifyIPAFile:(id)sender {
+    NSArray *allowedFileTypes = [NSArray arrayWithObjects:@"ipa", @"IPA", nil]; //only allow IPAs
+    
 	NSOpenPanel *openDlg = [NSOpenPanel openPanel];
 	[openDlg setCanChooseFiles:YES];
 	[openDlg setCanChooseDirectories:NO];
 	[openDlg setAllowsMultipleSelection:NO];
+    [openDlg setAllowedFileTypes:allowedFileTypes];
 
-	if ([openDlg runModalForDirectory:nil file:nil] == NSOKButton) {
-		NSArray *files = [openDlg filenames];
+	if ([openDlg runModalForTypes:allowedFileTypes] == NSOKButton) {
+        NSArray *files = [openDlg filenames];
 
 		for (int i = 0; i < [files count]; i++ ) {
 			[self setupFromIPAFile:[files objectAtIndex:i]];
@@ -68,8 +71,14 @@
 	NSURL *ipaDestinationURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%@", NSTemporaryDirectory(), [[archiveIPAFilenameField stringValue] lastPathComponent]]];
 	[fileManager removeItemAtURL:ipaDestinationURL error:&fileDeleteError];
 	BOOL copiedIPAFile = [fileManager copyItemAtURL:ipaSourceURL toURL:ipaDestinationURL error:&fileCopyError];
-	if (!copiedIPAFile) {
+
+    if (!copiedIPAFile) {
 		NSLog(@"Error Copying IPA File: %@", fileCopyError);
+        NSAlert *theAlert = [NSAlert alertWithError:fileCopyError];
+        NSInteger button = [theAlert runModal];
+        if (button != NSAlertFirstButtonReturn) {
+            //user hit the rightmost button
+        }
 	} else {
 		//Remove Existing Trash in Temp Directory
 		[fileManager removeItemAtPath:[NSTemporaryDirectory() stringByAppendingPathComponent:@"extracted_app"] error:nil];
@@ -116,6 +125,7 @@
 	NSString *templatePath = [[NSBundle mainBundle] pathForResource:@"index_template" ofType:@"html"];
 	NSString *htmlTemplateString = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_NAME]" withString:[bundleNameField stringValue]];
+    htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_VERSION]" withString:[bundleVersionField stringValue]];
 	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_PLIST]" withString:[NSString stringWithFormat:@"%@/%@", [webserverDirectoryField stringValue], @"manifest.plist"]];
 	
 	//ask for save location	
@@ -142,6 +152,11 @@
 		BOOL copiedIPAFile = [fileManager copyItemAtURL:ipaSourceURL toURL:ipaDestinationURL error:&fileCopyError];
 		if (!copiedIPAFile) {
 			NSLog(@"Error Copying IPA File: %@", fileCopyError);
+            NSAlert *theAlert = [NSAlert alertWithError:fileCopyError];
+            NSInteger button = [theAlert runModal];
+            if (button != NSAlertFirstButtonReturn) {
+                //user hit the rightmost button
+            }
 		}
 		
 		//Copy README
