@@ -15,10 +15,13 @@
 		5A23434D1211AB1F0098AAB8 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343461211AB1F0098AAB8 /* zip.c */; };
 		5A23434E1211AB1F0098AAB8 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343491211AB1F0098AAB8 /* ZipArchive.mm */; };
 		5A23435C1211ABD40098AAB8 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A23435B1211ABD40098AAB8 /* libz.1.2.3.dylib */; };
+		5A6C75B812E4C65C0050AA2B /* HISTORY in Resources */ = {isa = PBXBuildFile; fileRef = 5A6C75B712E4C65C0050AA2B /* HISTORY */; };
+		5A8F042612E613040087F51C /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F042512E613040087F51C /* NSFileManager+DirectoryLocations.m */; };
 		5AA4E39D120DE13300385530 /* BuilderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA4E39C120DE13300385530 /* BuilderController.m */; };
 		5AA4E409120DE84F00385530 /* index_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E408120DE84F00385530 /* index_template.html */; };
 		5AA4E491120DF21D00385530 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E490120DF21D00385530 /* README */; };
 		5AB3C6151224870100778CFC /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AB3C6141224870100778CFC /* Credits.html */; };
+		5ACEC915125FD37F009864D8 /* betabuilder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5ACEC914125FD37F009864D8 /* betabuilder.icns */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -47,11 +50,15 @@
 		5A2343481211AB1F0098AAB8 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		5A2343491211AB1F0098AAB8 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
 		5A23435B1211ABD40098AAB8 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		5A6C75B712E4C65C0050AA2B /* HISTORY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HISTORY; sourceTree = "<group>"; };
+		5A8F042412E613040087F51C /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		5A8F042512E613040087F51C /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
 		5AA4E39B120DE13300385530 /* BuilderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuilderController.h; sourceTree = "<group>"; };
 		5AA4E39C120DE13300385530 /* BuilderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuilderController.m; sourceTree = "<group>"; };
 		5AA4E408120DE84F00385530 /* index_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_template.html; sourceTree = "<group>"; };
 		5AA4E490120DF21D00385530 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5AB3C6141224870100778CFC /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		5ACEC914125FD37F009864D8 /* betabuilder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = betabuilder.icns; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BetaBuilder-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BetaBuilder-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* BetaBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +79,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5A8F042312E612F10087F51C /* Categories */,
 				5A23433D1211AB1F0098AAB8 /* ZipArchive */,
 				256AC3D80F4B6AC300CF3369 /* BetaBuilderAppDelegate.h */,
 				256AC3D90F4B6AC300CF3369 /* BetaBuilderAppDelegate.m */,
@@ -132,6 +140,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5A6C75B712E4C65C0050AA2B /* HISTORY */,
+				5ACEC914125FD37F009864D8 /* betabuilder.icns */,
 				8D1107310486CEB800E47090 /* BetaBuilder-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -177,6 +187,15 @@
 			path = minizip;
 			sourceTree = "<group>";
 		};
+		5A8F042312E612F10087F51C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5A8F042412E613040087F51C /* NSFileManager+DirectoryLocations.h */,
+				5A8F042512E613040087F51C /* NSFileManager+DirectoryLocations.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,7 +224,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BetaBuilder" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* BetaBuilder */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -225,6 +251,8 @@
 				5AA4E409120DE84F00385530 /* index_template.html in Resources */,
 				5AA4E491120DF21D00385530 /* README in Resources */,
 				5AB3C6151224870100778CFC /* Credits.html in Resources */,
+				5ACEC915125FD37F009864D8 /* betabuilder.icns in Resources */,
+				5A6C75B812E4C65C0050AA2B /* HISTORY in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +271,7 @@
 				5A23434C1211AB1F0098AAB8 /* unzip.c in Sources */,
 				5A23434D1211AB1F0098AAB8 /* zip.c in Sources */,
 				5A23434E1211AB1F0098AAB8 /* ZipArchive.mm in Sources */,
+				5A8F042612E613040087F51C /* NSFileManager+DirectoryLocations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +311,7 @@
 				GCC_PREFIX_HEADER = BetaBuilder_Prefix.pch;
 				INFOPLIST_FILE = "BetaBuilder-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = BetaBuilder;
 			};
 			name = Debug;
@@ -297,6 +327,7 @@
 				GCC_PREFIX_HEADER = BetaBuilder_Prefix.pch;
 				INFOPLIST_FILE = "BetaBuilder-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = BetaBuilder;
 			};
 			name = Release;

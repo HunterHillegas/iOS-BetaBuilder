@@ -1,0 +1,11 @@
+** HISTORY **
+
+1.5
+
+- First version published on Mac App Store.
+- Include version number in generated files.
+- Remembers the Web server publishing location for IPA files.
+- Support for HTML template files - just replace the index_template.html file in the Application Support directory with your own.
+- Several bugfixes and small improvements.
+
+Thanks to chrisy, stoulouse, and rbochet for your submissions and code.

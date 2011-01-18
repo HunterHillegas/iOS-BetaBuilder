@@ -2,6 +2,13 @@
 build/*
 *.pbxuser
 *.mode1v3
+BetaBuilder.xcodeproj/hunter.perspectivev3
+BetaBuilder.xcodeproj/xcuserdata/hunter.xcuserdatad
+BetaBuilder.xcodeproj/xcuserdata/hunter.xcuserdatad/*
+BetaBuilder.xcodeproj/project.xcworkspace
+
+#icon
+betabuilder.icns
 
 # old skool
 .svn
