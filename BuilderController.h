@@ -59,4 +59,7 @@
 
 - (void)setupFromIPAFile:(NSString *)ipaFilename;
 
+- (void)populateFieldsFromHistoryForBundleID:(NSString *)bundleID;
+- (void)storeFieldsInHistoryForBundleID:(NSString *)bundleID;
+
 @end

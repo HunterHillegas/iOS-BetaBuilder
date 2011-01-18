@@ -29,6 +29,8 @@
  3. This notice may not be removed or altered from any source distribution.
  */
 
+#import "NSFileManager+DirectoryLocations.h"
+
 #import "BuilderController.h"
 #import "ZipArchive.h"
 
@@ -101,6 +103,8 @@
 				[bundleVersionField setStringValue:[bundlePlistFile valueForKey:@"CFBundleVersion"]];
 				[bundleIdentifierField setStringValue:[bundlePlistFile valueForKey:@"CFBundleIdentifier"]];
 				[bundleNameField setStringValue:[bundlePlistFile valueForKey:@"CFBundleDisplayName"]];
+                
+                [self populateFieldsFromHistoryForBundleID:[bundlePlistFile valueForKey:@"CFBundleIdentifier"]];
 			}
 			
 			//set mobile provision file
@@ -109,6 +113,38 @@
 	}
 	
 	[generateFilesButton setEnabled:YES];
+}
+
+- (void)populateFieldsFromHistoryForBundleID:(NSString *)bundleID {
+    NSString *applicationSupportPath = [[NSFileManager defaultManager] applicationSupportDirectory];
+    NSString *historyPath = [applicationSupportPath stringByAppendingPathComponent:@"history.plist"];
+    
+    NSDictionary *historyDictionary = [NSDictionary dictionaryWithContentsOfFile:historyPath];
+    
+    if (historyDictionary) {
+        NSDictionary *historyItem = [historyDictionary valueForKey:bundleID];
+        
+        if (historyItem) {
+            [webserverDirectoryField setStringValue:[historyItem valueForKey:@"webserverDirectory"]];
+        } else {
+            NSLog(@"No History Item Found for Bundle ID: %@", bundleID);
+        }
+    }
+}
+
+- (void)storeFieldsInHistoryForBundleID:(NSString *)bundleID {    
+    NSString *applicationSupportPath = [[NSFileManager defaultManager] applicationSupportDirectory];
+    NSString *historyPath = [applicationSupportPath stringByAppendingPathComponent:@"history.plist"];
+    
+    NSMutableDictionary *historyDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:historyPath];
+    if (!historyDictionary) {
+        historyDictionary = [NSMutableDictionary dictionary];
+    }
+    
+    NSDictionary *webserverDirectoryDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[webserverDirectoryField stringValue], @"webserverDirectory", nil];
+    [historyDictionary setValue:webserverDirectoryDictionary forKey:bundleID];
+    
+    [historyDictionary writeToFile:historyPath atomically:YES];
 }
 
 - (IBAction)generateFiles:(id)sender {
@@ -121,13 +157,26 @@
 	NSDictionary *outerManifestDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSArray arrayWithObject:innerManifestDictionary], @"items", nil];
 	NSLog(@"Manifest Created");
 	
-	//create html file
-	NSString *templatePath = [[NSBundle mainBundle] pathForResource:@"index_template" ofType:@"html"];
+	//create html file    
+    NSString *applicationSupportPath = [[NSFileManager defaultManager] applicationSupportDirectory];
+    NSString *templatePath = [applicationSupportPath stringByAppendingPathComponent:@"index_template.html"];
 	NSString *htmlTemplateString = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_NAME]" withString:[bundleNameField stringValue]];
     htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_VERSION]" withString:[bundleVersionField stringValue]];
 	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_PLIST]" withString:[NSString stringWithFormat:@"%@/%@", [webserverDirectoryField stringValue], @"manifest.plist"]];
 	
+    //add formatted date
+    NSDateFormatter *shortDateFormatter = [[NSDateFormatter alloc] init];
+    [shortDateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    [shortDateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    NSString *formattedDateString = [shortDateFormatter stringFromDate:[NSDate date]];
+    [shortDateFormatter release];
+    htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_DATE]" withString:formattedDateString];
+    
+    //store history
+    if ([webserverDirectoryField stringValue])
+        [self storeFieldsInHistoryForBundleID:[bundleIdentifierField stringValue]];
+    
 	//ask for save location	
 	NSOpenPanel *directoryPanel = [NSOpenPanel openPanel];
 	[directoryPanel setCanChooseFiles:NO];
