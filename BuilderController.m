@@ -190,9 +190,14 @@
 		NSURL *saveDirectoryURL = [directoryPanel directoryURL];
 		
 		//Write Files
+        NSError *fileWriteError;
 		[outerManifestDictionary writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"manifest.plist"] atomically:YES];
-		[htmlTemplateString writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"index.html"] atomically:YES encoding:NSASCIIStringEncoding error:nil];
+		BOOL wroteHTMLFileSuccessfully = [htmlTemplateString writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"index.html"] atomically:YES encoding:NSUTF8StringEncoding error:&fileWriteError];
 		
+        if (!wroteHTMLFileSuccessfully) {
+            NSLog(@"Error Writing HTML File: %@ to %@", fileWriteError, saveDirectoryURL);
+        }
+        
 		//Copy IPA
 		NSError *fileCopyError;
 		NSFileManager *fileManager = [NSFileManager defaultManager];
