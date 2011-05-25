@@ -9,3 +9,12 @@
 - Several bugfixes and small improvements.
 
 Thanks to chrisy, stoulouse, and rbochet for your submissions and code.
+
+1.6
+
+- Window is now a drag target for IPA files.
+- If your project includes an iTunesArtwork file, it will be used on the generated HTML page.
+- Command line support [experimental]
+
+Command Line Example:
+"/Applications/Beta Builder for iOS Apps/Contents/MacOS/Beta Builder for iOS Apps" -ipaPath=/Users/me/Desktop/file.ipa -webserver=http://www.test.com/app/ -outputDirectory=/Users/me/Desktop/file/

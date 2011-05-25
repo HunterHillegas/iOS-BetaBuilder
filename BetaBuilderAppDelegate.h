@@ -8,7 +8,7 @@
 
 /* 
  iOS BetaBuilder - a tool for simpler iOS betas
- Version 1.5, January 2011
+ Version 1.6
  
  Condition of use and distribution:
  
@@ -35,7 +35,7 @@
 
 @interface BetaBuilderAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
-	
+    
 	NSPanel *deploymentHelpPanel;
 	NSPanel *archiveIPAHelpPanel;
 	
@@ -48,6 +48,13 @@
 @property (nonatomic, retain) IBOutlet NSPanel *archiveIPAHelpPanel;
 
 @property (nonatomic, retain) IBOutlet BuilderController *builderController;
+
+- (NSString *)htmlTemplatePath;
+- (NSString *)defaultTemplatePath;
+
+- (void)processCommandLineArguments:(NSArray *)arguments;
+
+- (void)alertDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
 
 - (IBAction)showDeploymentHelpPanel:(id)sender;
 - (IBAction)showArchiveHelpPanel:(id)sender;

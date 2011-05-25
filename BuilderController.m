@@ -8,7 +8,7 @@
 
 /* 
  iOS BetaBuilder - a tool for simpler iOS betas
- Version 1.5, January 2011
+ Version 1.6
  
  Condition of use and distribution:
  
@@ -43,6 +43,7 @@
 @synthesize archiveIPAFilenameField;
 @synthesize generateFilesButton;
 @synthesize mobileProvisionFilePath;
+@synthesize appIconFilePath;
 
 - (IBAction)specifyIPAFile:(id)sender {
     NSArray *allowedFileTypes = [NSArray arrayWithObjects:@"ipa", @"IPA", nil]; //only allow IPAs
@@ -109,6 +110,9 @@
 			
 			//set mobile provision file
 			mobileProvisionFilePath = [appDirectoryPath stringByAppendingPathComponent:[[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"embedded.mobileprovision"]];
+            
+            //set the app file icon path
+            appIconFilePath = [appDirectoryPath stringByAppendingPathComponent:[[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"iTunesArtwork"]];
 		}
 	}
 	
@@ -135,22 +139,28 @@
 - (void)storeFieldsInHistoryForBundleID:(NSString *)bundleID {    
     NSString *applicationSupportPath = [[NSFileManager defaultManager] applicationSupportDirectory];
     NSString *historyPath = [applicationSupportPath stringByAppendingPathComponent:@"history.plist"];
+    NSString *trimmedURLString = [[webserverDirectoryField stringValue] stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     NSMutableDictionary *historyDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:historyPath];
     if (!historyDictionary) {
         historyDictionary = [NSMutableDictionary dictionary];
     }
     
-    NSDictionary *webserverDirectoryDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[webserverDirectoryField stringValue], @"webserverDirectory", nil];
+    NSDictionary *webserverDirectoryDictionary = [NSDictionary dictionaryWithObjectsAndKeys:trimmedURLString, @"webserverDirectory", nil];
     [historyDictionary setValue:webserverDirectoryDictionary forKey:bundleID];
     
     [historyDictionary writeToFile:historyPath atomically:YES];
 }
 
 - (IBAction)generateFiles:(id)sender {
-	//create plist
+    [self generateFilesWithWebserverAddress:nil andOutputDirectory:nil];
+}
+
+- (void)generateFilesWithWebserverAddress:(NSString *)webserver andOutputDirectory:(NSString *)outputPath {
+    //create plist
+    NSString *trimmedURLString = [[webserverDirectoryField stringValue] stringByReplacingOccurrencesOfString:@" " withString:@""];
 	NSString *encodedIpaFilename = [[[archiveIPAFilenameField stringValue] lastPathComponent] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; //this isn't the most robust way to do this
-	NSString *ipaURLString = [NSString stringWithFormat:@"%@/%@", [webserverDirectoryField stringValue], encodedIpaFilename];
+	NSString *ipaURLString = [NSString stringWithFormat:@"%@/%@", trimmedURLString, encodedIpaFilename];
 	NSDictionary *assetsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"software-package", @"kind", ipaURLString, @"url", nil];
 	NSDictionary *metadataDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[bundleIdentifierField stringValue], @"bundle-identifier", [bundleVersionField stringValue], @"bundle-version", @"software", @"kind", [bundleNameField stringValue], @"title", nil];
 	NSDictionary *innerManifestDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSArray arrayWithObject:assetsDictionary], @"assets", metadataDictionary, @"metadata", nil];
@@ -163,7 +173,7 @@
 	NSString *htmlTemplateString = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_NAME]" withString:[bundleNameField stringValue]];
     htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_VERSION]" withString:[bundleVersionField stringValue]];
-	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_PLIST]" withString:[NSString stringWithFormat:@"%@/%@", [webserverDirectoryField stringValue], @"manifest.plist"]];
+	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_PLIST]" withString:[NSString stringWithFormat:@"%@/%@", trimmedURLString, @"manifest.plist"]];
 	
     //add formatted date
     NSDateFormatter *shortDateFormatter = [[NSDateFormatter alloc] init];
@@ -174,63 +184,92 @@
     htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_DATE]" withString:formattedDateString];
     
     //store history
-    if ([webserverDirectoryField stringValue])
+    if (trimmedURLString)
         [self storeFieldsInHistoryForBundleID:[bundleIdentifierField stringValue]];
     
-	//ask for save location	
-	NSOpenPanel *directoryPanel = [NSOpenPanel openPanel];
-	[directoryPanel setCanChooseFiles:NO];
-	[directoryPanel setCanChooseDirectories:YES];
-	[directoryPanel setAllowsMultipleSelection:NO];
-	[directoryPanel setCanCreateDirectories:YES];
-	[directoryPanel setPrompt:@"Choose Directory"];
-	[directoryPanel setMessage:@"Choose the Directory for Beta Files - Probably Should Match Deployment Directory"];
-	
-	if ([directoryPanel runModalForDirectory:nil file:nil] == NSOKButton) {
-		NSURL *saveDirectoryURL = [directoryPanel directoryURL];
-		
-		//Write Files
-        NSError *fileWriteError;
-		[outerManifestDictionary writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"manifest.plist"] atomically:YES];
-		BOOL wroteHTMLFileSuccessfully = [htmlTemplateString writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"index.html"] atomically:YES encoding:NSUTF8StringEncoding error:&fileWriteError];
-		
-        if (!wroteHTMLFileSuccessfully) {
-            NSLog(@"Error Writing HTML File: %@ to %@", fileWriteError, saveDirectoryURL);
-        }
+    if (!outputPath) {
+    	//ask for save location	
+        NSOpenPanel *directoryPanel = [NSOpenPanel openPanel];
+        [directoryPanel setCanChooseFiles:NO];
+        [directoryPanel setCanChooseDirectories:YES];
+        [directoryPanel setAllowsMultipleSelection:NO];
+        [directoryPanel setCanCreateDirectories:YES];
+        [directoryPanel setPrompt:@"Choose Directory"];
+        [directoryPanel setMessage:@"Choose the Directory for Beta Files - Probably Should Match Deployment Directory"];
         
-		//Copy IPA
-		NSError *fileCopyError;
-		NSFileManager *fileManager = [NSFileManager defaultManager];
-		NSURL *ipaSourceURL = [NSURL fileURLWithPath:[archiveIPAFilenameField stringValue]];
-		NSURL *ipaDestinationURL = [saveDirectoryURL URLByAppendingPathComponent:[[archiveIPAFilenameField stringValue] lastPathComponent]];
-		BOOL copiedIPAFile = [fileManager copyItemAtURL:ipaSourceURL toURL:ipaDestinationURL error:&fileCopyError];
-		if (!copiedIPAFile) {
-			NSLog(@"Error Copying IPA File: %@", fileCopyError);
-            NSAlert *theAlert = [NSAlert alertWithError:fileCopyError];
-            NSInteger button = [theAlert runModal];
-            if (button != NSAlertFirstButtonReturn) {
-                //user hit the rightmost button
-            }
-		}
-		
-		//Copy README
-		NSString *readmeContents = [[NSBundle mainBundle] pathForResource:@"README" ofType:@""];
-		[readmeContents writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] atomically:YES encoding:NSASCIIStringEncoding error:nil];
-		
-		//Create Archived Version for 3.0 Apps
-		ZipArchive* zip = [[ZipArchive alloc] init];
-		BOOL ret = [zip CreateZipFile2:[[saveDirectoryURL path] stringByAppendingPathComponent:@"beta_archive.zip"]];
-		ret = [zip addFileToZip:[archiveIPAFilenameField stringValue] newname:@"application.ipa"];
-		ret = [zip addFileToZip:mobileProvisionFilePath newname:@"beta_provision.mobileprovision"];
-		if(![zip CloseZipFile2]) {
-			NSLog(@"Error Creating 3.x Zip File");
-		}
-		[zip release];
-		
-		//Play Done Sound / Display Alert
-		NSSound *systemSound = [NSSound soundNamed:@"Glass"];
-		[systemSound play];
-	}
+        if ([directoryPanel runModalForDirectory:nil file:nil] == NSOKButton) {
+            NSURL *saveDirectoryURL = [directoryPanel directoryURL];
+            [self saveFilesToOutputDirectory:saveDirectoryURL forManifestDictionary:outerManifestDictionary withTemplateHTML:htmlTemplateString];
+            
+            //Play Done Sound / Display Alert
+            NSSound *systemSound = [NSSound soundNamed:@"Glass"];
+            [systemSound play];
+        }    
+    } else {
+        NSURL *saveDirectoryURL = [NSURL fileURLWithPath:outputPath];
+        [self saveFilesToOutputDirectory:saveDirectoryURL forManifestDictionary:outerManifestDictionary withTemplateHTML:htmlTemplateString];
+    }
+}
+
+- (void)saveFilesToOutputDirectory:(NSURL *)saveDirectoryURL forManifestDictionary:(NSDictionary *)outerManifestDictionary withTemplateHTML:(NSString *)htmlTemplateString {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    //Copy IPA
+    NSError *fileCopyError;
+    NSURL *ipaSourceURL = [NSURL fileURLWithPath:[archiveIPAFilenameField stringValue]];
+    NSURL *ipaDestinationURL = [saveDirectoryURL URLByAppendingPathComponent:[[archiveIPAFilenameField stringValue] lastPathComponent]];
+    BOOL copiedIPAFile = [fileManager copyItemAtURL:ipaSourceURL toURL:ipaDestinationURL error:&fileCopyError];
+    if (!copiedIPAFile) {
+        NSLog(@"Error Copying IPA File: %@", fileCopyError);
+        NSAlert *theAlert = [NSAlert alertWithError:fileCopyError];
+        NSInteger button = [theAlert runModal];
+        if (button != NSAlertFirstButtonReturn) {
+            //user hit the rightmost button
+        }
+    }
+    
+    //Copy README
+    NSString *readmeContents = [[NSBundle mainBundle] pathForResource:@"README" ofType:@""];
+    [readmeContents writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] atomically:YES encoding:NSASCIIStringEncoding error:nil];
+    
+    //If iTunesArtwork file exists, use it
+    BOOL doesArtworkExist = [fileManager fileExistsAtPath:appIconFilePath];
+    if (doesArtworkExist) {
+        NSString *artworkDestinationFilename = [NSString stringWithFormat:@"%@.png", [appIconFilePath lastPathComponent]];
+        
+        NSURL *artworkSourceURL = [NSURL fileURLWithPath:appIconFilePath];
+        NSURL *artworkDestinationURL = [saveDirectoryURL URLByAppendingPathComponent:artworkDestinationFilename];
+        
+        NSError *artworkCopyError;
+        BOOL copiedArtworkFile = [fileManager copyItemAtURL:artworkSourceURL toURL:artworkDestinationURL error:&artworkCopyError];
+        
+        if (copiedArtworkFile) {
+            htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_ICON]" withString:[NSString stringWithFormat:@"<p><img src='%@' length='57' width='57' /></p>", artworkDestinationFilename]];
+        } else {
+            htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_ICON]" withString:@""];
+        }
+    } else {
+        NSLog(@"No iTunesArtwork File Exists");
+    }
+    
+    //Write Files
+    NSError *fileWriteError;
+    [outerManifestDictionary writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"manifest.plist"] atomically:YES];
+    BOOL wroteHTMLFileSuccessfully = [htmlTemplateString writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"index.html"] atomically:YES encoding:NSUTF8StringEncoding error:&fileWriteError];
+    
+    if (!wroteHTMLFileSuccessfully) {
+        NSLog(@"Error Writing HTML File: %@ to %@", fileWriteError, saveDirectoryURL);
+    }
+    
+    //Create Archived Version for 3.0 Apps
+    ZipArchive* zip = [[ZipArchive alloc] init];
+    BOOL ret = [zip CreateZipFile2:[[saveDirectoryURL path] stringByAppendingPathComponent:@"beta_archive.zip"]];
+    ret = [zip addFileToZip:[archiveIPAFilenameField stringValue] newname:@"application.ipa"];
+    ret = [zip addFileToZip:mobileProvisionFilePath newname:@"beta_provision.mobileprovision"];
+    if(![zip CloseZipFile2]) {
+        NSLog(@"Error Creating 3.x Zip File");
+    }
+    [zip release];
 }
 
 @end

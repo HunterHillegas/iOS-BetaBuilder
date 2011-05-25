@@ -8,7 +8,7 @@
 
 /* 
  iOS BetaBuilder - a tool for simpler iOS betas
- Version 1.5, January 2011
+ Version 1.6
  
  Condition of use and distribution:
  
@@ -42,6 +42,7 @@
 	NSButton *generateFilesButton;
 	
 	NSString *mobileProvisionFilePath;
+    NSString *appIconFilePath;
 }
 
 @property (nonatomic, retain) IBOutlet NSTextField *bundleIdentifierField;
@@ -53,9 +54,12 @@
 @property (nonatomic, retain) IBOutlet NSButton *generateFilesButton;
 
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;
+@property (nonatomic, copy) NSString *appIconFilePath;
 
 - (IBAction)specifyIPAFile:(id)sender;
 - (IBAction)generateFiles:(id)sender;
+- (void)generateFilesWithWebserverAddress:(NSString *)webserver andOutputDirectory:(NSString *)outputPath;
+- (void)saveFilesToOutputDirectory:(NSURL *)saveDirectoryURL forManifestDictionary:(NSDictionary *)outerManifestDictionary withTemplateHTML:(NSString *)htmlTemplateString;
 
 - (void)setupFromIPAFile:(NSString *)ipaFilename;
 

@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
-		<string key="IBDocument.SystemVersion">10J567</string>
-		<string key="IBDocument.InterfaceBuilderVersion">1305</string>
+		<string key="IBDocument.SystemVersion">10J869</string>
+		<string key="IBDocument.InterfaceBuilderVersion">1306</string>
 		<string key="IBDocument.AppKitVersion">1038.35</string>
-		<string key="IBDocument.HIToolboxVersion">462.00</string>
+		<string key="IBDocument.HIToolboxVersion">461.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">1305</string>
+			<string key="NS.object.0">1306</string>
 		</object>
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1325,7 +1325,7 @@
 				<string key="NSWindowRect">{{335, 260}, {306, 490}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">BetaBuilder for iOS Apps</string>
-				<string key="NSWindowClass">NSWindow</string>
+				<string key="NSWindowClass">BetaBuilderWindow</string>
 				<nil key="NSViewClass"/>
 				<object class="NSView" key="NSWindowView" id="439893737">
 					<reference key="NSNextResponder"/>
@@ -1740,6 +1740,7 @@
 							<string key="NSFrame">{{48, 12}, {210, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="1008333631">
 								<int key="NSCellFlags">604110336</int>
@@ -1785,7 +1786,7 @@
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
 				<object class="NSView" key="NSWindowView" id="544223807">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1883,6 +1884,7 @@
 						</object>
 					</object>
 					<string key="NSFrame">{{7, 11}, {276, 378}}</string>
+					<reference key="NSSuperview"/>
 					<reference key="NSNextKeyView" ref="250950994"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {2560, 1418}}</string>
@@ -1891,26 +1893,26 @@
 			<object class="NSWindowTemplate" id="910310921">
 				<int key="NSWindowStyleMask">19</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{230, 437}, {276, 155}}</string>
+				<string key="NSWindowRect">{{230, 437}, {276, 172}}</string>
 				<int key="NSWTFlags">-1535639552</int>
 				<string key="NSWindowTitle">IPA File</string>
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
 				<object class="NSView" key="NSWindowView" id="405760554">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSTextField" id="716744629">
 							<reference key="NSNextResponder" ref="405760554"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 20}, {242, 85}}</string>
+							<string key="NSFrame">{{17, 20}, {242, 102}}</string>
 							<reference key="NSSuperview" ref="405760554"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="578480779">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">272891904</int>
-								<string key="NSContents">Create this file in Xcode using 'Build and Archive'. Take the resulting build product and 'Save to Disk...' to create an IPA file with embedded provisioning profile.</string>
+								<string key="NSContents">Create this file in Xcode using 'Build and Archive' (Xcode 3.x) or simply 'Archive' (Xcode 4.x). Take the resulting build product and 'Save to Disk...' to create an IPA file with embedded provisioning profile.</string>
 								<reference key="NSSupport" ref="844088775"/>
 								<reference key="NSControlView" ref="716744629"/>
 								<reference key="NSBackgroundColor" ref="250330485"/>
@@ -1920,7 +1922,7 @@
 						<object class="NSTextField" id="350364458">
 							<reference key="NSNextResponder" ref="405760554"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{17, 113}, {242, 22}}</string>
+							<string key="NSFrame">{{17, 130}, {242, 22}}</string>
 							<reference key="NSSuperview" ref="405760554"/>
 							<reference key="NSNextKeyView" ref="716744629"/>
 							<bool key="NSEnabled">YES</bool>
@@ -1935,7 +1937,8 @@
 							</object>
 						</object>
 					</object>
-					<string key="NSFrame">{{7, 11}, {276, 155}}</string>
+					<string key="NSFrame">{{7, 11}, {276, 172}}</string>
+					<reference key="NSSuperview"/>
 					<reference key="NSNextKeyView" ref="350364458"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {2560, 1418}}</string>
@@ -4809,7 +4812,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">607</int>
+			<int key="maxID">608</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4898,6 +4901,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/BetaBuilderAppDelegate.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">BetaBuilderWindow</string>
+					<string key="superclassName">NSWindow</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/BetaBuilderWindow.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

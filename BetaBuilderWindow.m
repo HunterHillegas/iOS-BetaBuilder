@@ -8,22 +8,26 @@
 
 #import "BetaBuilderWindow.h"
 
+#import "BetaBuilderAppDelegate.h"
+#import "BuilderController.h"
 
 @implementation BetaBuilderWindow
 
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        // Initialization code here.
-    }
-    
-    return self;
+- (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender {
+    return NSDragOperationGeneric;
 }
 
-- (void)dealloc
-{
-    [super dealloc];
+- (BOOL)performDragOperation:(id < NSDraggingInfo >)sender {
+    NSArray *draggedFilenames = [[sender draggingPasteboard] propertyListForType:NSFilenamesPboardType];
+    
+    if ([[[draggedFilenames objectAtIndex:0] pathExtension] isEqual:@"ipa"]) {
+        BetaBuilderAppDelegate *appDelegate = (BetaBuilderAppDelegate *)[[NSApplication sharedApplication] delegate];
+        [appDelegate.builderController setupFromIPAFile:[draggedFilenames objectAtIndex:0]];
+
+        return YES; 
+    } else {
+        return NO;
+    }
 }
 
 @end

@@ -21,6 +21,7 @@
 		5AA4E409120DE84F00385530 /* index_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E408120DE84F00385530 /* index_template.html */; };
 		5AA4E491120DF21D00385530 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E490120DF21D00385530 /* README */; };
 		5AB3C6151224870100778CFC /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AB3C6141224870100778CFC /* Credits.html */; };
+		5ACAEBFE138D6CED00BED0F7 /* BetaBuilderWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACAEBFD138D6CED00BED0F7 /* BetaBuilderWindow.m */; };
 		5ACEC915125FD37F009864D8 /* betabuilder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5ACEC914125FD37F009864D8 /* betabuilder.icns */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -58,9 +59,11 @@
 		5AA4E408120DE84F00385530 /* index_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_template.html; sourceTree = "<group>"; };
 		5AA4E490120DF21D00385530 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5AB3C6141224870100778CFC /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		5ACAEBFC138D6CED00BED0F7 /* BetaBuilderWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetaBuilderWindow.h; sourceTree = "<group>"; };
+		5ACAEBFD138D6CED00BED0F7 /* BetaBuilderWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetaBuilderWindow.m; sourceTree = "<group>"; };
 		5ACEC914125FD37F009864D8 /* betabuilder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = betabuilder.icns; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BetaBuilder-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BetaBuilder-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* BetaBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* BetaBuilder for iOS Apps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetaBuilder for iOS Apps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				256AC3D90F4B6AC300CF3369 /* BetaBuilderAppDelegate.m */,
 				5AA4E39B120DE13300385530 /* BuilderController.h */,
 				5AA4E39C120DE13300385530 /* BuilderController.m */,
+				5ACAEBFC138D6CED00BED0F7 /* BetaBuilderWindow.h */,
+				5ACAEBFD138D6CED00BED0F7 /* BetaBuilderWindow.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -111,7 +116,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* BetaBuilder.app */,
+				8D1107320486CEB800E47090 /* BetaBuilder for iOS Apps.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,7 +219,7 @@
 			name = BetaBuilder;
 			productInstallPath = "$(HOME)/Applications";
 			productName = BetaBuilder;
-			productReference = 8D1107320486CEB800E47090 /* BetaBuilder.app */;
+			productReference = 8D1107320486CEB800E47090 /* BetaBuilder for iOS Apps.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -272,6 +277,7 @@
 				5A23434D1211AB1F0098AAB8 /* zip.c in Sources */,
 				5A23434E1211AB1F0098AAB8 /* ZipArchive.mm in Sources */,
 				5A8F042612E613040087F51C /* NSFileManager+DirectoryLocations.m in Sources */,
+				5ACAEBFE138D6CED00BED0F7 /* BetaBuilderWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
