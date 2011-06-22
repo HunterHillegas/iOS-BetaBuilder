@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		5A23434C1211AB1F0098AAB8 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343441211AB1F0098AAB8 /* unzip.c */; };
 		5A23434D1211AB1F0098AAB8 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343461211AB1F0098AAB8 /* zip.c */; };
 		5A23434E1211AB1F0098AAB8 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343491211AB1F0098AAB8 /* ZipArchive.mm */; };
-		5A23435C1211ABD40098AAB8 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A23435B1211ABD40098AAB8 /* libz.1.2.3.dylib */; };
+		5A3D919113B2468900FD85A2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3D919013B2468900FD85A2 /* libz.dylib */; };
 		5A6C75B812E4C65C0050AA2B /* HISTORY in Resources */ = {isa = PBXBuildFile; fileRef = 5A6C75B712E4C65C0050AA2B /* HISTORY */; };
 		5A8F042612E613040087F51C /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F042512E613040087F51C /* NSFileManager+DirectoryLocations.m */; };
 		5AA4E39D120DE13300385530 /* BuilderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA4E39C120DE13300385530 /* BuilderController.m */; };
@@ -50,7 +50,7 @@
 		5A2343471211AB1F0098AAB8 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
 		5A2343481211AB1F0098AAB8 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		5A2343491211AB1F0098AAB8 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
-		5A23435B1211ABD40098AAB8 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		5A3D919013B2468900FD85A2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5A6C75B712E4C65C0050AA2B /* HISTORY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HISTORY; sourceTree = "<group>"; };
 		5A8F042412E613040087F51C /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		5A8F042512E613040087F51C /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
@@ -71,8 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3D919113B2468900FD85A2 /* libz.dylib in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				5A23435C1211ABD40098AAB8 /* libz.1.2.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A23435B1211ABD40098AAB8 /* libz.1.2.3.dylib */,
+				5A3D919013B2468900FD85A2 /* libz.dylib */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -227,8 +227,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BetaBuilder" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -309,7 +312,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -349,8 +351,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
@@ -364,8 +365,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;

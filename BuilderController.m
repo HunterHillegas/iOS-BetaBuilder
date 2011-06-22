@@ -54,11 +54,12 @@
 	[openDlg setAllowsMultipleSelection:NO];
     [openDlg setAllowedFileTypes:allowedFileTypes];
 
-	if ([openDlg runModalForTypes:allowedFileTypes] == NSOKButton) {
-        NSArray *files = [openDlg filenames];
-
+    if ([openDlg runModal] == NSOKButton) {
+        NSArray *files = [openDlg URLs];
+        
 		for (int i = 0; i < [files count]; i++ ) {
-			[self setupFromIPAFile:[files objectAtIndex:i]];
+            NSURL *fileURL = [files objectAtIndex:i];
+			[self setupFromIPAFile:[fileURL path]];
 		}
 	}
 }
@@ -153,12 +154,12 @@
 }
 
 - (IBAction)generateFiles:(id)sender {
-    [self generateFilesWithWebserverAddress:nil andOutputDirectory:nil];
+    [self generateFilesWithWebserverAddress:[webserverDirectoryField stringValue] andOutputDirectory:nil];
 }
 
 - (void)generateFilesWithWebserverAddress:(NSString *)webserver andOutputDirectory:(NSString *)outputPath {
     //create plist
-    NSString *trimmedURLString = [[webserverDirectoryField stringValue] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *trimmedURLString = [webserver stringByReplacingOccurrencesOfString:@" " withString:@""];
 	NSString *encodedIpaFilename = [[[archiveIPAFilenameField stringValue] lastPathComponent] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; //this isn't the most robust way to do this
 	NSString *ipaURLString = [NSString stringWithFormat:@"%@/%@", trimmedURLString, encodedIpaFilename];
 	NSDictionary *assetsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"software-package", @"kind", ipaURLString, @"url", nil];
@@ -197,7 +198,7 @@
         [directoryPanel setPrompt:@"Choose Directory"];
         [directoryPanel setMessage:@"Choose the Directory for Beta Files - Probably Should Match Deployment Directory"];
         
-        if ([directoryPanel runModalForDirectory:nil file:nil] == NSOKButton) {
+        if ([directoryPanel runModal] == NSOKButton) {
             NSURL *saveDirectoryURL = [directoryPanel directoryURL];
             [self saveFilesToOutputDirectory:saveDirectoryURL forManifestDictionary:outerManifestDictionary withTemplateHTML:htmlTemplateString];
             
@@ -249,7 +250,9 @@
             htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_ICON]" withString:@""];
         }
     } else {
-        NSLog(@"No iTunesArtwork File Exists");
+        NSLog(@"No iTunesArtwork File Exists in Bundle");
+        
+        htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_ICON]" withString:@""];
     }
     
     //Write Files
@@ -263,9 +266,9 @@
     
     //Create Archived Version for 3.0 Apps
     ZipArchive* zip = [[ZipArchive alloc] init];
-    BOOL ret = [zip CreateZipFile2:[[saveDirectoryURL path] stringByAppendingPathComponent:@"beta_archive.zip"]];
-    ret = [zip addFileToZip:[archiveIPAFilenameField stringValue] newname:@"application.ipa"];
-    ret = [zip addFileToZip:mobileProvisionFilePath newname:@"beta_provision.mobileprovision"];
+    [zip CreateZipFile2:[[saveDirectoryURL path] stringByAppendingPathComponent:@"beta_archive.zip"]];
+    [zip addFileToZip:[archiveIPAFilenameField stringValue] newname:@"application.ipa"];
+    [zip addFileToZip:mobileProvisionFilePath newname:@"beta_provision.mobileprovision"];
     if(![zip CloseZipFile2]) {
         NSLog(@"Error Creating 3.x Zip File");
     }
