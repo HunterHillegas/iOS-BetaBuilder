@@ -33,16 +33,7 @@
 
 
 @interface BuilderController : NSObject {
-	NSTextField *bundleIdentifierField;
-	NSTextField *bundleVersionField;
-	NSTextField *bundleNameField;
-	NSTextField *webserverDirectoryField;
-	NSTextField *archiveIPAFilenameField;
-	
-	NSButton *generateFilesButton;
-	
-	NSString *mobileProvisionFilePath;
-    NSString *appIconFilePath;
+
 }
 
 @property (nonatomic, retain) IBOutlet NSTextField *bundleIdentifierField;
@@ -55,6 +46,12 @@
 
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;
 @property (nonatomic, copy) NSString *appIconFilePath;
+
+@property (nonatomic, retain) NSString *bundleIdentifier;
+@property (nonatomic, retain) NSString *bundleVersion;
+@property (nonatomic, retain) NSString *bundleName;
+@property (nonatomic, retain) NSString *webserverDirectory;
+@property (nonatomic, retain) NSString *archiveIPAFilename;
 
 - (IBAction)specifyIPAFile:(id)sender;
 - (IBAction)generateFiles:(id)sender;
