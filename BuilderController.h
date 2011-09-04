@@ -32,13 +32,14 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface BuilderController : NSObject {
+@interface BuilderController : NSObject <NSFileManagerDelegate> {
 	NSTextField *bundleIdentifierField;
 	NSTextField *bundleVersionField;
 	NSTextField *bundleNameField;
 	NSTextField *webserverDirectoryField;
 	NSTextField *archiveIPAFilenameField;
 	
+    NSButton *overwriteFilesButton;
 	NSButton *generateFilesButton;
 	
 	NSString *mobileProvisionFilePath;
@@ -51,6 +52,7 @@
 @property (nonatomic, retain) IBOutlet NSTextField *webserverDirectoryField;
 @property (nonatomic, retain) IBOutlet NSTextField *archiveIPAFilenameField;
 
+@property (nonatomic, retain) IBOutlet NSButton *overwriteFilesButton;
 @property (nonatomic, retain) IBOutlet NSButton *generateFilesButton;
 
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;

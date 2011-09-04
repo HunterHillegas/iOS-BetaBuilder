@@ -64,10 +64,12 @@
         } else {
             NSLog(@"Index Template Exists But Has Been Modified");
             
-            NSString *infoText = [NSString stringWithFormat:@"The template index file used to create the HTML output has been updated to include new functionality. It appears you alread have a version of this file in place (%@). Would you like to replace this file? Any customizations will be lost - you may want to backup the file first.", [self htmlTemplatePath]];
-            
-            NSAlert *indexTemplateAlert = [[NSAlert alertWithMessageText:@"A Newer Index Template File Exists" defaultButton:@"Do Nothing" alternateButton:@"Replace File" otherButton:nil informativeTextWithFormat:infoText] autorelease];
-            [indexTemplateAlert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];
+            if ([commandLineArgs count] == 0) { //only present this if we have no command line args
+                NSString *infoText = [NSString stringWithFormat:@"The template index file used to create the HTML output has been updated to include new functionality. It appears you alread have a version of this file in place (%@). Would you like to replace this file? Any customizations will be lost - you may want to backup the file first.", [self htmlTemplatePath]];
+                
+                NSAlert *indexTemplateAlert = [[NSAlert alertWithMessageText:@"A Newer Index Template File Exists" defaultButton:@"Do Nothing" alternateButton:@"Replace File" otherButton:nil informativeTextWithFormat:infoText] autorelease];
+                [indexTemplateAlert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];    
+            }
         }
     }
 }

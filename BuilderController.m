@@ -39,6 +39,7 @@
 @synthesize bundleIdentifierField;
 @synthesize bundleVersionField;
 @synthesize bundleNameField;
+@synthesize overwriteFilesButton;
 @synthesize webserverDirectoryField;
 @synthesize archiveIPAFilenameField;
 @synthesize generateFilesButton;
@@ -214,6 +215,7 @@
 
 - (void)saveFilesToOutputDirectory:(NSURL *)saveDirectoryURL forManifestDictionary:(NSDictionary *)outerManifestDictionary withTemplateHTML:(NSString *)htmlTemplateString {
     NSFileManager *fileManager = [NSFileManager defaultManager];
+    fileManager.delegate = self;
     
     //Copy IPA
     NSError *fileCopyError;
@@ -230,6 +232,9 @@
     }
     
     //Copy README
+    if ([self.overwriteFilesButton state] == NSOnState)
+        [fileManager removeItemAtURL:[saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] error:nil];
+    
     NSString *readmeContents = [[NSBundle mainBundle] pathForResource:@"README" ofType:@""];
     [readmeContents writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] atomically:YES encoding:NSASCIIStringEncoding error:nil];
     
@@ -256,6 +261,9 @@
     }
     
     //Write Files
+    if ([self.overwriteFilesButton state] == NSOnState)
+        [fileManager removeItemAtURL:[saveDirectoryURL URLByAppendingPathComponent:@"manifest.plist"] error:nil];
+    
     NSError *fileWriteError;
     [outerManifestDictionary writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"manifest.plist"] atomically:YES];
     BOOL wroteHTMLFileSuccessfully = [htmlTemplateString writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"index.html"] atomically:YES encoding:NSUTF8StringEncoding error:&fileWriteError];
@@ -273,6 +281,21 @@
         NSLog(@"Error Creating 3.x Zip File");
     }
     [zip release];
+}
+
+- (BOOL)fileManager:(NSFileManager *)fileManager shouldCopyItemAtURL:(NSURL *)srcURL toURL:(NSURL *)dstURL {
+    if ([self.overwriteFilesButton state] == NSOnState) {
+        NSLog(@"Overwriting File: %@", dstURL);
+        
+        NSError *deleteError;
+        BOOL deleted = [fileManager removeItemAtURL:dstURL error:&deleteError];
+        
+        if (!deleted) {
+            NSLog(@"Error Deleting %@: %@", dstURL, deleteError);
+        }
+    }
+    
+    return YES;
 }
 
 @end
