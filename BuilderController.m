@@ -45,6 +45,9 @@
 @synthesize generateFilesButton;
 @synthesize mobileProvisionFilePath;
 @synthesize appIconFilePath;
+@synthesize openInFinderButton;
+@synthesize destinationPath;
+@synthesize previousDestinationPathAsString;
 
 - (IBAction)specifyIPAFile:(id)sender {
     NSArray *allowedFileTypes = [NSArray arrayWithObjects:@"ipa", @"IPA", nil]; //only allow IPAs
@@ -103,10 +106,19 @@
 			NSDictionary *bundlePlistFile = [NSDictionary dictionaryWithContentsOfFile:[appDirectoryPath stringByAppendingPathComponent:plistPath]];
 			
 			if (bundlePlistFile) {
-				[bundleVersionField setStringValue:[bundlePlistFile valueForKey:@"CFBundleVersion"]];
-				[bundleIdentifierField setStringValue:[bundlePlistFile valueForKey:@"CFBundleIdentifier"]];
-				[bundleNameField setStringValue:[bundlePlistFile valueForKey:@"CFBundleDisplayName"]];
+                if ([bundlePlistFile valueForKey:@"CFBundleShortVersionString"])   
+                    [bundleVersionField setStringValue:[NSString stringWithFormat:@"%@ (%@)", [bundlePlistFile valueForKey:@"CFBundleShortVersionString"], [bundlePlistFile valueForKey:@"CFBundleVersion"]]];
+				else
+                    [bundleVersionField setStringValue:[bundlePlistFile valueForKey:@"CFBundleVersion"]];
                 
+                [bundleIdentifierField setStringValue:[bundlePlistFile valueForKey:@"CFBundleIdentifier"]];
+				
+                if ([bundlePlistFile valueForKey:@"CFBundleDisplayName"])
+                    [bundleNameField setStringValue:[bundlePlistFile valueForKey:@"CFBundleDisplayName"]];
+                else
+                    [bundleNameField setStringValue:@""];
+                
+                [webserverDirectoryField setStringValue:@""];
                 [self populateFieldsFromHistoryForBundleID:[bundlePlistFile valueForKey:@"CFBundleIdentifier"]];
 			}
 			
@@ -129,11 +141,17 @@
     
     if (historyDictionary) {
         NSDictionary *historyItem = [historyDictionary valueForKey:bundleID];
-        
         if (historyItem) {
             [webserverDirectoryField setStringValue:[historyItem valueForKey:@"webserverDirectory"]];
         } else {
             NSLog(@"No History Item Found for Bundle ID: %@", bundleID);
+        }
+        
+        NSDictionary *outputPathItem = [historyDictionary valueForKey:[NSString stringWithFormat:@"%@-output", bundleID]];
+        if (outputPathItem) {
+            self.previousDestinationPathAsString = [outputPathItem valueForKey:@"outputDirectory"];
+        } else {
+            NSLog(@"No Output Path History Item Found for Bundle ID: %@", bundleID);
         }
     }
 }
@@ -142,6 +160,7 @@
     NSString *applicationSupportPath = [[NSFileManager defaultManager] applicationSupportDirectory];
     NSString *historyPath = [applicationSupportPath stringByAppendingPathComponent:@"history.plist"];
     NSString *trimmedURLString = [[webserverDirectoryField stringValue] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *outputDirectoryPath = [self.destinationPath path];
     
     NSMutableDictionary *historyDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:historyPath];
     if (!historyDictionary) {
@@ -150,6 +169,9 @@
     
     NSDictionary *webserverDirectoryDictionary = [NSDictionary dictionaryWithObjectsAndKeys:trimmedURLString, @"webserverDirectory", nil];
     [historyDictionary setValue:webserverDirectoryDictionary forKey:bundleID];
+    
+    NSDictionary *outputDirectoryDictionary = [NSDictionary dictionaryWithObjectsAndKeys:outputDirectoryPath, @"outputDirectory", nil];
+    [historyDictionary setValue:outputDirectoryDictionary forKey:[NSString stringWithFormat:@"%@-output", bundleID]];
     
     [historyDictionary writeToFile:historyPath atomically:YES];
 }
@@ -185,10 +207,6 @@
     [shortDateFormatter release];
     htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_DATE]" withString:formattedDateString];
     
-    //store history
-    if (trimmedURLString)
-        [self storeFieldsInHistoryForBundleID:[bundleIdentifierField stringValue]];
-    
     if (!outputPath) {
     	//ask for save location	
         NSOpenPanel *directoryPanel = [NSOpenPanel openPanel];
@@ -197,15 +215,38 @@
         [directoryPanel setAllowsMultipleSelection:NO];
         [directoryPanel setCanCreateDirectories:YES];
         [directoryPanel setPrompt:@"Choose Directory"];
-        [directoryPanel setMessage:@"Choose the Directory for Beta Files - Probably Should Match Deployment Directory"];
+        [directoryPanel setMessage:@"Choose the Directory for Beta Files - Probably Should Match Deployment Directory and Should NOT Include the IPA"];
+        
+        if (self.previousDestinationPathAsString) {
+            if ([[NSFileManager defaultManager] fileExistsAtPath:self.previousDestinationPathAsString]) {
+                NSLog(@"Previous Directory Exists - Using That");
+                
+                [directoryPanel setDirectoryURL:[NSURL fileURLWithPath:self.previousDestinationPathAsString]];
+            }
+        }
         
         if ([directoryPanel runModal] == NSOKButton) {
             NSURL *saveDirectoryURL = [directoryPanel directoryURL];
-            [self saveFilesToOutputDirectory:saveDirectoryURL forManifestDictionary:outerManifestDictionary withTemplateHTML:htmlTemplateString];
+            BOOL saved = [self saveFilesToOutputDirectory:saveDirectoryURL forManifestDictionary:outerManifestDictionary withTemplateHTML:htmlTemplateString];
             
-            //Play Done Sound / Display Alert
-            NSSound *systemSound = [NSSound soundNamed:@"Glass"];
-            [systemSound play];
+            if (saved) {
+                self.destinationPath = saveDirectoryURL;
+                
+                NSSound *systemSound = [NSSound soundNamed:@"Glass"]; //Play Done Sound / Display Alert
+                [systemSound play];
+                
+                //store history
+                if (trimmedURLString)
+                    [self storeFieldsInHistoryForBundleID:[bundleIdentifierField stringValue]];
+                
+                //show in finder
+                [self.openInFinderButton setEnabled:YES];
+                
+                //put the doc in recent items
+                [[NSDocumentController sharedDocumentController] noteNewRecentDocumentURL:[NSURL fileURLWithPath:[archiveIPAFilenameField stringValue]]];
+            } else {
+                NSBeep();
+            }
         }    
     } else {
         NSURL *saveDirectoryURL = [NSURL fileURLWithPath:outputPath];
@@ -213,7 +254,9 @@
     }
 }
 
-- (void)saveFilesToOutputDirectory:(NSURL *)saveDirectoryURL forManifestDictionary:(NSDictionary *)outerManifestDictionary withTemplateHTML:(NSString *)htmlTemplateString {
+- (BOOL)saveFilesToOutputDirectory:(NSURL *)saveDirectoryURL forManifestDictionary:(NSDictionary *)outerManifestDictionary withTemplateHTML:(NSString *)htmlTemplateString {
+    BOOL savedSuccessfully = NO;
+    
     NSFileManager *fileManager = [NSFileManager defaultManager];
     fileManager.delegate = self;
     
@@ -229,6 +272,8 @@
         if (button != NSAlertFirstButtonReturn) {
             //user hit the rightmost button
         }
+        
+        return NO;
     }
     
     //Copy README
@@ -270,6 +315,9 @@
     
     if (!wroteHTMLFileSuccessfully) {
         NSLog(@"Error Writing HTML File: %@ to %@", fileWriteError, saveDirectoryURL);
+        savedSuccessfully = NO;
+    } else {
+        savedSuccessfully = YES;
     }
     
     //Create Archived Version for 3.0 Apps
@@ -281,21 +329,31 @@
         NSLog(@"Error Creating 3.x Zip File");
     }
     [zip release];
+    
+    return savedSuccessfully;
 }
 
 - (BOOL)fileManager:(NSFileManager *)fileManager shouldCopyItemAtURL:(NSURL *)srcURL toURL:(NSURL *)dstURL {
     if ([self.overwriteFilesButton state] == NSOnState) {
-        NSLog(@"Overwriting File: %@", dstURL);
-        
-        NSError *deleteError;
-        BOOL deleted = [fileManager removeItemAtURL:dstURL error:&deleteError];
-        
-        if (!deleted) {
-            NSLog(@"Error Deleting %@: %@", dstURL, deleteError);
+        if ([fileManager fileExistsAtPath:[dstURL path]]) {
+            NSLog(@"Overwriting File: %@", dstURL);
+            
+            NSError *deleteError;
+            BOOL deleted = [fileManager removeItemAtURL:dstURL error:&deleteError];
+            
+            if (!deleted) {
+                NSLog(@"Error Deleting %@: %@", dstURL, deleteError);
+            }
+        } else {
+            NSLog(@"File Didn't Exist to Delete: %@", dstURL);
         }
     }
     
     return YES;
+}
+
+- (IBAction)openInFinder:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:self.destinationPath];
 }
 
 @end

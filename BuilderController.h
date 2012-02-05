@@ -33,17 +33,21 @@
 
 
 @interface BuilderController : NSObject <NSFileManagerDelegate> {
-	NSTextField *bundleIdentifierField;
-	NSTextField *bundleVersionField;
-	NSTextField *bundleNameField;
-	NSTextField *webserverDirectoryField;
-	NSTextField *archiveIPAFilenameField;
-	
+    NSTextField *bundleIdentifierField;
+    NSTextField *bundleVersionField;
+    NSTextField *bundleNameField;
+    NSTextField *webserverDirectoryField;
+    NSTextField *archiveIPAFilenameField;
+    
     NSButton *overwriteFilesButton;
-	NSButton *generateFilesButton;
-	
-	NSString *mobileProvisionFilePath;
+    NSButton *generateFilesButton;
+    NSButton *openInFinderButton;
+    
+    NSString *mobileProvisionFilePath;
     NSString *appIconFilePath;
+    
+    NSURL *destinationPath;
+    NSString *previousDestinationPathAsString;
 }
 
 @property (nonatomic, retain) IBOutlet NSTextField *bundleIdentifierField;
@@ -54,14 +58,20 @@
 
 @property (nonatomic, retain) IBOutlet NSButton *overwriteFilesButton;
 @property (nonatomic, retain) IBOutlet NSButton *generateFilesButton;
+@property (nonatomic, retain) IBOutlet NSButton *openInFinderButton;
 
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;
 @property (nonatomic, copy) NSString *appIconFilePath;
 
+@property (nonatomic, copy) NSURL *destinationPath;
+@property (nonatomic, copy) NSString *previousDestinationPathAsString;
+
 - (IBAction)specifyIPAFile:(id)sender;
 - (IBAction)generateFiles:(id)sender;
+- (IBAction)openInFinder:(id)sender;
+
 - (void)generateFilesWithWebserverAddress:(NSString *)webserver andOutputDirectory:(NSString *)outputPath;
-- (void)saveFilesToOutputDirectory:(NSURL *)saveDirectoryURL forManifestDictionary:(NSDictionary *)outerManifestDictionary withTemplateHTML:(NSString *)htmlTemplateString;
+- (BOOL)saveFilesToOutputDirectory:(NSURL *)saveDirectoryURL forManifestDictionary:(NSDictionary *)outerManifestDictionary withTemplateHTML:(NSString *)htmlTemplateString;
 
 - (void)setupFromIPAFile:(NSString *)ipaFilename;
 
