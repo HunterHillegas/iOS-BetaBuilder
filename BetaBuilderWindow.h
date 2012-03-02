@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-
 @interface BetaBuilderWindow : NSWindow {
 @private
-    
 }
 
 @end

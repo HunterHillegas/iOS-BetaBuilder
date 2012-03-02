@@ -36,14 +36,14 @@
 
 @implementation BetaBuilderAppDelegate
 
-@synthesize window;
-@synthesize deploymentHelpPanel;
-@synthesize archiveIPAHelpPanel;
-@synthesize builderController;
+@synthesize window = _window;
+@synthesize deploymentHelpPanel = _deploymentHelpPanel;
+@synthesize archiveIPAHelpPanel = _archiveIPAHelpPanel;
+@synthesize builderController = _builderController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     //Setup Drag Target for IPA Files
-    [window registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, nil]];
+    [self.window registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, nil]];
     
     //Process Command Line Arguments, If Any
     NSArray *commandLineArgs = [[NSProcessInfo processInfo] arguments];
@@ -67,7 +67,7 @@
             if ([commandLineArgs count] == 0) { //only present this if we have no command line args
                 NSString *infoText = [NSString stringWithFormat:@"The template index file used to create the HTML output has been updated to include new functionality. It appears you alread have a version of this file in place (%@). Would you like to replace this file? Any customizations will be lost - you may want to backup the file first.", [self htmlTemplatePath]];
                 
-                NSAlert *indexTemplateAlert = [[NSAlert alertWithMessageText:@"A Newer Index Template File Exists" defaultButton:@"Do Nothing" alternateButton:@"Replace File" otherButton:nil informativeTextWithFormat:infoText] autorelease];
+                NSAlert *indexTemplateAlert = [NSAlert alertWithMessageText:@"A Newer Index Template File Exists" defaultButton:@"Do Nothing" alternateButton:@"Replace File" otherButton:nil informativeTextWithFormat:infoText];
                 [indexTemplateAlert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];    
             }
         }
@@ -134,11 +134,11 @@
 }
 
 - (IBAction)showDeploymentHelpPanel:(id)sender {
-	[deploymentHelpPanel setIsVisible:YES];
+	[self.deploymentHelpPanel setIsVisible:YES];
 }
 
 - (IBAction)showArchiveHelpPanel:(id)sender {
-	[archiveIPAHelpPanel setIsVisible:YES];
+	[self.archiveIPAHelpPanel setIsVisible:YES];
 }
 
 - (BOOL)application:(NSApplication *)theApplication openFile:(NSString *)filename {

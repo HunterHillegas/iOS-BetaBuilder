@@ -33,21 +33,12 @@
 
 @class BuilderController;
 
-@interface BetaBuilderAppDelegate : NSObject <NSApplicationDelegate> {
-    NSWindow *window;
-    
-	NSPanel *deploymentHelpPanel;
-	NSPanel *archiveIPAHelpPanel;
-	
-	BuilderController *builderController;
-}
+@interface BetaBuilderAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
-
-@property (nonatomic, retain) IBOutlet NSPanel *deploymentHelpPanel;
-@property (nonatomic, retain) IBOutlet NSPanel *archiveIPAHelpPanel;
-
-@property (nonatomic, retain) IBOutlet BuilderController *builderController;
+@property IBOutlet NSWindow *window;
+@property (nonatomic) IBOutlet NSPanel *deploymentHelpPanel;
+@property (nonatomic) IBOutlet NSPanel *archiveIPAHelpPanel;
+@property (nonatomic) IBOutlet BuilderController *builderController;
 
 - (NSString *)htmlTemplatePath;
 - (NSString *)defaultTemplatePath;

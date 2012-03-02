@@ -32,37 +32,18 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface BuilderController : NSObject <NSFileManagerDelegate> {
-    NSTextField *bundleIdentifierField;
-    NSTextField *bundleVersionField;
-    NSTextField *bundleNameField;
-    NSTextField *webserverDirectoryField;
-    NSTextField *archiveIPAFilenameField;
-    
-    NSButton *overwriteFilesButton;
-    NSButton *generateFilesButton;
-    NSButton *openInFinderButton;
-    
-    NSString *mobileProvisionFilePath;
-    NSString *appIconFilePath;
-    
-    NSURL *destinationPath;
-    NSString *previousDestinationPathAsString;
-}
+@interface BuilderController : NSObject <NSFileManagerDelegate>
 
-@property (nonatomic, retain) IBOutlet NSTextField *bundleIdentifierField;
-@property (nonatomic, retain) IBOutlet NSTextField *bundleVersionField;
-@property (nonatomic, retain) IBOutlet NSTextField *bundleNameField;
-@property (nonatomic, retain) IBOutlet NSTextField *webserverDirectoryField;
-@property (nonatomic, retain) IBOutlet NSTextField *archiveIPAFilenameField;
-
-@property (nonatomic, retain) IBOutlet NSButton *overwriteFilesButton;
-@property (nonatomic, retain) IBOutlet NSButton *generateFilesButton;
-@property (nonatomic, retain) IBOutlet NSButton *openInFinderButton;
-
+@property (nonatomic) IBOutlet NSTextField *bundleIdentifierField;
+@property (nonatomic) IBOutlet NSTextField *bundleVersionField;
+@property (nonatomic) IBOutlet NSTextField *bundleNameField;
+@property (nonatomic) IBOutlet NSTextField *webserverDirectoryField;
+@property (nonatomic) IBOutlet NSTextField *archiveIPAFilenameField;
+@property (nonatomic) IBOutlet NSButton *overwriteFilesButton;
+@property (nonatomic) IBOutlet NSButton *generateFilesButton;
+@property (nonatomic) IBOutlet NSButton *openInFinderButton;
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;
 @property (nonatomic, copy) NSString *appIconFilePath;
-
 @property (nonatomic, copy) NSURL *destinationPath;
 @property (nonatomic, copy) NSString *previousDestinationPathAsString;
 
