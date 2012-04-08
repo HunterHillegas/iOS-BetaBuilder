@@ -92,6 +92,7 @@
 #define kIPAPathArgument @"-ipaPath"
 #define kWebserverArgument @"-webserver"
 #define kOutputDirectoryArgument @"-outputDirectory"
+#define kTemplateArgument @"-template"
 
 - (void)processCommandLineArguments:(NSArray *)arguments {
     NSLog(@"Processing Command Line Arguments");
@@ -99,6 +100,7 @@
     NSString *ipaPath = nil;
     NSString *webserverAddress = nil;
     NSString *outputPath = nil;
+    NSString *templateFile = nil;
     
     for (NSString *argument in arguments) {
         NSArray *splitArgument = [argument componentsSeparatedByString:kArgumentSeperator];
@@ -110,11 +112,17 @@
                 webserverAddress = [splitArgument objectAtIndex:1];
             } else if ([[splitArgument objectAtIndex:0] isEqualToString:kOutputDirectoryArgument]) {
                 outputPath = [splitArgument objectAtIndex:1];
+            } else if ([[splitArgument objectAtIndex:0] isEqualToString:kTemplateArgument]) {
+                templateFile = [splitArgument objectAtIndex:1];
             }
         }
     }
     
     if (ipaPath && webserverAddress && outputPath) {
+        if (templateFile)
+        {
+            self.builderController.templateFile = templateFile;
+        }
         [self.builderController setupFromIPAFile:ipaPath];
         [self.builderController generateFilesWithWebserverAddress:webserverAddress andOutputDirectory:outputPath];
         [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
