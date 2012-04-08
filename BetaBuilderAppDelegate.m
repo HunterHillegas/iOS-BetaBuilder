@@ -87,7 +87,6 @@
 }
 
 #pragma mark - Command Line
-
 #define kArgumentSeperator @"="
 #define kIPAPathArgument @"-ipaPath"
 #define kWebserverArgument @"-webserver"
