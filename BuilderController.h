@@ -44,6 +44,7 @@
 @property (nonatomic) IBOutlet NSButton *openInFinderButton;
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;
 @property (nonatomic, copy) NSString *appIconFilePath;
+@property (nonatomic, copy) NSString *templateFile;
 @property (nonatomic, copy) NSURL *destinationPath;
 @property (nonatomic, copy) NSString *previousDestinationPathAsString;
 
