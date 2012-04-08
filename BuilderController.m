@@ -46,6 +46,7 @@
 @synthesize openInFinderButton = _openInFinderButton;
 @synthesize mobileProvisionFilePath = _mobileProvisionFilePath;
 @synthesize appIconFilePath = _appIconFilePath;
+@synthesize templateFile = _templateFile;
 @synthesize destinationPath = _destinationPath;
 @synthesize previousDestinationPathAsString = _previousDestinationPathAsString;
 
@@ -192,7 +193,33 @@
 	
 	//create html file    
     NSString *applicationSupportPath = [[NSFileManager defaultManager] applicationSupportDirectory];
-    NSString *templatePath = [applicationSupportPath stringByAppendingPathComponent:@"index_template.html"];
+    NSString *templatePath = nil;
+    
+    if (_templateFile != nil)
+    {
+        if ([_templateFile hasPrefix:@"~"])
+        {
+            _templateFile = [_templateFile stringByExpandingTildeInPath];
+        }
+        if ([_templateFile hasPrefix:@"/"])
+        {
+            templatePath = _templateFile;
+        }
+        else 
+        {
+            templatePath = [applicationSupportPath stringByAppendingPathComponent:_templateFile];
+        }
+        if (![[NSFileManager defaultManager] fileExistsAtPath:templatePath])
+        {
+            NSLog(@"Template file does not exist at path: %@", templatePath);
+            exit(1);
+        }
+    }
+    else
+    {
+        templatePath = [applicationSupportPath stringByAppendingPathComponent:@"index_template.html"];
+    }
+
 	NSString *htmlTemplateString = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_NAME]" withString:[self.bundleNameField stringValue]];
     htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_VERSION]" withString:[self.bundleVersionField stringValue]];
