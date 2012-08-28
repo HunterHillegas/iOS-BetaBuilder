@@ -44,11 +44,14 @@
 @synthesize overwriteFilesButton = _overwriteFilesButton;
 @synthesize generateFilesButton = _generateFilesButton;
 @synthesize openInFinderButton = _openInFinderButton;
+@synthesize sendToClipboardButton = _sendToClipboardButton;
 @synthesize mobileProvisionFilePath = _mobileProvisionFilePath;
 @synthesize appIconFilePath = _appIconFilePath;
 @synthesize templateFile = _templateFile;
 @synthesize destinationPath = _destinationPath;
 @synthesize previousDestinationPathAsString = _previousDestinationPathAsString;
+@synthesize betaURLString;
+
 
 - (IBAction)specifyIPAFile:(id)sender {
     NSArray *allowedFileTypes = [NSArray arrayWithObjects:@"ipa", @"IPA", nil]; //only allow IPAs
@@ -223,8 +226,10 @@
 	NSString *htmlTemplateString = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_NAME]" withString:[self.bundleNameField stringValue]];
     htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_VERSION]" withString:[self.bundleVersionField stringValue]];
-	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_PLIST]" withString:[NSString stringWithFormat:@"%@/%@", trimmedURLString, @"manifest.plist"]];
-	
+	betaURLString =[NSString stringWithFormat:@"%@/%@", trimmedURLString, @"manifest.plist"];
+	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_PLIST]" withString:betaURLString];
+
+    
     //add formatted date
     NSDateFormatter *shortDateFormatter = [[NSDateFormatter alloc] init];
     [shortDateFormatter setTimeStyle:NSDateFormatterNoStyle];
@@ -266,6 +271,7 @@
                 
                 //show in finder
                 [self.openInFinderButton setEnabled:YES];
+                [self.sendToClipboardButton setEnabled:YES];
                 
                 //put the doc in recent items
                 [[NSDocumentController sharedDocumentController] noteNewRecentDocumentURL:[NSURL fileURLWithPath:[self.archiveIPAFilenameField stringValue]]];
@@ -378,6 +384,13 @@
 
 - (IBAction)openInFinder:(id)sender {
     [[NSWorkspace sharedWorkspace] openURL:self.destinationPath];
+}
+
+- (IBAction)copyToClipboard:(id)sender {
+    NSString * toCopy = [NSString stringWithFormat:@"itms-services://?action=download-manifest&url="];
+    toCopy = [toCopy stringByAppendingString:betaURLString];
+    [[NSPasteboard generalPasteboard] clearContents];
+    [[NSPasteboard generalPasteboard] setString:toCopy  forType:NSStringPboardType];
 }
 
 @end

@@ -42,15 +42,18 @@
 @property (nonatomic) IBOutlet NSButton *overwriteFilesButton;
 @property (nonatomic) IBOutlet NSButton *generateFilesButton;
 @property (nonatomic) IBOutlet NSButton *openInFinderButton;
+@property (nonatomic) IBOutlet NSButton *sendToClipboardButton;
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;
 @property (nonatomic, copy) NSString *appIconFilePath;
 @property (nonatomic, copy) NSString *templateFile;
 @property (nonatomic, copy) NSURL *destinationPath;
 @property (nonatomic, copy) NSString *previousDestinationPathAsString;
+@property (nonatomic, retain) NSString * betaURLString;
 
 - (IBAction)specifyIPAFile:(id)sender;
 - (IBAction)generateFiles:(id)sender;
 - (IBAction)openInFinder:(id)sender;
+- (IBAction)copyToClipboard:(id)sender;
 
 - (void)generateFilesWithWebserverAddress:(NSString *)webserver andOutputDirectory:(NSString *)outputPath;
 - (BOOL)saveFilesToOutputDirectory:(NSURL *)saveDirectoryURL forManifestDictionary:(NSDictionary *)outerManifestDictionary withTemplateHTML:(NSString *)htmlTemplateString;
