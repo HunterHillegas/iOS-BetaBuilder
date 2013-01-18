@@ -90,6 +90,10 @@ NSString *const DAVClientErrorDomain = @"com.MattRajca.DAVKit.error";
 	}
 	
 	[_data appendData:data];
+
+	if ([_delegate respondsToSelector:@selector(request:didReceiveData:)]) {
+		[_delegate request:self didReceiveData:data];
+	}
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {

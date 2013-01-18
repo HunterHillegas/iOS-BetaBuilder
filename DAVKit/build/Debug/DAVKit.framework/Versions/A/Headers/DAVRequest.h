@@ -50,4 +50,7 @@ extern NSString *const DAVClientErrorDomain;
 // The resulting object varies depending on the request type
 - (void)request:(DAVRequest *)aRequest didSucceedWithResult:(id)result;
 
+// The resulting object varies depending on the request type
+- (void)request:(DAVRequest *)aRequest didReceiveData:(NSData *)data;
+
 @end

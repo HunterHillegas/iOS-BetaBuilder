@@ -47,6 +47,8 @@
 @synthesize progressIndicator;
 @synthesize passwordPanel;
 @synthesize generateAndDeployButton;
+@synthesize _oldiOSSupport;
+@synthesize localDirectoryField;
 
 - (id) init {
 	self = [super init];
@@ -137,9 +139,23 @@
 	
 	{
 		NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-		NSString* value = [defaults valueForKey:[archiveIPAFilenameField stringValue]];
-		if (value) {
-			[webserverDirectoryField setStringValue: value];
+		{
+			NSString* value = [defaults valueForKey:[archiveIPAFilenameField stringValue]];
+			if (value) {
+				[webserverDirectoryField setStringValue: value];
+			}
+		}
+		{
+			NSNumber* value = [defaults valueForKey:[NSString stringWithFormat:@"%@OldiOSSupport", [archiveIPAFilenameField stringValue]]];
+			if (value) {
+				[_oldiOSSupport setState: [value boolValue]];
+			}
+		}
+		{
+			NSURL* value = [defaults URLForKey:[NSString stringWithFormat:@"%@saveDirectoryURL", [archiveIPAFilenameField stringValue]]];
+			if (value) {
+				[localDirectoryField setStringValue: [value path]];
+			}
 		}
 	}
 
@@ -148,13 +164,30 @@
 	
 }
 
+- (IBAction)chooseOutputDirectory:(id)sender {
+	//ask for save location
+	NSOpenPanel *directoryPanel = [NSOpenPanel openPanel];
+	
+	[directoryPanel setCanChooseFiles:NO];
+	[directoryPanel setCanChooseDirectories:YES];
+	[directoryPanel setAllowsMultipleSelection:NO];
+	[directoryPanel setCanCreateDirectories:YES];
+	[directoryPanel setPrompt:@"Choose Directory"];
+	[directoryPanel setMessage:@"Choose the Directory for Beta Files - Probably Should Match Deployment Directory"];
+	
+	if ([directoryPanel runModalForDirectory:[localDirectoryField stringValue] file:nil] == NSOKButton) {
+		[localDirectoryField setStringValue: [[directoryPanel directoryURL] path]];
+	}
+}
+
 - (void)generateFilesWithOutputDirectory:(NSString*)outputPath {
 	[saveDirectoryURL release];
 	saveDirectoryURL = nil;
 
 	if (outputPath == nil) {
-		//ask for save location	
+		//ask for save location
 		NSOpenPanel *directoryPanel = [NSOpenPanel openPanel];
+
 		[directoryPanel setCanChooseFiles:NO];
 		[directoryPanel setCanChooseDirectories:YES];
 		[directoryPanel setAllowsMultipleSelection:NO];
@@ -162,7 +195,7 @@
 		[directoryPanel setPrompt:@"Choose Directory"];
 		[directoryPanel setMessage:@"Choose the Directory for Beta Files - Probably Should Match Deployment Directory"];
 		
-		if ([directoryPanel runModalForDirectory:nil file:nil] == NSOKButton) {
+		if ([directoryPanel runModalForDirectory:[localDirectoryField stringValue] file:nil] == NSOKButton) {
 			saveDirectoryURL = [[directoryPanel directoryURL] copy];
 		}
 	} else {
@@ -170,10 +203,12 @@
 	}
 
 	if (saveDirectoryURL) {
-		
 		{
 			NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
 			[defaults setValue:[webserverDirectoryField stringValue] forKey:[archiveIPAFilenameField stringValue]];
+			[defaults setValue:[NSNumber numberWithBool:[_oldiOSSupport state]] forKey:[NSString stringWithFormat:@"%@OldiOSSupport", [archiveIPAFilenameField stringValue]]];
+			[defaults setURL:saveDirectoryURL forKey:[NSString stringWithFormat:@"%@saveDirectoryURL", [archiveIPAFilenameField stringValue]]];
+			[defaults synchronize];
 		}
 		
 		//create plist
@@ -186,7 +221,13 @@
 		NSLog(@"Manifest Created");
 		
 		//create html file
-		NSString *templatePath = [[NSBundle mainBundle] pathForResource:@"index_template" ofType:@"html"];
+		NSString *templatePath = @"";
+		if (![_oldiOSSupport state]) {
+			templatePath = [[NSBundle mainBundle] pathForResource:@"index_template" ofType:@"html"];
+		} else {
+			templatePath = [[NSBundle mainBundle] pathForResource:@"index_template_old" ofType:@"html"];
+		}
+
 		NSString *htmlTemplateString = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 		htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_NAME]" withString:[bundleNameField stringValue]];
 		htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_VERSION]" withString:[bundleVersionField stringValue]];
@@ -194,6 +235,9 @@
 		
 		
 		{
+			[[NSFileManager defaultManager] removeItemAtURL: [saveDirectoryURL URLByAppendingPathComponent:@"manifest.plist"] error:nil];
+			[[NSFileManager defaultManager] removeItemAtURL: [saveDirectoryURL URLByAppendingPathComponent:@"index.html"] error:nil];
+
 			//Write Files
 			[outerManifestDictionary writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"manifest.plist"] atomically:YES];
 			[htmlTemplateString writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"index.html"] atomically:YES encoding:NSASCIIStringEncoding error:nil];			
@@ -203,35 +247,40 @@
 			NSFileManager *fileManager = [NSFileManager defaultManager];
 			NSURL *ipaSourceURL = [NSURL fileURLWithPath:[archiveIPAFilenameField stringValue]];
 			NSURL *ipaDestinationURL = [saveDirectoryURL URLByAppendingPathComponent:[[archiveIPAFilenameField stringValue] lastPathComponent]];
+			[[NSFileManager defaultManager] removeItemAtURL: ipaDestinationURL error:nil];
 			BOOL copiedIPAFile = [fileManager copyItemAtURL:ipaSourceURL toURL:ipaDestinationURL error:&fileCopyError];
 			if (!copiedIPAFile) {
 				NSLog(@"Error Copying IPA File: %@", fileCopyError);
 			}
 			
 			NSURL *iconDestinationURL = [saveDirectoryURL URLByAppendingPathComponent:@"icon.png"];
-//			[fileManager copyItemAtURL:[NSURL fileURLWithPath:iconFilePath] toURL:iconDestinationURL error:&fileCopyError];
+			[[NSFileManager defaultManager] removeItemAtURL: iconDestinationURL error:nil];
 			fixpng([iconFilePath UTF8String], [[iconDestinationURL path] UTF8String]);
 			
 
 			//Copy README
 			NSString *readmeContents = [[NSBundle mainBundle] pathForResource:@"README" ofType:@""];
+			[[NSFileManager defaultManager] removeItemAtURL: [saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] error:nil];
 			[readmeContents writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] atomically:YES encoding:NSASCIIStringEncoding error:nil];
 			
 			//Create Archived Version for 3.0 Apps
-			ZipArchive* zip = [[ZipArchive alloc] init];
-			BOOL ret = [zip CreateZipFile2:[[saveDirectoryURL path] stringByAppendingPathComponent:@"beta_archive.zip"]];
-			ret = [zip addFileToZip:[archiveIPAFilenameField stringValue] newname:@"application.ipa"];
-			ret = [zip addFileToZip:mobileProvisionFilePath newname:@"beta_provision.mobileprovision"];
-			if(![zip CloseZipFile2]) {
-				NSLog(@"Error Creating 3.x Zip File");
+			if ([_oldiOSSupport state]) {
+				[[NSFileManager defaultManager] removeItemAtURL: [saveDirectoryURL URLByAppendingPathComponent:@"beta_archive.zip"] error:nil];
+				ZipArchive* zip = [[ZipArchive alloc] init];
+				BOOL ret = [zip CreateZipFile2:[[saveDirectoryURL path] stringByAppendingPathComponent:@"beta_archive.zip"]];
+				ret = [zip addFileToZip:[archiveIPAFilenameField stringValue] newname:@"application.ipa"];
+				ret = [zip addFileToZip:mobileProvisionFilePath newname:@"beta_provision.mobileprovision"];
+				if(![zip CloseZipFile2]) {
+					NSLog(@"Error Creating 3.x Zip File");
+				}
+				[zip release];
 			}
-			[zip release];
 		}
 	}
 }
 
 - (IBAction)generateFiles:(id)sender {
-	[self generateFilesWithOutputDirectory:nil];
+	[self generateFilesWithOutputDirectory:[localDirectoryField stringValue]];
 	
 	//Play Done Sound / Display Alert
 	NSSound *systemSound = [NSSound soundNamed:@"Glass"];
@@ -349,6 +398,10 @@
 
 - (void)request:(DAVRequest *)aRequest didFailWithError:(NSError *)error {
 	NSLog(@"request error: %@ - %@", aRequest.path, [error localizedDescription]);
+}
+
+- (void)request:(DAVRequest *)aRequest didReceiveData:(NSData *)data {
+	NSLog(@"%d", [data length]);
 }
 
 @end

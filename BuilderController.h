@@ -38,6 +38,7 @@
 	NSTextField *bundleNameField;
 	NSTextField *webserverDirectoryField;
 	NSTextField *archiveIPAFilenameField;
+	NSTextField *localDirectoryField;
 	
 	NSButton *generateFilesButton;
 	NSButton *generateAndDeployButton;
@@ -48,6 +49,7 @@
 	NSURL *saveDirectoryURL;
 	NSProgressIndicator	*progressIndicator;
 	NSPasswordPanel*	passwordPanel;
+	NSButton*	_oldiOSSupport;
 }
 
 @property (nonatomic, retain) IBOutlet NSProgressIndicator	*progressIndicator;
@@ -56,10 +58,12 @@
 @property (nonatomic, retain) IBOutlet NSTextField *bundleNameField;
 @property (nonatomic, retain) IBOutlet NSTextField *webserverDirectoryField;
 @property (nonatomic, retain) IBOutlet NSTextField *archiveIPAFilenameField;
+@property (nonatomic, retain) IBOutlet NSTextField *localDirectoryField;
 
 @property (nonatomic, retain) IBOutlet NSButton *generateFilesButton;
 @property (nonatomic, retain) IBOutlet NSButton *generateAndDeployButton;
 @property (nonatomic, retain) IBOutlet NSPasswordPanel* passwordPanel;
+@property (nonatomic, retain) IBOutlet NSButton*	_oldiOSSupport;
 
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;
 
@@ -68,5 +72,7 @@
 
 - (void)setupFromIPAFile:(NSString *)ipaFilename;
 - (IBAction)generateAndDeployButtonClicked:(id)sender;
+
+- (IBAction)chooseOutputDirectory:(id)sender;
 
 @end

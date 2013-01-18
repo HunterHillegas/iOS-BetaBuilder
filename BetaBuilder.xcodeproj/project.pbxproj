@@ -17,6 +17,8 @@
 		0138070912A72B4B007914E0 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0138070112A72B4B007914E0 /* libcurl.dylib */; };
 		01380B3112A75086007914E0 /* DAVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01380B3012A75086007914E0 /* DAVKit.framework */; };
 		01380B4412A750A4007914E0 /* DAVKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01380B3012A75086007914E0 /* DAVKit.framework */; };
+		0148FF9C134D0EA600A04240 /* index_template_old.html in Resources */ = {isa = PBXBuildFile; fileRef = 0148FF9B134D0EA600A04240 /* index_template_old.html */; };
+		0156655F16A9A12A00EEF078 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0156655E16A9A12A00EEF078 /* libz.dylib */; };
 		01C5724B12A96FAB00F88ECC /* fixpng.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5724A12A96FAB00F88ECC /* fixpng.c */; };
 		01C5724E12A96FC800F88ECC /* flipchannels.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5724D12A96FC800F88ECC /* flipchannels.c */; };
 		01C5727912A9709C00F88ECC /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C5726612A9709C00F88ECC /* png.c */; };
@@ -44,7 +46,6 @@
 		5A23434C1211AB1F0098AAB8 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343441211AB1F0098AAB8 /* unzip.c */; };
 		5A23434D1211AB1F0098AAB8 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343461211AB1F0098AAB8 /* zip.c */; };
 		5A23434E1211AB1F0098AAB8 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5A2343491211AB1F0098AAB8 /* ZipArchive.mm */; };
-		5A23435C1211ABD40098AAB8 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A23435B1211ABD40098AAB8 /* libz.1.2.3.dylib */; };
 		5AA4E39D120DE13300385530 /* BuilderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA4E39C120DE13300385530 /* BuilderController.m */; };
 		5AA4E409120DE84F00385530 /* index_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E408120DE84F00385530 /* index_template.html */; };
 		5AA4E491120DF21D00385530 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E490120DF21D00385530 /* README */; };
@@ -77,6 +78,8 @@
 		0138070012A72B4B007914E0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
 		0138070112A72B4B007914E0 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = /usr/lib/libcurl.dylib; sourceTree = "<absolute>"; };
 		01380B3012A75086007914E0 /* DAVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DAVKit.framework; path = DAVKit/build/Debug/DAVKit.framework; sourceTree = "<group>"; };
+		0148FF9B134D0EA600A04240 /* index_template_old.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_template_old.html; sourceTree = "<group>"; };
+		0156655E16A9A12A00EEF078 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = ../../../../usr/lib/libz.dylib; sourceTree = "<group>"; };
 		01C5724912A96FAB00F88ECC /* fixpng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fixpng.h; sourceTree = "<group>"; };
 		01C5724A12A96FAB00F88ECC /* fixpng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fixpng.c; sourceTree = "<group>"; };
 		01C5724C12A96FC800F88ECC /* flipchannels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flipchannels.h; sourceTree = "<group>"; };
@@ -138,8 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0156655F16A9A12A00EEF078 /* libz.dylib in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				5A23435C1211ABD40098AAB8 /* libz.1.2.3.dylib in Frameworks */,
 				0138070212A72B4B007914E0 /* libicucore.A.dylib in Frameworks */,
 				0138070312A72B4B007914E0 /* libssl.dylib in Frameworks */,
 				0138070412A72B4B007914E0 /* libcrypto.dylib in Frameworks */,
@@ -238,6 +241,7 @@
 		29B97314FDCFA39411CA2CEA /* BetaBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				0156655E16A9A12A00EEF078 /* libz.dylib */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -263,6 +267,7 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 				5AA4E408120DE84F00385530 /* index_template.html */,
+				0148FF9B134D0EA600A04240 /* index_template_old.html */,
 				5AA4E490120DF21D00385530 /* README */,
 				5AB3C6141224870100778CFC /* Credits.html */,
 			);
@@ -361,6 +366,7 @@
 				5AA4E409120DE84F00385530 /* index_template.html in Resources */,
 				5AA4E491120DF21D00385530 /* README in Resources */,
 				5AB3C6151224870100778CFC /* Credits.html in Resources */,
+				0148FF9C134D0EA600A04240 /* index_template_old.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +482,7 @@
 				HEADER_SEARCH_PATHS = ".//**";
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -489,7 +495,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ".//**";
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
