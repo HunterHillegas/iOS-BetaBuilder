@@ -38,7 +38,7 @@
 @implementation BuilderController
 
 @synthesize bundleIdentifierField;
-@synthesize bundleVersionField;
+@synthesize bundleVersionField, bundleShortVersionField;
 @synthesize bundleNameField;
 @synthesize webserverDirectoryField;
 @synthesize archiveIPAFilenameField;
@@ -120,9 +120,27 @@
 			
 			if (bundlePlistFile) {
 				[bundleVersionField setStringValue:[bundlePlistFile valueForKey:@"CFBundleVersion"]];
+				[bundleShortVersionField setStringValue:[bundlePlistFile valueForKey:@"CFBundleShortVersionString"]];
 				[bundleIdentifierField setStringValue:[bundlePlistFile valueForKey:@"CFBundleIdentifier"]];
 				[bundleNameField setStringValue:[bundlePlistFile valueForKey:@"CFBundleDisplayName"]];
 				NSString* iconFile = [bundlePlistFile valueForKey:@"CFBundleIconFile"];
+				if ([iconFile length] == 0) {
+					NSArray* iconFiles = [bundlePlistFile valueForKey:@"CFBundleIconFiles"];
+					if ([iconFiles count] > 0) {
+						iconFile = [iconFiles objectAtIndex:0];
+					} else {
+						NSDictionary* icons = [bundlePlistFile valueForKey:@"CFBundleIcons"];
+						if ([icons count] > 0) {
+							NSDictionary* primaryIcon = [icons valueForKey:@"CFBundlePrimaryIcon"];
+							if ([primaryIcon count] > 0) {
+								NSArray* iconFiles = [primaryIcon valueForKey:@"CFBundleIconFiles"];
+								if ([iconFiles count] > 0) {
+									iconFile = [iconFiles objectAtIndex:0];
+								}
+							}
+						}
+					}
+				}
 				if (iconFile) {
 					[iconFilePath release];
 					iconFilePath = nil;
@@ -230,8 +248,16 @@
 
 		NSString *htmlTemplateString = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 		htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_NAME]" withString:[bundleNameField stringValue]];
-		htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_VERSION]" withString:[bundleVersionField stringValue]];
+		
+		NSString* niceBuildNumberName;
+		if (![[bundleShortVersionField stringValue] isEqualToString:[bundleVersionField stringValue]])
+			niceBuildNumberName = [NSString stringWithFormat:@"%@-%@", [bundleShortVersionField stringValue], [bundleVersionField stringValue]];
+		else
+			niceBuildNumberName = [NSString stringWithFormat:@"%@", [bundleVersionField stringValue]];
+		
+		htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_VERSION]" withString:niceBuildNumberName];
 		htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_PLIST]" withString:[NSString stringWithFormat:@"%@/%@", [webserverDirectoryField stringValue], @"manifest.plist"]];
+		htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_IPA]" withString:ipaURLString];
 		
 		
 		{

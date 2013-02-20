@@ -35,6 +35,7 @@
 @interface BuilderController : NSObject <NSTextFieldDelegate> {
 	NSTextField *bundleIdentifierField;
 	NSTextField *bundleVersionField;
+	NSTextField *bundleShortVersionField;
 	NSTextField *bundleNameField;
 	NSTextField *webserverDirectoryField;
 	NSTextField *archiveIPAFilenameField;
@@ -55,6 +56,7 @@
 @property (nonatomic, retain) IBOutlet NSProgressIndicator	*progressIndicator;
 @property (nonatomic, retain) IBOutlet NSTextField *bundleIdentifierField;
 @property (nonatomic, retain) IBOutlet NSTextField *bundleVersionField;
+@property (nonatomic, retain) IBOutlet NSTextField *bundleShortVersionField;
 @property (nonatomic, retain) IBOutlet NSTextField *bundleNameField;
 @property (nonatomic, retain) IBOutlet NSTextField *webserverDirectoryField;
 @property (nonatomic, retain) IBOutlet NSTextField *archiveIPAFilenameField;
