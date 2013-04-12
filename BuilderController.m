@@ -36,20 +36,6 @@
 
 @implementation BuilderController
 
-@synthesize bundleIdentifierField = _bundleIdentifierField;
-@synthesize bundleVersionField = _bundleVersionField;
-@synthesize bundleNameField = _bundleNameField;
-@synthesize webserverDirectoryField = _webserverDirectoryField;
-@synthesize archiveIPAFilenameField = _archiveIPAFilenameField;
-@synthesize overwriteFilesButton = _overwriteFilesButton;
-@synthesize generateFilesButton = _generateFilesButton;
-@synthesize openInFinderButton = _openInFinderButton;
-@synthesize mobileProvisionFilePath = _mobileProvisionFilePath;
-@synthesize appIconFilePath = _appIconFilePath;
-@synthesize templateFile = _templateFile;
-@synthesize destinationPath = _destinationPath;
-@synthesize previousDestinationPathAsString = _previousDestinationPathAsString;
-
 - (IBAction)specifyIPAFile:(id)sender {
     NSArray *allowedFileTypes = [NSArray arrayWithObjects:@"ipa", @"IPA", nil]; //only allow IPAs
     
@@ -71,7 +57,9 @@
 
 - (void)setupFromIPAFile:(NSString *)ipaFilename {
 	[self.archiveIPAFilenameField setStringValue:ipaFilename];
-	
+
+    self.includeTetheredDownloadOptions = YES;
+
 	//Attempt to pull values
 	NSError *fileCopyError;
 	NSError *fileDeleteError;
@@ -120,6 +108,16 @@
                 
                 [self.webserverDirectoryField setStringValue:@""];
                 [self populateFieldsFromHistoryForBundleID:[bundlePlistFile valueForKey:@"CFBundleIdentifier"]];
+
+                if ([bundlePlistFile valueForKey:@"MinimumOSVersion"]) {
+                    CGFloat minimumOSVerson = [[bundlePlistFile valueForKey:@"MinimumOSVersion"] floatValue];
+
+                    if (minimumOSVerson >= 4.0) {
+                        NSLog(@"This IPA doesn't support iOS 3 - do not show archive install options.");
+
+                        self.includeTetheredDownloadOptions = NO;
+                    }
+                }
 			}
 			
 			//set mobile provision file
@@ -182,7 +180,8 @@
 
 - (void)generateFilesWithWebserverAddress:(NSString *)webserver andOutputDirectory:(NSString *)outputPath {
     //create plist
-    NSString *trimmedURLString = [webserver stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *encodedWebserver = [webserver stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *trimmedURLString = [encodedWebserver stringByReplacingOccurrencesOfString:@" " withString:@""];
 	NSString *encodedIpaFilename = [[[self.archiveIPAFilenameField stringValue] lastPathComponent] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; //this isn't the most robust way to do this
 	NSString *ipaURLString = [NSString stringWithFormat:@"%@/%@", trimmedURLString, encodedIpaFilename];
 	NSDictionary *assetsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"software-package", @"kind", ipaURLString, @"url", nil];
@@ -195,29 +194,25 @@
     NSString *applicationSupportPath = [[NSFileManager defaultManager] applicationSupportDirectory];
     NSString *templatePath = nil;
     
-    if (_templateFile != nil)
-    {
-        if ([_templateFile hasPrefix:@"~"])
-        {
+    if (_templateFile != nil) {
+        if ([_templateFile hasPrefix:@"~"]) {
             _templateFile = [_templateFile stringByExpandingTildeInPath];
         }
-        if ([_templateFile hasPrefix:@"/"])
-        {
+
+        if ([_templateFile hasPrefix:@"/"]) {
             templatePath = _templateFile;
-        }
-        else 
-        {
+        } else  {
             templatePath = [applicationSupportPath stringByAppendingPathComponent:_templateFile];
-        }
-        if (![[NSFileManager defaultManager] fileExistsAtPath:templatePath])
-        {
+        } if (![[NSFileManager defaultManager] fileExistsAtPath:templatePath]) {
             NSLog(@"Template file does not exist at path: %@", templatePath);
             exit(1);
         }
-    }
-    else
-    {
-        templatePath = [applicationSupportPath stringByAppendingPathComponent:@"index_template.html"];
+    } else  {
+        if (self.includeTetheredDownloadOptions) {
+            templatePath = [applicationSupportPath stringByAppendingPathComponent:@"index_template.html"];
+        } else {
+            templatePath = [applicationSupportPath stringByAppendingPathComponent:@"index_template_no_tether.html"];
+        }
     }
 
 	NSString *htmlTemplateString = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
@@ -344,20 +339,27 @@
     } else {
         savedSuccessfully = YES;
     }
-    
+
     //Create Archived Version for 3.0 Apps
-    ZipArchive* zip = [[ZipArchive alloc] init];
-    [zip CreateZipFile2:[[saveDirectoryURL path] stringByAppendingPathComponent:@"beta_archive.zip"]];
-    [zip addFileToZip:[self.archiveIPAFilenameField stringValue] newname:@"application.ipa"];
-    [zip addFileToZip:self.mobileProvisionFilePath newname:@"beta_provision.mobileprovision"];
-    if(![zip CloseZipFile2]) {
-        NSLog(@"Error Creating 3.x Zip File");
+    if (self.includeTetheredDownloadOptions) {
+        ZipArchive *zip = [[ZipArchive alloc] init];
+        
+        [zip CreateZipFile2:[[saveDirectoryURL path] stringByAppendingPathComponent:@"beta_archive.zip"]];
+        [zip addFileToZip:[self.archiveIPAFilenameField stringValue] newname:@"application.ipa"];
+        [zip addFileToZip:self.mobileProvisionFilePath newname:@"beta_provision.mobileprovision"];
+
+        if (![zip CloseZipFile2]) {
+            NSLog(@"Error Creating 3.x Zip File");
+        }
     }
     
     return savedSuccessfully;
 }
 
 - (BOOL)fileManager:(NSFileManager *)fileManager shouldCopyItemAtURL:(NSURL *)srcURL toURL:(NSURL *)dstURL {
+    if ([srcURL isEqual:dstURL])
+        return NO;
+
     if ([self.overwriteFilesButton state] == NSOnState) {
         if ([fileManager fileExistsAtPath:[dstURL path]]) {
             NSLog(@"Overwriting File: %@", dstURL);

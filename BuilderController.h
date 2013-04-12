@@ -47,6 +47,7 @@
 @property (nonatomic, copy) NSString *templateFile;
 @property (nonatomic, copy) NSURL *destinationPath;
 @property (nonatomic, copy) NSString *previousDestinationPathAsString;
+@property (nonatomic) BOOL includeTetheredDownloadOptions;
 
 - (IBAction)specifyIPAFile:(id)sender;
 - (IBAction)generateFiles:(id)sender;

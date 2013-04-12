@@ -40,14 +40,12 @@
 @property (nonatomic) IBOutlet NSPanel *archiveIPAHelpPanel;
 @property (nonatomic) IBOutlet BuilderController *builderController;
 
-- (NSString *)htmlTemplatePath;
-- (NSString *)defaultTemplatePath;
-
-- (void)processCommandLineArguments:(NSArray *)arguments;
+- (BOOL)processCommandLineArguments:(NSArray *)arguments;
 
 - (void)alertDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo;
 
 - (IBAction)showDeploymentHelpPanel:(id)sender;
+
 - (IBAction)showArchiveHelpPanel:(id)sender;
 
 @end

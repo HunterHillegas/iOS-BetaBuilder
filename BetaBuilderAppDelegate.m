@@ -34,6 +34,13 @@
 
 #import "NSFileManager+DirectoryLocations.h"
 
+@interface BetaBuilderAppDelegate ()
+
+@property (nonatomic) BOOL runningInCommandLineSession;
+@property (nonatomic, strong) NSDictionary *indexTemplateAlertPaths;
+
+@end
+
 @implementation BetaBuilderAppDelegate
 
 @synthesize window = _window;
@@ -46,55 +53,77 @@
     [self.window registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, nil]];
     
     //Process Command Line Arguments, If Any
+    self.runningInCommandLineSession = NO;
     NSArray *commandLineArgs = [[NSProcessInfo processInfo] arguments];
     if (commandLineArgs && [commandLineArgs count] > 0) {
-        [self processCommandLineArguments:commandLineArgs];
+        self.runningInCommandLineSession = [self processCommandLineArguments:commandLineArgs];
     }
-    
+
     //Copy HTML Template to App Support
+    [self copyTemplatesIfNeededCommandLineArgs:commandLineArgs];
+}
+
+#pragma mark - Setup Templates
+
+- (void)copyTemplatesIfNeededCommandLineArgs:(NSArray *)commandLineArgs {
     NSFileManager *fileManager = [NSFileManager defaultManager];
-	if (![fileManager fileExistsAtPath:[self htmlTemplatePath]]) {
-		NSLog(@"Copying Index Template");
-		
-		if ([self defaultTemplatePath])
-			[fileManager copyItemAtPath:[self defaultTemplatePath] toPath:[self htmlTemplatePath] error:nil];
-	} else {
-        if ([fileManager contentsEqualAtPath:[self defaultTemplatePath] andPath:[self htmlTemplatePath]]) {
-            NSLog(@"Index Template Already Exists And They Are the Same - Not Copying From Bundle");
-        } else {
-            NSLog(@"Index Template Exists But Has Been Modified");
+
+    for (NSString *templatePath in [self htmlTemplatePaths]) {
+        NSString *filename = [templatePath lastPathComponent];
+        NSString *fileType = [filename pathExtension];
+
+        NSString *templatePathInBundle = [[NSBundle mainBundle] pathForResource:[filename stringByDeletingPathExtension] ofType:fileType];
+
+        if (![fileManager fileExistsAtPath:templatePath]) {
+            NSLog(@"Copying Template: %@", templatePath);
             
-            if ([commandLineArgs count] == 0) { //only present this if we have no command line args
-                NSString *infoText = [NSString stringWithFormat:@"The template index file used to create the HTML output has been updated to include new functionality. It appears you alread have a version of this file in place (%@). Would you like to replace this file? Any customizations will be lost - you may want to backup the file first.", [self htmlTemplatePath]];
-                
-                NSAlert *indexTemplateAlert = [NSAlert alertWithMessageText:@"A Newer Index Template File Exists" defaultButton:@"Do Nothing" alternateButton:@"Replace File" otherButton:nil informativeTextWithFormat:infoText];
-                [indexTemplateAlert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:nil];    
+            if (templatePathInBundle)
+                [fileManager copyItemAtPath:templatePathInBundle toPath:templatePath error:nil];
+        } else {
+            if ([fileManager contentsEqualAtPath:templatePathInBundle andPath:templatePath]) {
+                NSLog(@"Index Template Already Exists And They Are the Same - Not Copying From Bundle");
+            } else {
+                NSLog(@"Index Template Exists But Has Been Modified");
+
+                if (!self.runningInCommandLineSession) { //only present this if we have no command line args
+                    self.indexTemplateAlertPaths = @{@"fromPath" : templatePathInBundle, @"toPath" : templatePath};
+
+                    NSAlert *indexTemplateAlert = [NSAlert alertWithMessageText:@"A Newer Index Template File Exists" defaultButton:@"Do Nothing" alternateButton:@"Replace File" otherButton:nil informativeTextWithFormat:@"The template index file used to create the HTML output has been updated to include new functionality. It appears you alread have a version of this file in place (%@). Would you like to replace this file? Any customizations will be lost - you may want to backup the file first.", templatePath];
+                    [indexTemplateAlert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:&_indexTemplateAlertPaths];
+                }
             }
         }
     }
 }
 
-- (NSString *)htmlTemplatePath {
+- (NSArray *)htmlTemplatePaths {
+    NSMutableArray *templatePaths = [NSMutableArray array];
+
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *applicationSupportPath = [fileManager applicationSupportDirectory];
-    NSString *templatePath = [applicationSupportPath stringByAppendingPathComponent:@"index_template.html"];    
-    
-    return templatePath;
-}
 
-- (NSString *)defaultTemplatePath {
-    return [[NSBundle mainBundle] pathForResource:@"index_template" ofType:@"html"];
+    NSArray *templateNames = @[@"index_template.html", @"index_template_no_tether.html"];
+    
+    for (NSString *templateName in templateNames) {
+        NSString *templatePath = [applicationSupportPath stringByAppendingPathComponent:templateName];
+        [templatePaths addObject:templatePath];
+    }
+
+    return templatePaths;
 }
 
 #pragma mark - Command Line
+
 #define kArgumentSeperator @"="
 #define kIPAPathArgument @"-ipaPath"
 #define kWebserverArgument @"-webserver"
 #define kOutputDirectoryArgument @"-outputDirectory"
 #define kTemplateArgument @"-template"
 
-- (void)processCommandLineArguments:(NSArray *)arguments {
+- (BOOL)processCommandLineArguments:(NSArray *)arguments {
     NSLog(@"Processing Command Line Arguments");
+
+    BOOL processedArgs = NO;
     
     NSString *ipaPath = nil;
     NSString *webserverAddress = nil;
@@ -118,25 +147,33 @@
     }
     
     if (ipaPath && webserverAddress && outputPath) {
-        if (templateFile)
-        {
+        if (templateFile) {
             self.builderController.templateFile = templateFile;
         }
+        
         [self.builderController setupFromIPAFile:ipaPath];
         [self.builderController generateFilesWithWebserverAddress:webserverAddress andOutputDirectory:outputPath];
+        
         [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
+
+        processedArgs = YES;
     }
+
+    return processedArgs;
 }
 
 #pragma mark - Alert
 
 - (void)alertDidEnd:(NSAlert *)alert returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {    
     if (returnCode == NSAlertAlternateReturn) {
-        NSLog(@"Remove Existing Index File");
-        
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        [fileManager removeItemAtPath:[self htmlTemplatePath] error:nil];
-        [fileManager copyItemAtPath:[self defaultTemplatePath] toPath:[self htmlTemplatePath] error:nil];
+        if (contextInfo) {
+            NSLog(@"Remove Existing Index File %@", self.indexTemplateAlertPaths[@"toPath"]);
+
+            NSFileManager *fileManager = [NSFileManager defaultManager];
+
+            [fileManager removeItemAtPath:self.indexTemplateAlertPaths[@"toPath"] error:nil];
+            [fileManager copyItemAtPath:self.indexTemplateAlertPaths[@"fromPath"] toPath:self.indexTemplateAlertPaths[@"toPath"] error:nil];
+        }
     }
 }
 
