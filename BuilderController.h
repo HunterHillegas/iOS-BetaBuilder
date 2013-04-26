@@ -42,6 +42,7 @@
 @property (nonatomic) IBOutlet NSButton *overwriteFilesButton;
 @property (nonatomic) IBOutlet NSButton *generateFilesButton;
 @property (nonatomic) IBOutlet NSButton *openInFinderButton;
+@property (nonatomic) IBOutlet NSProgressIndicator *progressIndicator;
 @property (nonatomic, copy) NSString *mobileProvisionFilePath;
 @property (nonatomic, copy) NSString *appIconFilePath;
 @property (nonatomic, copy) NSString *templateFile;

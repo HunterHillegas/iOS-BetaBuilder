@@ -276,6 +276,8 @@
 
 - (BOOL)saveFilesToOutputDirectory:(NSURL *)saveDirectoryURL forManifestDictionary:(NSDictionary *)outerManifestDictionary withTemplateHTML:(NSString *)htmlTemplateString {
     BOOL savedSuccessfully = NO;
+
+    [self.progressIndicator startAnimation:nil];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     fileManager.delegate = self;
@@ -352,6 +354,8 @@
             NSLog(@"Error Creating 3.x Zip File");
         }
     }
+
+    [self.progressIndicator stopAnimation:nil];
     
     return savedSuccessfully;
 }
