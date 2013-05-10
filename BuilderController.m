@@ -58,8 +58,6 @@
 - (void)setupFromIPAFile:(NSString *)ipaFilename {
 	[self.archiveIPAFilenameField setStringValue:ipaFilename];
 
-    self.includeTetheredDownloadOptions = YES;
-
 	//Attempt to pull values
 	NSError *fileCopyError;
 	NSError *fileDeleteError;
@@ -112,10 +110,10 @@
                 if ([bundlePlistFile valueForKey:@"MinimumOSVersion"]) {
                     CGFloat minimumOSVerson = [[bundlePlistFile valueForKey:@"MinimumOSVersion"] floatValue];
 
-                    if (minimumOSVerson >= 4.0) {
-                        NSLog(@"This IPA doesn't support iOS 3 - do not show archive install options.");
-
-                        self.includeTetheredDownloadOptions = NO;
+                    if (minimumOSVerson < 4.0) {
+                        [self.includeZipFileButton setState:NSOnState];
+                    } else {
+                        [self.includeZipFileButton setState:NSOffState];
                     }
                 }
 			}
@@ -125,6 +123,9 @@
             
             //set the app file icon path
             self.appIconFilePath = [appDirectoryPath stringByAppendingPathComponent:[[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"iTunesArtwork"]];
+            if (![fileManager fileExistsAtPath:self.appIconFilePath]) { //iTunesArtwork file does not exist - look for Icon.png instead
+                self.appIconFilePath = [appDirectoryPath stringByAppendingPathComponent:[[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"Icon.png"]];
+            }
 		}
 	}
 	
@@ -208,7 +209,7 @@
             exit(1);
         }
     } else  {
-        if (self.includeTetheredDownloadOptions) {
+        if ([self.includeZipFileButton state] == NSOnState) {
             templatePath = [applicationSupportPath stringByAppendingPathComponent:@"index_template.html"];
         } else {
             templatePath = [applicationSupportPath stringByAppendingPathComponent:@"index_template_no_tether.html"];
@@ -343,7 +344,7 @@
     }
 
     //Create Archived Version for 3.0 Apps
-    if (self.includeTetheredDownloadOptions) {
+    if ([self.includeZipFileButton state] == NSOnState) {
         ZipArchive *zip = [[ZipArchive alloc] init];
         
         [zip CreateZipFile2:[[saveDirectoryURL path] stringByAppendingPathComponent:@"beta_archive.zip"]];

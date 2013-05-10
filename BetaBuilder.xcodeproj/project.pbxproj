@@ -23,7 +23,8 @@
 		5AA4E491120DF21D00385530 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 5AA4E490120DF21D00385530 /* README */; };
 		5AB3C6151224870100778CFC /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 5AB3C6141224870100778CFC /* Credits.html */; };
 		5ACAEBFE138D6CED00BED0F7 /* BetaBuilderWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACAEBFD138D6CED00BED0F7 /* BetaBuilderWindow.m */; };
-		5ACEC915125FD37F009864D8 /* betabuilder.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5ACEC914125FD37F009864D8 /* betabuilder.icns */; };
+		5AFE7583173CA520002BAD1E /* icons.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 5AFE7582173CA520002BAD1E /* icons.iconset */; };
+		5AFE7587173CA568002BAD1E /* icons.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5AFE7586173CA568002BAD1E /* icons.icns */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -63,7 +64,8 @@
 		5AB3C6141224870100778CFC /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		5ACAEBFC138D6CED00BED0F7 /* BetaBuilderWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetaBuilderWindow.h; sourceTree = "<group>"; };
 		5ACAEBFD138D6CED00BED0F7 /* BetaBuilderWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetaBuilderWindow.m; sourceTree = "<group>"; };
-		5ACEC914125FD37F009864D8 /* betabuilder.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = betabuilder.icns; sourceTree = "<group>"; };
+		5AFE7582173CA520002BAD1E /* icons.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icons.iconset; sourceTree = "<group>"; };
+		5AFE7586173CA568002BAD1E /* icons.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icons.icns; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BetaBuilder-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BetaBuilder-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* BetaBuilder for iOS Apps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetaBuilder for iOS Apps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 		29B97314FDCFA39411CA2CEA /* BetaBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				5AFE7586173CA568002BAD1E /* icons.icns */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -147,8 +150,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5AFE7582173CA520002BAD1E /* icons.iconset */,
 				5A6C75B712E4C65C0050AA2B /* HISTORY */,
-				5ACEC914125FD37F009864D8 /* betabuilder.icns */,
 				8D1107310486CEB800E47090 /* BetaBuilder-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -262,9 +265,10 @@
 				5AA4E409120DE84F00385530 /* index_template.html in Resources */,
 				5AA4E491120DF21D00385530 /* README in Resources */,
 				5AB3C6151224870100778CFC /* Credits.html in Resources */,
-				5ACEC915125FD37F009864D8 /* betabuilder.icns in Resources */,
 				5A6C75B812E4C65C0050AA2B /* HISTORY in Resources */,
 				5A0087AB171607300087433E /* index_template_no_tether.html in Resources */,
+				5AFE7583173CA520002BAD1E /* icons.iconset in Resources */,
+				5AFE7587173CA568002BAD1E /* icons.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +320,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -340,7 +344,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_GC = unsupported;

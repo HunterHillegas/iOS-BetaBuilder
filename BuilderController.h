@@ -40,6 +40,7 @@
 @property (nonatomic) IBOutlet NSTextField *webserverDirectoryField;
 @property (nonatomic) IBOutlet NSTextField *archiveIPAFilenameField;
 @property (nonatomic) IBOutlet NSButton *overwriteFilesButton;
+@property (nonatomic) IBOutlet NSButton *includeZipFileButton;
 @property (nonatomic) IBOutlet NSButton *generateFilesButton;
 @property (nonatomic) IBOutlet NSButton *openInFinderButton;
 @property (nonatomic) IBOutlet NSProgressIndicator *progressIndicator;
@@ -48,7 +49,6 @@
 @property (nonatomic, copy) NSString *templateFile;
 @property (nonatomic, copy) NSURL *destinationPath;
 @property (nonatomic, copy) NSString *previousDestinationPathAsString;
-@property (nonatomic) BOOL includeTetheredDownloadOptions;
 
 - (IBAction)specifyIPAFile:(id)sender;
 - (IBAction)generateFiles:(id)sender;
