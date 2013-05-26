@@ -300,17 +300,20 @@
     }
     
     //Copy README
-    if ([self.overwriteFilesButton state] == NSOnState)
-        [fileManager removeItemAtURL:[saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] error:nil];
-    
-    NSString *readmeContents = [[NSBundle mainBundle] pathForResource:@"README" ofType:@""];
-    [readmeContents writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] atomically:YES encoding:NSASCIIStringEncoding error:nil];
+    if ([self.includeZipFileButton state] == NSOnState) {
+        if ([self.overwriteFilesButton state] == NSOnState)
+            [fileManager removeItemAtURL:[saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] error:nil];
+
+        NSString *readmeContents = [[NSBundle mainBundle] pathForResource:@"README" ofType:@""];
+        [readmeContents writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"README.txt"] atomically:YES encoding:NSASCIIStringEncoding error:nil];
+    }
     
     //If iTunesArtwork file exists, use it
     BOOL doesArtworkExist = [fileManager fileExistsAtPath:self.appIconFilePath];
     if (doesArtworkExist) {
         NSString *artworkDestinationFilename = [NSString stringWithFormat:@"%@.png", [self.appIconFilePath lastPathComponent]];
-        
+        artworkDestinationFilename = [artworkDestinationFilename stringByReplacingOccurrencesOfString:@".png.png" withString:@".png"]; //fix for commonly incorrectly named files
+
         NSURL *artworkSourceURL = [NSURL fileURLWithPath:self.appIconFilePath];
         NSURL *artworkDestinationURL = [saveDirectoryURL URLByAppendingPathComponent:artworkDestinationFilename];
         

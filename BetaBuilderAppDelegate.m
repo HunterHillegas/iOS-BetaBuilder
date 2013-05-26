@@ -59,6 +59,10 @@
         self.runningInCommandLineSession = [self processCommandLineArguments:commandLineArgs];
     }
 
+    if (![[NSUserDefaults standardUserDefaults] valueForKey:kSupressTemplateWarning]) {
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:kSupressTemplateWarning];
+    }
+
     //Copy HTML Template to App Support
     [self copyTemplatesIfNeededCommandLineArgs:commandLineArgs];
 }
@@ -86,10 +90,13 @@
                 NSLog(@"Index Template Exists But Has Been Modified");
 
                 if (!self.runningInCommandLineSession) { //only present this if we have no command line args
-                    self.indexTemplateAlertPaths = @{@"fromPath" : templatePathInBundle, @"toPath" : templatePath};
+                    BOOL shouldSuppressAlert = [[NSUserDefaults standardUserDefaults] boolForKey:kSupressTemplateWarning];
+                    if (!shouldSuppressAlert) {
+                        self.indexTemplateAlertPaths = @{@"fromPath" : templatePathInBundle, @"toPath" : templatePath};
 
-                    NSAlert *indexTemplateAlert = [NSAlert alertWithMessageText:@"A Newer Index Template File Exists" defaultButton:@"Do Nothing" alternateButton:@"Replace File" otherButton:nil informativeTextWithFormat:@"The template index file used to create the HTML output has been updated to include new functionality. It appears you alread have a version of this file in place (%@). Would you like to replace this file? Any customizations will be lost - you may want to backup the file first.", templatePath];
-                    [indexTemplateAlert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:&_indexTemplateAlertPaths];
+                        NSAlert *indexTemplateAlert = [NSAlert alertWithMessageText:@"A Newer Index Template File Exists" defaultButton:@"Do Nothing" alternateButton:@"Replace File" otherButton:nil informativeTextWithFormat:@"The template index file used to create the HTML output has been updated to include new functionality. It appears you alread have a version of this file in place (%@). Would you like to replace this file? Any customizations will be lost - you may want to backup the file first.", templatePath];
+                        [indexTemplateAlert beginSheetModalForWindow:self.window modalDelegate:self didEndSelector:@selector(alertDidEnd:returnCode:contextInfo:) contextInfo:&_indexTemplateAlertPaths];
+                    }
                 }
             }
         }
@@ -172,8 +179,11 @@
             NSFileManager *fileManager = [NSFileManager defaultManager];
 
             [fileManager removeItemAtPath:self.indexTemplateAlertPaths[@"toPath"] error:nil];
+            
             [fileManager copyItemAtPath:self.indexTemplateAlertPaths[@"fromPath"] toPath:self.indexTemplateAlertPaths[@"toPath"] error:nil];
         }
+    } else if (returnCode == NSAlertDefaultReturn) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kSupressTemplateWarning];
     }
 }
 
