@@ -62,6 +62,7 @@
 		5AA4E408120DE84F00385530 /* index_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_template.html; sourceTree = "<group>"; };
 		5AA4E490120DF21D00385530 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5AB3C6141224870100778CFC /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		5AC5224C1A46042400C58289 /* SampleManifest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SampleManifest.plist; sourceTree = "<group>"; };
 		5ACAEBFC138D6CED00BED0F7 /* BetaBuilderWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetaBuilderWindow.h; sourceTree = "<group>"; };
 		5ACAEBFD138D6CED00BED0F7 /* BetaBuilderWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetaBuilderWindow.m; sourceTree = "<group>"; };
 		5AFE7582173CA520002BAD1E /* icons.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = icons.iconset; sourceTree = "<group>"; };
@@ -159,6 +160,7 @@
 				5A0087AA171607300087433E /* index_template_no_tether.html */,
 				5AA4E490120DF21D00385530 /* README */,
 				5AB3C6141224870100778CFC /* Credits.html */,
+				5AC5224C1A46042400C58289 /* SampleManifest.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -234,7 +236,12 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					8D1107260486CEB800E47090 = {
+						DevelopmentTeam = 7347CE2QV8;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BetaBuilder" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -318,9 +325,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -331,10 +338,10 @@
 				GCC_PREFIX_HEADER = BetaBuilder_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BetaBuilder-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = /Applications;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "BetaBuilder for iOS Apps";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1f4ce4c3-6dc8-414b-91e7-0e52d41820d1";
 			};
 			name = Debug;
 		};
@@ -342,9 +349,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_GC = unsupported;
@@ -353,17 +360,16 @@
 				GCC_PREFIX_HEADER = BetaBuilder_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BetaBuilder-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
+				INSTALL_PATH = /Applications;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "BetaBuilder for iOS Apps";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1f4ce4c3-6dc8-414b-91e7-0e52d41820d1";
 			};
 			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Hunter Hillegas";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -380,7 +386,6 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Hunter Hillegas";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;

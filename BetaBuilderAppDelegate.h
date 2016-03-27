@@ -38,6 +38,7 @@
 @property IBOutlet NSWindow *window;
 @property (nonatomic) IBOutlet NSPanel *deploymentHelpPanel;
 @property (nonatomic) IBOutlet NSPanel *archiveIPAHelpPanel;
+@property (nonatomic) IBOutlet NSPanel *preferencesPanel;
 @property (nonatomic) IBOutlet BuilderController *builderController;
 
 - (BOOL)processCommandLineArguments:(NSArray *)arguments;
@@ -47,5 +48,7 @@
 - (IBAction)showDeploymentHelpPanel:(id)sender;
 
 - (IBAction)showArchiveHelpPanel:(id)sender;
+
+- (IBAction)showPreferencesPanel:(id)sender;
 
 @end

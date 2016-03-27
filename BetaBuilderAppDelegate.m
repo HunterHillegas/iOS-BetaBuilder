@@ -47,6 +47,7 @@
 @synthesize deploymentHelpPanel = _deploymentHelpPanel;
 @synthesize archiveIPAHelpPanel = _archiveIPAHelpPanel;
 @synthesize builderController = _builderController;
+@synthesize preferencesPanel = _preferencesPanel;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     //Setup Drag Target for IPA Files
@@ -193,6 +194,10 @@
 
 - (IBAction)showArchiveHelpPanel:(id)sender {
 	[self.archiveIPAHelpPanel setIsVisible:YES];
+}
+
+- (IBAction)showPreferencesPanel:(id)sender {
+    [self.preferencesPanel setIsVisible:YES];
 }
 
 - (BOOL)application:(NSApplication *)theApplication openFile:(NSString *)filename {

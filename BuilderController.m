@@ -87,8 +87,18 @@
 		//read the Info.plist file
 		NSString *appDirectoryPath = [[NSTemporaryDirectory() stringByAppendingPathComponent:@"extracted_app"] stringByAppendingPathComponent:@"Payload"];
 		NSArray *payloadContents = [fileManager contentsOfDirectoryAtPath:appDirectoryPath error:nil];
-		if ([payloadContents count] > 0) {
-			NSString *plistPath = [[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"Info.plist"];
+        
+        NSString *appPath;
+        for (NSString *possiblePath in payloadContents) {
+            if ([[possiblePath pathExtension] isEqualToString:@"app"]) {
+                appPath = possiblePath;
+                
+                break;
+            }
+        }
+        
+		if (appPath) {
+			NSString *plistPath = [appPath stringByAppendingPathComponent:@"Info.plist"];
 			NSDictionary *bundlePlistFile = [NSDictionary dictionaryWithContentsOfFile:[appDirectoryPath stringByAppendingPathComponent:plistPath]];
 			
 			if (bundlePlistFile) {
@@ -125,6 +135,18 @@
             self.appIconFilePath = [appDirectoryPath stringByAppendingPathComponent:[[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"iTunesArtwork"]];
             if (![fileManager fileExistsAtPath:self.appIconFilePath]) { //iTunesArtwork file does not exist - look for Icon.png instead
                 self.appIconFilePath = [appDirectoryPath stringByAppendingPathComponent:[[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"Icon.png"]];
+                
+                if (![fileManager fileExistsAtPath:self.appIconFilePath]) {//look for Retina icon
+                    self.appIconFilePath = [appDirectoryPath stringByAppendingPathComponent:[[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"Icon@2x.png"]];
+                    
+                    if (![fileManager fileExistsAtPath:self.appIconFilePath]) {//look for iOS 7 icon
+                        self.appIconFilePath = [appDirectoryPath stringByAppendingPathComponent:[[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"AppIcon60x60@2x.png"]];
+                        
+                        if (![fileManager fileExistsAtPath:self.appIconFilePath]) {//look for iPad icon
+                            self.appIconFilePath = [appDirectoryPath stringByAppendingPathComponent:[[payloadContents objectAtIndex:0] stringByAppendingPathComponent:@"AppIcon76x76@2x~ipad.png"]];
+                        }
+                    }
+                }
             }
 		}
 	}
@@ -180,15 +202,53 @@
 }
 
 - (void)generateFilesWithWebserverAddress:(NSString *)webserver andOutputDirectory:(NSString *)outputPath {
-    //create plist
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"supressHTTPSWarning"]) {
+        if ([webserver rangeOfString:@"https"].location == NSNotFound) {
+            NSAlert *notHTTPSAlert = [NSAlert alertWithMessageText:@"Web Deploy Not HTTPS" defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"As of iOS 7.1, Web servers must be running SSL/HTTPS to work with ad-hoc deployment. If your devices do not trust the SSL certficiates, installation may fail."];
+            
+            [notHTTPSAlert runModal];
+        }
+    }
+
+    //create manifest plist
     NSString *encodedWebserver = [webserver stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString *trimmedURLString = [encodedWebserver stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    if (![trimmedURLString hasSuffix:@"/"]) {
+        trimmedURLString = [trimmedURLString stringByAppendingString:@"/"];
+    }
+    
 	NSString *encodedIpaFilename = [[[self.archiveIPAFilenameField stringValue] lastPathComponent] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; //this isn't the most robust way to do this
-	NSString *ipaURLString = [NSString stringWithFormat:@"%@/%@", trimmedURLString, encodedIpaFilename];
+	NSString *ipaURLString = [NSString stringWithFormat:@"%@%@", trimmedURLString, encodedIpaFilename];
 	NSDictionary *assetsDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"software-package", @"kind", ipaURLString, @"url", nil];
+    
+    NSDictionary *displayImageDictionary;
+    NSDictionary *fullsizeImageDictionary;
+    
+    BOOL doesArtworkExist = [[NSFileManager defaultManager] fileExistsAtPath:self.appIconFilePath];
+    if (doesArtworkExist) {
+        NSString *artworkDestinationFilename = [NSString stringWithFormat:@"%@.png", [self.appIconFilePath lastPathComponent]]; //TODO: move to method
+        artworkDestinationFilename = [artworkDestinationFilename stringByReplacingOccurrencesOfString:@".png.png" withString:@".png"]; //fix for commonly incorrectly named files
+        
+        NSString *imageURLString = [NSString stringWithFormat:@"%@%@", trimmedURLString, artworkDestinationFilename];
+        
+        displayImageDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"display-image", @"kind", imageURLString, @"url", nil];
+        fullsizeImageDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"full-size-image", @"kind", imageURLString, @"url", nil];
+    }
+    
 	NSDictionary *metadataDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[self.bundleIdentifierField stringValue], @"bundle-identifier", [self.bundleVersionField stringValue], @"bundle-version", @"software", @"kind", [self.bundleNameField stringValue], @"title", nil];
-	NSDictionary *innerManifestDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSArray arrayWithObject:assetsDictionary], @"assets", metadataDictionary, @"metadata", nil];
+    
+    NSMutableArray *assetsArray = [NSMutableArray array];
+    [assetsArray addObject:assetsDictionary];
+    
+    if (displayImageDictionary && fullsizeImageDictionary) {
+        [assetsArray addObject:displayImageDictionary];
+        [assetsArray addObject:fullsizeImageDictionary];
+    }
+    
+	NSDictionary *innerManifestDictionary = [NSDictionary dictionaryWithObjectsAndKeys:assetsArray, @"assets", metadataDictionary, @"metadata", nil];
 	NSDictionary *outerManifestDictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSArray arrayWithObject:innerManifestDictionary], @"items", nil];
+    
 	NSLog(@"Manifest Created");
 	
 	//create html file    
@@ -219,7 +279,7 @@
 	NSString *htmlTemplateString = [NSString stringWithContentsOfFile:templatePath encoding:NSUTF8StringEncoding error:nil];
 	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_NAME]" withString:[self.bundleNameField stringValue]];
     htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_VERSION]" withString:[self.bundleVersionField stringValue]];
-	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_PLIST]" withString:[NSString stringWithFormat:@"%@/%@", trimmedURLString, @"manifest.plist"]];
+	htmlTemplateString = [htmlTemplateString stringByReplacingOccurrencesOfString:@"[BETA_PLIST]" withString:[NSString stringWithFormat:@"%@%@", trimmedURLString, @"manifest.plist"]];
 	
     //add formatted date
     NSDateFormatter *shortDateFormatter = [[NSDateFormatter alloc] init];
@@ -271,6 +331,7 @@
         }    
     } else {
         NSURL *saveDirectoryURL = [NSURL fileURLWithPath:outputPath];
+        
         [self saveFilesToOutputDirectory:saveDirectoryURL forManifestDictionary:outerManifestDictionary withTemplateHTML:htmlTemplateString];
     }
 }
@@ -332,9 +393,10 @@
     }
     
     //Write Files
-    if ([self.overwriteFilesButton state] == NSOnState)
+    if ([self.overwriteFilesButton state] == NSOnState) {
         [fileManager removeItemAtURL:[saveDirectoryURL URLByAppendingPathComponent:@"manifest.plist"] error:nil];
-    
+    }
+        
     NSError *fileWriteError;
     [outerManifestDictionary writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"manifest.plist"] atomically:YES];
     BOOL wroteHTMLFileSuccessfully = [htmlTemplateString writeToURL:[saveDirectoryURL URLByAppendingPathComponent:@"index.html"] atomically:YES encoding:NSUTF8StringEncoding error:&fileWriteError];
