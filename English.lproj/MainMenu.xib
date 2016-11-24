@@ -949,7 +949,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" id="qvf-Aa-A7x">
                             <font key="font" metaFont="systemBold"/>
-                            <string key="title">NOTE: Recent changes to iOS now require the host Web server to be running SSL with a trusted certficiate (i.e. not self-signed).</string>
+                            <string key="title">NOTE: Recent changes to iOS now require the host Web server to be running SSL with a trusted certificate (i.e. not self-signed).</string>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
