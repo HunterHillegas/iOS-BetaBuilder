@@ -1,2 +1,10 @@
 '$*."-'#'
-'$Job_config.xml#
+'$Job_config.xml
+#
+'$*."_Job
+'#'
+_config.
+'$*.
+"_'#'
+_.xml
+'*."_Job_config_xml
