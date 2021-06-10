@@ -1,15 +1,32 @@
 '# $*.";!?-_=/
-*."_;/<xml version="1.0" encoding="UTF-8"?>
+*."_;/<xml version=
+	   "1.0" 
+	   encoding=
+	   "UTF-8"
+	   ?>
 '#
 *."
 *."-P=<
-#$*.";!?-_=/<dict>
-<xml version="1.0" encoding="UTF-8"?>
+#$*.
+	    ";!?-_=/<dict>
+<xml version="
+	    1.0
+	    " encoding="
+	    UTF-8
+
+"?>
 <DOCTYPE plist PUBLIC 
-	 "-//Apple//DTD PLIST 1.0//EN" 
-	<!ENTITY % plistObject "(array | data | date | dict | real | integer | string | true | false )" >
+	 "
+	    -//Apple//DTD PLIST 1.0//EN
+
+" 
+	<!ENTITY % plistObject "
+	    (array | data | date | dict | real | integer | string | true | false )
+	    " >
 <!ELEMENT plist %plistObject;>
-<!ATTLIST plist version CDATA "1.0" >
+<!ATTLIST plist version CDATA "
+	    1.0
+	    " >
 
 <!-- Collections -->
 <!ELEMENT array (%plistObject;)*>
@@ -26,8 +43,12 @@
 <!ELEMENT false EMPTY> <!-- Boolean constant false -->
 <!ELEMENT real (#PCDATA)> <!-- Contents should represent a floating point number matching ("+" | "-")? d+ ("."d*)? ("E" ("+" | "-") d+)? where d is a digit 0-9.  -->
 <!ELEMENT integer (#PCDATA)> <!-- Contents should represent a (possibly signed) integer number in base 10 -->
-	"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
+	"
+	    http://www.apple.com/DTDs/PropertyList-1.0.dtd
+	    ">
+<plist version="
+	    1.0
+	    ">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
@@ -85,4 +106,4 @@
 	<key>UTImportedTypeDeclarations</key>
 	<array/>
 </dict>
-</plist>
+
