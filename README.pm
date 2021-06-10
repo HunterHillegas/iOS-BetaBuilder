@@ -1,41 +1,126 @@
 '# $*.";!?-_=/
-*."_;/<xml version=
+*.
+	"_;/<xml version=
 	   "1.0" 
-	   encoding=
+	   encoding
+
+=
 	   "UTF-8"
 	   ?>
 '#
-*."
-*."-P=<
+*.
+	"
+*.
+	"-P=<
 #$*.
 	    ";!?-_=/<dict>
-<xml version="
+<
+xml version
+
+=
+"
 	    1.0
-	    " encoding="
-	    UTF-8
+	    " 
+	    encoding
+
+=
+	"
+	    UTF
+	    -
+	    8
 
 "?>
-<DOCTYPE plist PUBLIC 
+<
+DOCTYPE plist PUBLIC 
 	 "
-	    -//Apple//DTD PLIST 1.0//EN
+	    -
+	    /
+	    Apple
+
+/
+DTD PLIST 
+	    1.0
+	    /
+	    /EN
 
 " 
-	<!ENTITY % plistObject "
-	    (array | data | date | dict | real | integer | string | true | false )
+	<
+	!
+	 
+	% 
+	
+	"
+	    (
+	 | data 
+	 | date 
+	 | dict 
+	 | real
+
+ | integer 
+ | string 
+ | 
+	'true |
 	    " >
-<!ELEMENT plist %plistObject;>
-<!ATTLIST plist version CDATA "
+<
+	!
+	 plist 
+	 %
+	 plistObject
+
+;
+>
+<
+!
+ATTLIST plist version CDATA 
+"
 	    1.0
 	    " >
 
-<!-- Collections -->
-<!ELEMENT array (%plistObject;)*>
-<!ELEMENT dict (key, %plistObject;)*>
-<!ELEMENT key (#PCDATA)>
+<!-- 
+	 -->
+<!
+	ELEMENT array 
+(%
+ plistObject
 
-<!--- Primitive types -->
-<!ELEMENT string (#PCDATA)>
-<!ELEMENT data (#PCDATA)> <!-- Contents interpreted as Base-64 encoded -->
+;)*>
+<!
+ELEMENT 
+dict 
+(
+key
+
+, 
+	%
+	;)*>
+<!
+ELEMENT 
+key (
+	#PCDATA)>
+
+<!---
+	Primitive types 
+	-->
+<!ELEMENT 
+string (
+	#PCDATA
+)
+	>
+<!
+	 data
+
+ (
+ #PCDATA
+ )
+ > 
+	<
+	!
+	-- 
+	Contents interpreted as Base
+	-
+	64 
+	
+	-->
 <!ELEMENT date (#PCDATA)> <!-- Contents should conform to a subset of ISO 8601 (in particular, YYYY '-' MM '-' DD 'T' HH ':' MM ':' SS 'Z'.  Smaller units may be omitted with a loss of precision) -->
 
 <!-- Numerical primitives -->
