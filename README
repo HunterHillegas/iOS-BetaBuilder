@@ -1,1 +1,0 @@
-The files generated in this directory need to be copied into the URL that was specified as the Web deployment URL.
